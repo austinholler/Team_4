@@ -23,8 +23,8 @@
 #  Created by: Austin Holler
 #  Date: Feb 25, 2016
 #  Purpose: To make a limited, by API specifications, number of calls to
-#			the meetup API for get groups. Finding all groups within cities
-#			from the JSON cities files that meet our criteria.
+#	    the meetup API for get groups. Finding all groups within cities
+#	    from the JSON cities files that meet our criteria.
 #  
 
 import json
@@ -36,7 +36,7 @@ import time
 	only the groups that match the designated city.
 	
 	Variables: state -> Specified state fetched from USCities.json and passed in
-			   city -> Specified city fetched from USCities.json and passed in'''
+		   city -> Specified city fetched from USCities.json and passed in'''
 def getUSGroups(state, city):
 	
 	off = 0
@@ -81,11 +81,11 @@ def getUSGroups(state, city):
 	return 0
 
 ''' getOtherGroups: This function makes a "get groups" API call to the Meetup API.
-	Taking a given country and city, inputted into the URL call, and parsing
-	only the groups that match the designated city.
+		    Taking a given country and city, inputted into the URL call, and parsing
+		    only the groups that match the designated city.
 	
 	Variables: state -> Specified country fetched from otherCities.json and passed in
-			   city -> Specified city fetched from otherCities.json and passed in'''
+		   city -> Specified city fetched from otherCities.json and passed in'''
 
 def getOtherGroups(country, city):
 	

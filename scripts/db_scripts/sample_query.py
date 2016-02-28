@@ -18,8 +18,8 @@ def sampleQuery():
 	r = urllib.request.urlopen(url)
 	data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
 	data = data["results"]
-	for arrayElem in data:
-		arrayElem["description"] = "REMOVED"
+	#for arrayElem in data:
+	#	arrayElem["description"] = "REMOVED"
 	return data
 
 def main():

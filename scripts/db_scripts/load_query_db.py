@@ -13,11 +13,19 @@
 import json
 import time
 import pymongo
+import sys
 
 
 def main():
-	# TODO: Should come from user IO in future. 
-	loadJsonIntoMongo("test","meetupsample","basic_json.json")
+	# User must provide 3 arguments
+	if (len(sys.argv) < 4):
+		sys.exit("USAGE: py load_query_db.py [dbName] [collectionName] [jsonPath]")
+	name = sys.argv[1]
+	collection = sys.argv[2]
+	path = sys.argv[3]
+	
+	# Load the data
+	loadJsonIntoMongo(name,collection,path)
 
 	return 0
 
@@ -41,7 +49,7 @@ def loadJsonIntoMongo(dbName,collectionName,jsonPath):
 	data = json.loads(json_data)
 
 	# insert json array into the database
-	collection.insert(data)
+	collection.insert(data[collectionName])
 
 if __name__ == '__main__':
 	main()

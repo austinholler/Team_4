@@ -23,7 +23,7 @@ def main():
 	name = sys.argv[1]
 	collection = sys.argv[2]
 	path = sys.argv[3]
-	
+
 	# Load the data
 	loadJsonIntoMongo(name,collection,path)
 
@@ -48,8 +48,27 @@ def loadJsonIntoMongo(dbName,collectionName,jsonPath):
 	# Load json into data 
 	data = json.loads(json_data)
 
-	# insert json array into the database
-	collection.insert(data[collectionName])
+	# Insertion into the events collection
+	if (collectionName == "events"):
+		collection.insert(data[collectionName])
+
+	# Insertion into the cities collection
+	elif (collectionName == "cities"):
+		# for every state
+		for state in data.keys():
+			# for every city
+			for name in data[state]:
+				# Insert a JSON object for this state containing the name/state. 
+				collection.insert({"name":name,"state":state})
+
+	# Insertion into the groups collection
+	elif (collectionName == "groups"):
+		collection.insert(data[collectionName])
+
+	# Don't currently support any other types of insertion
+	else: 
+		sys.exit("Only supports inserting into events, cities, or groups")
+
 
 if __name__ == '__main__':
 	main()

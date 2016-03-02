@@ -5,14 +5,14 @@ var router = express.Router();
 var Schema = mongoose.Schema;
 
 // Define the model for what we are pulling out of the DB.
-var Group = mongoose.model('Group',new Schema(),'groups');
+var Event = mongoose.model('Event',new Schema(),'events');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
   // Does a "find" on group and returns all groups.
-  Group.find(function (err,groups) {
-    res.send(groups)
+  Event.find(function (err,events) {
+    res.send(events)
   })
 });
 

@@ -4,14 +4,14 @@
 // Edit History
 // Date    Author   Description
 // =================================================
-// 3/1    MB        Updated to redirect to index.html
+// 3/1    MB        Catches any api failures.
 
 var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendfile('public/index.html')
+  res.send("ERROR: Invalid API call. API paths are: api/groups, api/events, api/cities")
 });
 
 module.exports = router;

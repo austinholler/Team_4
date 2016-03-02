@@ -2,9 +2,11 @@
 // Created by: Matt Bubernak
 
 // Edit History
-// Date , Author, Description
-// ==========================
-// 2/28 , MB , Mongo Support
+// Date    Author   Description
+// =================================================
+// 2/28    MB       Mongo Support
+// 3/1     MB       CORS Support + Additional Routes
+
 
 // Modules
 var mongoose = require("mongoose");
@@ -14,10 +16,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var cors = require("cors");
 var routes = require('./routes/index');
 var events = require('./routes/events');
 var groups = require('./routes/groups');
 var cities = require('./routes/cities');
+var api = require('./routes/api');
+
 
 // Application
 var app = express();
@@ -42,6 +47,7 @@ app.use('/', routes);
 app.use('/api/events', events);
 app.use('/api/groups', groups);
 app.use('/api/cities', cities);
+app.use('/api*', api);
 
 
 // catch 404 and forward to error handler

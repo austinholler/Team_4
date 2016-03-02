@@ -1,0 +1,53 @@
+<!-- public/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Meetup Stuff</title>
+
+    <!-- CSS -->
+        <!-- Bootstrap -->
+        <!--<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">-->
+        <!-- Materialize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    <!-- Javascript -->
+        <!-- Angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <!-- Materialize -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+    <!-- Angular Scripts -->
+        <!-- App -->
+        <script src="javascripts/angular/app.js"></script>
+
+</head>
+
+<body ng-app="">
+
+    <!-- NavBar -->
+    <nav>
+        <div class="nav-wrapper lime accent-3">
+            <a href="#" class="brand-logo black-text"><b>Meetup Pulse</b></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down ">
+                <li><a href="collapsible.html" class="black-text">API</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    Hello World! {{ "Angular" + " is cool!" }}
+
+    <!-- View -->
+    <div ng-view ></div>
+
+
+    <!-- FOOTER -->
+
+</body>
+
+</html>

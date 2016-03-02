@@ -1,3 +1,11 @@
+// cities.js
+// Created by: Matt Bubernak
+
+// Edit History
+// Date    Author   Description
+// =================================================
+// 3/1    MB       File Creation
+
 // Models
 var express = require('express');
 var mongoose = require("mongoose");

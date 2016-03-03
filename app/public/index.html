@@ -13,37 +13,48 @@
         <!-- Materialize -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
 
     <!-- Javascript -->
         <!-- Angular -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+
         <!-- Materialize -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
     <!-- Angular Scripts -->
+
+        <!-- Controllers -->
+        <script src="javascripts/angular/controllers/MainCtrl.js"></script>
+
+        <!-- Routes -->
+        <script src="javascripts/angular/routes.js"></script>
+
         <!-- App -->
         <script src="javascripts/angular/app.js"></script>
 
+
 </head>
 
-<body ng-app="">
+
+<body ng-app="app">
 
     <!-- NavBar -->
     <nav>
         <div class="nav-wrapper lime accent-3">
             <a href="#" class="brand-logo black-text"><b>Meetup Pulse</b></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down ">
-                <li><a href="collapsible.html" class="black-text">API</a></li>
+                <li><a href="about.html" class="black-text">About</a></li>
+                <li><a href="api.html" class="black-text">API</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Content -->
-    Hello World! {{ "Angular" + " is cool!" }}
 
     <!-- View -->
-    <div ng-view ></div>
+    <div ng-view></div>
 
 
     <!-- FOOTER -->

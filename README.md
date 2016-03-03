@@ -7,8 +7,8 @@ Aggregate information about events/groups from Meetup API, visualize topic popul
 MEAN Stack (Mongo / Node / Express / Angular) + Python for data aggregation. 
 
 ## Team
-Matt Bubernak Bubernak
-Austin Holler
-Andrew Candelaresi
-Tushar Singh
-Xiaojun Yin
+* Matt Bubernak Bubernak
+* Austin Holler
+* Andrew Candelaresi
+* Tushar Singh
+* Xiaojun Yin

@@ -44,9 +44,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/', routes);
-app.use('/api/events', events);
-app.use('/api/groups', groups);
-app.use('/api/cities', cities);
+app.use('/api/events*', events);
+app.use('/api/groups*', groups);
+app.use('/api/cities*', cities);
 app.use('/api*', api);
 
 

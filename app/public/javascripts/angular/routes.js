@@ -13,6 +13,10 @@ angular.module('routes', []).config(['$routeProvider', '$locationProvider', func
         .when('/', {
             templateUrl: 'pages/splash.html',
             controller: 'MainController'
+        })
+        .when('/city.html', {
+            templateUrl: 'pages/city.html',
+            controller: 'CityController'
         });
     $locationProvider.html5Mode(true);
 

@@ -46,7 +46,7 @@ def getUSEvents(status, idNum, state, city):
 	other_groups = open('USEvents.json', 'a')
 	
 	#Get Events		
-	json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
+	json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,headcount,id,name,rating,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
 	parsed_json = json.loads(json_str)
 			
 	arr_len = len(parsed_json['results'])
@@ -66,7 +66,7 @@ def getUSEvents(status, idNum, state, city):
 		#go to the next page
 		off += 1
 				
-		json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
+		json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,headcount,id,name,rating,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
 		parsed_json = json.loads(json_str)
 				
 		arr_len = len(parsed_json['results'])
@@ -104,7 +104,7 @@ def getOtherEvents(status, idNum, country, city):
 	other_groups = open('otherEvents.json', 'a')
 	
 	#Get Events		
-	json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
+	json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,headcount,id,name,rating,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
 	parsed_json = json.loads(json_str)
 			
 	arr_len = len(parsed_json['results'])
@@ -124,7 +124,7 @@ def getOtherEvents(status, idNum, country, city):
 		#go to the next page
 		off += 1
 				
-		json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
+		json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,headcount,id,name,rating,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
 		parsed_json = json.loads(json_str)
 				
 		arr_len = len(parsed_json['results'])

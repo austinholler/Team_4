@@ -39,14 +39,14 @@ import time
 			   idNum -> Specified group ID fetched from USGroups.json and passed in
 			   state -> Specified group state fetched from USGroups.json and passed in
 			   city -> Specified group city fetched from USGroups.json and passed in'''
-def getUSEvents(status, idNum, state, city):
+def getUSEvents(status, idNum, state, city, rating, members):
 	#Starting Page
 	off = 0
 	
-	other_groups = open('USEvents.json', 'a')
+	other_groups = open('COEvents.json', 'a')
 	
 	#Get Events		
-	json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,headcount,id,name,rating,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
+	json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,id,name,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
 	parsed_json = json.loads(json_str)
 			
 	arr_len = len(parsed_json['results'])
@@ -54,9 +54,20 @@ def getUSEvents(status, idNum, state, city):
 	#For each position in the returned "results" array		
 	for x in xrange(arr_len):
 		
-		#Add city and country; write out JSON object.		
+		#Add city, country, group id, group rating, num of group members	
 		parsed_json['results'][x]['city'] = city
 		parsed_json['results'][x]['state'] = state
+		parsed_json['results'][x]['group_id'] = idNum
+		parsed_json['results'][x]['group']['rating'] = rating
+		parsed_json['results'][x]['group']['members'] = members
+		
+		#Cleaning up object
+		del parsed_json['results'][x]['group']['created']
+		del parsed_json['results'][x]['group']['group_lat']
+		del parsed_json['results'][x]['group']['group_lon']
+		del parsed_json['results'][x]['group']['who']
+		
+		#Write out JSON object
 		event_json = json.dumps(parsed_json['results'][x])
 		other_groups.write(',' + event_json)
 	
@@ -66,7 +77,7 @@ def getUSEvents(status, idNum, state, city):
 		#go to the next page
 		off += 1
 				
-		json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,headcount,id,name,rating,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
+		json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,id,name,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
 		parsed_json = json.loads(json_str)
 				
 		arr_len = len(parsed_json['results'])
@@ -74,11 +85,24 @@ def getUSEvents(status, idNum, state, city):
 		#For each position in the returned "results" array	
 		for x in xrange(arr_len):
 			
-			#Add city and country; write out JSON object.	
+			#Add city, country, group id, group rating, num of group members	
 			parsed_json['results'][x]['city'] = city
 			parsed_json['results'][x]['state'] = state
+			parsed_json['results'][x]['group_id'] = idNum
+			parsed_json['results'][x]['group']['rating'] = rating
+			parsed_json['results'][x]['group']['members'] = members
+			
+			#Cleaning up object
+			del parsed_json['results'][x]['group']['created']
+			del parsed_json['results'][x]['group']['group_lat']
+			del parsed_json['results'][x]['group']['group_lon']
+			del parsed_json['results'][x]['group']['who']
+		
+			#Write out JSON object
 			event_json = json.dumps(parsed_json['results'][x])
 			other_groups.write(',' + event_json)
+			
+			
 			
 		#sleep prevents overuse of the API (200 calls/hr)
 		time.sleep(18)
@@ -97,14 +121,14 @@ def getUSEvents(status, idNum, state, city):
 			   country -> Specified group country fetched from USGroups.json and passed in
 			   city -> Specified group city fetched from USGroups.json and passed in'''
 
-def getOtherEvents(status, idNum, country, city):
+def getOtherEvents(status, idNum, country, city, rating, members):
 	#Starting Page
 	off = 0
 	
 	other_groups = open('otherEvents.json', 'a')
 	
 	#Get Events		
-	json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,headcount,id,name,rating,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
+	json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,id,name,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
 	parsed_json = json.loads(json_str)
 			
 	arr_len = len(parsed_json['results'])
@@ -112,9 +136,20 @@ def getOtherEvents(status, idNum, country, city):
 	#For each position in the returned "results" array		
 	for x in xrange(arr_len):
 		
-		#Add city and country; write out JSON object.		
+		#Add city, country, and group id; write out JSON object.		
 		parsed_json['results'][x]['city'] = city
 		parsed_json['results'][x]['country'] = country
+		parsed_json['results'][x]['group_id'] = idNum
+		parsed_json['results'][x]['group']['rating'] = rating
+		parsed_json['results'][x]['group']['members'] = members
+		
+		#Cleaning up object
+		del parsed_json['results'][x]['group']['created']
+		del parsed_json['results'][x]['group']['group_lat']
+		del parsed_json['results'][x]['group']['group_lon']
+		del parsed_json['results'][x]['group']['who']
+		
+		#Write out JSON object
 		event_json = json.dumps(parsed_json['results'][x])
 		other_groups.write(',' + event_json)
 	
@@ -124,7 +159,7 @@ def getOtherEvents(status, idNum, country, city):
 		#go to the next page
 		off += 1
 				
-		json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,headcount,id,name,rating,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
+		json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,id,name,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
 		parsed_json = json.loads(json_str)
 				
 		arr_len = len(parsed_json['results'])
@@ -132,9 +167,20 @@ def getOtherEvents(status, idNum, country, city):
 		#For each position in the returned "results" array	
 		for x in xrange(arr_len):
 			
-			#Add city and country; write out JSON object.	
+			#Add city, country, and group id; write out JSON object.	
 			parsed_json['results'][x]['city'] = city
 			parsed_json['results'][x]['country'] = country
+			parsed_json['results'][x]['group_id'] = idNum
+			parsed_json['results'][x]['group']['rating'] = rating
+			parsed_json['results'][x]['group']['members'] = members
+			
+			#Cleaning up object
+			del parsed_json['results'][x]['group']['created']
+			del parsed_json['results'][x]['group']['group_lat']
+			del parsed_json['results'][x]['group']['group_lon']
+			del parsed_json['results'][x]['group']['who']
+		
+			#Write out JSON object
 			event_json = json.dumps(parsed_json['results'][x])
 			other_groups.write(',' + event_json)
 			
@@ -150,7 +196,7 @@ def main():
 	
 	
 	#Get US Events
-	json_str = open('USGroups.json','r').read()
+	json_str = open('COGroups.json','r').read()
 	parsed_json = json.loads(json_str)
 	
 	#For each group in the JSON
@@ -160,15 +206,17 @@ def main():
 		idNum = group['id']
 		city = group['city']
 		state = group['state']
+		rating = group['rating']
+		mem_count = group['members']
 		
 		print("Working with group id: " + str(idNum))
 		
 		print("Doing Past")
-		getUSEvents("past", idNum, state, city)
+		getUSEvents("past", idNum, state, city, rating, mem_count)
 		print("Doing Upcoming")
-		getUSEvents("upcoming", idNum, state, city)
+		getUSEvents("upcoming", idNum, state, city, rating, mem_count)
 	
-	#Get Other Events		
+	'''#Get Other Events		
 	json_str = open('otherGroups.json','r').read()
 	parsed_json = json.loads(json_str)
 	
@@ -179,13 +227,15 @@ def main():
 		idNum = group['id']
 		city = group['city'].encode('utf8')
 		country = group['country']
+		rating = group['rating']
+		mem_count = group['members']
 		
 		print("Working with group id: " + str(idNum))
 		
 		print("Doing Past")
-		getOtherEvents("past", idNum, country, city)
+		getOtherEvents("past", idNum, country, city, rating, mem_count)
 		print("Doing Upcoming")
-		getOtherEvents("upcoming", idNum, country, city)
+		getOtherEvents("upcoming", idNum, country, city, rating, mem_count)'''
 	
 	return 0
 

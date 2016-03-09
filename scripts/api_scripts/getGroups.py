@@ -41,7 +41,7 @@ def getUSGroups(state, city):
 	
 	off = 0
 	
-	US_groups = open('USGroups.json', 'a')
+	US_groups = open('COGroups.json', 'a')
 			
 	json_str = urllib.urlopen('https://api.meetup.com/2/groups?country=us&offset={}&city={}&sign=True&format=json&photo-host=public&state={}&page=200&radius=25.0&omit=description%2Clon%2Cgroup_photo%2Cjoin_mode%2Corganizer%2Clat%2Cwho&order=id&desc=false&key=1a325f7b6f6b544733d615f4873136b'.format(off,city,state)).read()
 	parsed_json = json.loads(json_str)
@@ -134,7 +134,7 @@ def main():
 	
 	
 	
-	json_str = open('USCities.json','r').read()
+	json_str = open('oneState.json','r').read()
 	parsed_json = json.loads(json_str)
 	
 	for state in parsed_json:
@@ -143,14 +143,14 @@ def main():
 			print("Working with city: {}".format(city))
 			getUSGroups(state, city)
 			
-	json_str = open('otherCities.json','r').read()
+	'''json_str = open('otherCities.json','r').read()
 	parsed_json = json.loads(json_str)
 	
 	for country in parsed_json:
 		print("Working with state: {}".format(country))
 		for city in parsed_json[country]:
 			print("Working with city: {}".format(city.encode('utf8')))
-			getOtherGroups(country, city)
+			getOtherGroups(country, city)'''
 	
 	return 0
 

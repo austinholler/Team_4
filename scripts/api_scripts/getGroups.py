@@ -30,6 +30,7 @@
 import json
 import urllib
 import time
+import os
 
 ''' getUSGroups: This function makes a "get groups" API call to the Meetup API.
 	Taking a given state and city, inputted into the URL call, and parsing
@@ -41,9 +42,12 @@ def getUSGroups(state, city):
 	
 	off = 0
 	
-	US_groups = open('COGroups.json', 'a')
+	US_groups = open('LrgCityGroups/{}-{}Groups.json'.format(city, state), 'a')
+	
+	if not (os.path.getsize('LrgCityGroups/{}-{}Groups.json'.format(city, state))):
+		US_groups.write('{"groups":[')
 			
-	json_str = urllib.urlopen('https://api.meetup.com/2/groups?country=us&offset={}&city={}&sign=True&format=json&photo-host=public&state={}&page=200&radius=25.0&omit=description%2Clon%2Cgroup_photo%2Cjoin_mode%2Corganizer%2Clat%2Cwho&order=id&desc=false&key=1a325f7b6f6b544733d615f4873136b'.format(off,city,state)).read()
+	json_str = urllib.urlopen('https://api.meetup.com/2/groups?country=us&offset={}&city={}&sign=True&format=json&photo-host=public&state={}&page=200&radius=10.0&omit=visibility%2Ctopics%2Cdescription%2Clon%2Cgroup_photo%2Cjoin_mode%2Corganizer%2Ccategory%2Clat%2Cwho&order=members&desc=false&key=1a325f7b6f6b544733d615f4873136b'.format(off,city,state)).read()
 	parsed_json = json.loads(json_str)
 			
 	arr_len = len(parsed_json['results'])
@@ -51,16 +55,16 @@ def getUSGroups(state, city):
 	for x in xrange(arr_len):
 				
 		#groups city must match searched city
-		if (parsed_json['results'][x]['city'] == city):
+		if (parsed_json['results'][x]['city'] == city and parsed_json['results'][x]['members'] > 99):
 			city_json = json.dumps(parsed_json['results'][x])
-			US_groups.write(',' + city_json)
+			US_groups.write(city_json + ',')
 			
-	while (parsed_json['meta']['next']):
+	while (parsed_json['meta']['next'] and (parsed_json['results'][arr_len - 1]['members'] > 99)):
 				
 		#go to the next page
 		off += 1
 				
-		json_str = urllib.urlopen('https://api.meetup.com/2/groups?country=us&offset={}&city={}&sign=True&format=json&photo-host=public&state={}&page=200&radius=25.0&omit=description%2Clon%2Cgroup_photo%2Cjoin_mode%2Corganizer%2Clat%2Cwho&order=id&desc=false&key=1a325f7b6f6b544733d615f4873136b'.format(off,city,state)).read()
+		json_str = urllib.urlopen('https://api.meetup.com/2/groups?country=us&offset={}&city={}&sign=True&format=json&photo-host=public&state={}&page=200&radius=10.0&omit=visibility%2Ctopics%2Cdescription%2Clon%2Cgroup_photo%2Cjoin_mode%2Corganizer%2Ccategory%2Clat%2Cwho&order=members&desc=false&key=1a325f7b6f6b544733d615f4873136b'.format(off,city,state)).read()
 		parsed_json = json.loads(json_str)
 				
 		arr_len = len(parsed_json['results'])
@@ -68,16 +72,21 @@ def getUSGroups(state, city):
 		for x in xrange(arr_len):
 				
 			#groups city must match searched city
-			if (parsed_json['results'][x]['city'] == city):
+			if (parsed_json['results'][x]['city'] == city and parsed_json['results'][x]['members'] > 99):
 				city_json = json.dumps(parsed_json['results'][x])
-				US_groups.write(',' + city_json)
+				US_groups.write(city_json + ',')
 			
 		#sleep prevents overuse of the API (200 calls/hr)
 		time.sleep(18)
 		
 	#sleep prevents overuse of the API (200 calls/hr)
 	time.sleep(18)
-			
+	
+	#This gets rid of the last comma and puts the end on the JSON
+	US_groups.seek(-1, os.SEEK_END)
+	US_groups.truncate()
+	US_groups.write(']}')
+	
 	return 0
 
 ''' getOtherGroups: This function makes a "get groups" API call to the Meetup API.
@@ -91,9 +100,9 @@ def getOtherGroups(country, city):
 	
 	off = 0
 	
-	other_groups = open('otherGroups.json', 'a')
+	other_groups = open('{}-{}Groups.json'.format(city, country), 'a')
 			
-	json_str = urllib.urlopen('https://api.meetup.com/2/groups?country={}&offset={}&city={}&sign=True&format=json&photo-host=public&page=200&radius=25.0&omit=description%2Clon%2Cgroup_photo%2Cjoin_mode%2Corganizer%2Clat%2Cwho&order=id&desc=false&key=1a325f7b6f6b544733d615f4873136b'.format(country,off,city.encode('utf8'))).read()
+	json_str = urllib.urlopen('https://api.meetup.com/2/groups?country={}&offset={}&city={}&sign=True&format=json&photo-host=public&page=200&radius=10.0&omit=visibility%2Ctopics%2Cdescription%2Clon%2Cgroup_photo%2Cjoin_mode%2Corganizer%2Ccategory%2Clat%2Cwho&order=members&desc=false&key=1a325f7b6f6b544733d615f4873136b'.format(country,off,city.encode('utf8'))).read()
 	parsed_json = json.loads(json_str)
 			
 	arr_len = len(parsed_json['results'])
@@ -110,7 +119,7 @@ def getOtherGroups(country, city):
 		#go to the next page
 		off += 1
 				
-		json_str = urllib.urlopen('https://api.meetup.com/2/groups?country={}&offset={}&city={}&sign=True&format=json&photo-host=public&page=200&radius=25.0&omit=description%2Clon%2Cgroup_photo%2Cjoin_mode%2Corganizer%2Clat%2Cwho&order=id&desc=false&key=1a325f7b6f6b544733d615f4873136b'.format(country,off,city.encode('utf8'))).read()
+		json_str = urllib.urlopen('https://api.meetup.com/2/groups?country={}&offset={}&city={}&sign=True&format=json&photo-host=public&page=200&radius=10.0&omit=visibility%2Ctopics%2Cdescription%2Clon%2Cgroup_photo%2Cjoin_mode%2Corganizer%2Ccategory%2Clat%2Cwho&order=members&desc=false&key=1a325f7b6f6b544733d615f4873136b'.format(country,off,city.encode('utf8'))).read()
 		parsed_json = json.loads(json_str)
 				
 		arr_len = len(parsed_json['results'])
@@ -127,6 +136,11 @@ def getOtherGroups(country, city):
 		
 	#sleep prevents overuse of the API (200 calls/hr)
 	time.sleep(18)
+	
+	#This gets rid of the last comma and puts the end on the JSON
+	other_groups.seek(-1, os.SEEK_END)
+	other_groups.truncate()
+	other_groups.write(']}')
 			
 	return 0
 			
@@ -134,14 +148,17 @@ def main():
 	
 	
 	
-	json_str = open('oneState.json','r').read()
+	json_str = open('USCities.json','r').read()
 	parsed_json = json.loads(json_str)
 	
 	for state in parsed_json:
 		print("Working with state: {}".format(state))
-		for city in parsed_json[state]:
+		city = parsed_json[state][0]
+		print("Working with city: {}".format(city))
+		getUSGroups(state, city)
+		'''for city in parsed_json[state]:
 			print("Working with city: {}".format(city))
-			getUSGroups(state, city)
+			getUSGroups(state, city)'''
 			
 	'''json_str = open('otherCities.json','r').read()
 	parsed_json = json.loads(json_str)
@@ -156,4 +173,5 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
 

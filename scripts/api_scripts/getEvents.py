@@ -30,6 +30,7 @@
 import json
 import urllib
 import time
+import os
 
 ''' getUSEvents: This function makes a "get events" API call to the Meetup API.
 	Taking a given event status and group ID, inputted into the URL call,
@@ -43,7 +44,10 @@ def getUSEvents(status, idNum, state, city, rating, members):
 	#Starting Page
 	off = 0
 	
-	other_groups = open('COEvents.json', 'a')
+	US_groups = open('LrgCityEvents/{}-{}Events.json'.format(city, state), 'a')
+	
+	if not (os.path.getsize('LrgCityEvents/{}-{}Events.json'.format(city, state))):
+		US_groups.write('{"events":[')
 	
 	#Get Events		
 	json_str = urllib.urlopen('https://api.meetup.com/2/events?offset={}&sign=True&format=json&limited_events=True&group_id={}&photo-host=public&page=200&fields=category,topics&only=event_url,group,id,name,time,utc_offset,yes_rsvp_count&key=1a325f7b6f6b544733d615f4873136b&order=time&status={}&desc=false'.format(off, idNum, status)).read()
@@ -57,7 +61,6 @@ def getUSEvents(status, idNum, state, city, rating, members):
 		#Add city, country, group id, group rating, num of group members	
 		parsed_json['results'][x]['city'] = city
 		parsed_json['results'][x]['state'] = state
-		parsed_json['results'][x]['group_id'] = idNum
 		parsed_json['results'][x]['group']['rating'] = rating
 		parsed_json['results'][x]['group']['members'] = members
 		
@@ -69,7 +72,7 @@ def getUSEvents(status, idNum, state, city, rating, members):
 		
 		#Write out JSON object
 		event_json = json.dumps(parsed_json['results'][x])
-		other_groups.write(',' + event_json)
+		US_groups.write(event_json + ',')
 	
 	#While there's a next page to go to		
 	while (parsed_json['meta']['next']):
@@ -88,7 +91,6 @@ def getUSEvents(status, idNum, state, city, rating, members):
 			#Add city, country, group id, group rating, num of group members	
 			parsed_json['results'][x]['city'] = city
 			parsed_json['results'][x]['state'] = state
-			parsed_json['results'][x]['group_id'] = idNum
 			parsed_json['results'][x]['group']['rating'] = rating
 			parsed_json['results'][x]['group']['members'] = members
 			
@@ -100,9 +102,7 @@ def getUSEvents(status, idNum, state, city, rating, members):
 		
 			#Write out JSON object
 			event_json = json.dumps(parsed_json['results'][x])
-			other_groups.write(',' + event_json)
-			
-			
+			US_groups.write(event_json + ',')
 			
 		#sleep prevents overuse of the API (200 calls/hr)
 		time.sleep(18)
@@ -110,7 +110,7 @@ def getUSEvents(status, idNum, state, city, rating, members):
 	#sleep prevents overuse of the API (200 calls/hr)
 	time.sleep(18)
 			
-	return 0
+	return 'LrgCityEvents/{}-{}Events.json'.format(city, state)
 
 ''' getOtherEvents: This function makes a "get events" API call to the Meetup API.
 	Taking a given event status and group ID, inputted into the URL call,
@@ -139,7 +139,6 @@ def getOtherEvents(status, idNum, country, city, rating, members):
 		#Add city, country, and group id; write out JSON object.		
 		parsed_json['results'][x]['city'] = city
 		parsed_json['results'][x]['country'] = country
-		parsed_json['results'][x]['group_id'] = idNum
 		parsed_json['results'][x]['group']['rating'] = rating
 		parsed_json['results'][x]['group']['members'] = members
 		
@@ -170,7 +169,6 @@ def getOtherEvents(status, idNum, country, city, rating, members):
 			#Add city, country, and group id; write out JSON object.	
 			parsed_json['results'][x]['city'] = city
 			parsed_json['results'][x]['country'] = country
-			parsed_json['results'][x]['group_id'] = idNum
 			parsed_json['results'][x]['group']['rating'] = rating
 			parsed_json['results'][x]['group']['members'] = members
 			
@@ -196,8 +194,10 @@ def main():
 	
 	
 	#Get US Events
-	json_str = open('COGroups.json','r').read()
+	json_str = open('CO_Groups/Colorado Springs-COGroups.json','r').read()
 	parsed_json = json.loads(json_str)
+	
+	filehandle = ''
 	
 	#For each group in the JSON
 	for group in parsed_json['groups']:
@@ -214,7 +214,13 @@ def main():
 		print("Doing Past")
 		getUSEvents("past", idNum, state, city, rating, mem_count)
 		print("Doing Upcoming")
-		getUSEvents("upcoming", idNum, state, city, rating, mem_count)
+		filehandle = getUSEvents("upcoming", idNum, state, city, rating, mem_count)
+		
+	#This gets rid of the last comma and puts the end on the JSON
+	with open(filehandle, 'rb+') as x:
+		x.seek(-1, os.SEEK_END)
+		x.truncate()
+		x.write(']}')
 	
 	'''#Get Other Events		
 	json_str = open('otherGroups.json','r').read()
@@ -241,4 +247,5 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
 

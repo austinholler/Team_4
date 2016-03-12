@@ -44,9 +44,9 @@ def getUSEvents(status, idNum, state, city, rating, members):
 	#Starting Page
 	off = 0
 	
-	US_groups = open('LrgCityEvents/{}-{}Events.json'.format(city, state), 'a')
+	US_groups = open('FullCOEvents/{}-{}Events.json'.format(city, state), 'a')
 	
-	if not (os.path.getsize('LrgCityEvents/{}-{}Events.json'.format(city, state))):
+	if not (os.path.getsize('FullCOEvents/{}-{}Events.json'.format(city, state))):
 		US_groups.write('{"events":[')
 	
 	#Get Events		
@@ -105,12 +105,12 @@ def getUSEvents(status, idNum, state, city, rating, members):
 			US_groups.write(event_json + ',')
 			
 		#sleep prevents overuse of the API (200 calls/hr)
-		time.sleep(18)
+		time.sleep(.40)
 		
 	#sleep prevents overuse of the API (200 calls/hr)
-	time.sleep(18)
+	time.sleep(.40)
 			
-	return 'LrgCityEvents/{}-{}Events.json'.format(city, state)
+	return 'FullCOEvents/{}-{}Events.json'.format(city, state)
 
 ''' getOtherEvents: This function makes a "get events" API call to the Meetup API.
 	Taking a given event status and group ID, inputted into the URL call,
@@ -192,35 +192,42 @@ def getOtherEvents(status, idNum, country, city, rating, members):
 			
 def main():
 	
+	filesList = os.listdir('FullCOGroups')
 	
-	#Get US Events
-	json_str = open('CO_Groups/Colorado Springs-COGroups.json','r').read()
-	parsed_json = json.loads(json_str)
+	for x in filesList:
+		
+		
+		#Get US Events
+		json_str = open('FullCOGroups/{}'.format(x),'r').read()
+		parsed_json = json.loads(json_str)
+		
+		
 	
-	filehandle = ''
+		filehandle = ''
 	
-	#For each group in the JSON
-	for group in parsed_json['groups']:
+		#For each group in the JSON
+		for group in parsed_json['groups']:
 		
-		#Assign group ID and location for use
-		idNum = group['id']
-		city = group['city']
-		state = group['state']
-		rating = group['rating']
-		mem_count = group['members']
+			#Assign group ID and location for use
+			idNum = group['id']
+			city = group['city']
+			state = group['state']
+			rating = group['rating']
+			mem_count = group['members']
+			
+			print("Working with {}, {}".format(city, state))
+			print("Working with group id: " + str(idNum))
 		
-		print("Working with group id: " + str(idNum))
+			print("Doing Past")
+			getUSEvents("past", idNum, state, city, rating, mem_count)
+			print("Doing Upcoming")
+			filehandle = getUSEvents("upcoming", idNum, state, city, rating, mem_count)
 		
-		print("Doing Past")
-		getUSEvents("past", idNum, state, city, rating, mem_count)
-		print("Doing Upcoming")
-		filehandle = getUSEvents("upcoming", idNum, state, city, rating, mem_count)
-		
-	#This gets rid of the last comma and puts the end on the JSON
-	with open(filehandle, 'rb+') as x:
-		x.seek(-1, os.SEEK_END)
-		x.truncate()
-		x.write(']}')
+		#This gets rid of the last comma and puts the end on the JSON
+		with open(filehandle, 'rb+') as x:
+			x.seek(-1, os.SEEK_END)
+			x.truncate()
+			x.write(']}')
 	
 	'''#Get Other Events		
 	json_str = open('otherGroups.json','r').read()

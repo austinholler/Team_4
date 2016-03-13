@@ -93,3 +93,6 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+// Needed for running on ec2
+app.listen(80);

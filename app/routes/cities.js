@@ -8,12 +8,11 @@
 
 // Models
 var express = require('express');
-var mongoose = require("mongoose");
 var router = express.Router();
 var Schema = mongoose.Schema;
 
 // Define the possible models we could be extracting from the DB.
-var City = mongoose.model('City',new Schema(),'cities');
+//var City = mongoose.model('City',new Schema(),'cities');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -33,10 +32,11 @@ router.get('/', function(req, res, next) {
   }
 
   console.log("API Request for: "  + "city: " + reqObj["city"] + " state: " + reqObj["state"]);
+  res.send("API Request for: "  + "city: " + reqObj["city"] + " state: " + reqObj["state"]);
   // Does a "find" on group and returns all groups.
-  City.find(reqObj,function (err,cities) {
-    res.send(cities)
-  })
+  //City.find(reqObj,function (err,cities) {
+  //  res.send(cities)
+  //})
 });
 
 module.exports = router;

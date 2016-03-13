@@ -9,7 +9,7 @@
 // Models
 var express = require('express');
 var router = express.Router();
-var Schema = mongoose.Schema;
+//var Schema = mongoose.Schema;
 
 // Define the possible models we could be extracting from the DB.
 //var City = mongoose.model('City',new Schema(),'cities');

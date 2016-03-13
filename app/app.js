@@ -6,10 +6,14 @@
 // =================================================
 // 2/28    MB       Mongo Support
 // 3/1     MB       CORS Support + Additional Routes
+// 312     MB       Dynamo Support
 
+// Const
+const region = "us-west-2";
+const dbLocation = "http://localhost:8000";
 
 // Modules
-var mongoose = require("mongoose");
+//var mongoose = require("mongoose");
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -22,13 +26,19 @@ var events = require('./routes/events');
 var groups = require('./routes/groups');
 var cities = require('./routes/cities');
 var api = require('./routes/api');
+var dbHandler = require("./dbHandler")
+
 
 
 // Application
 var app = express();
 
 // DB Connection
-mongoose.connect('mongodb://localhost/MeetupPulse');
+dbHandler.connect(region,dbLocation);
+//dbHandler.deleteTable("events");
+//dbHandler.createTable("events");
+dbHandler.put("events");
+dbHandler.get("events");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

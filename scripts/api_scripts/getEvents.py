@@ -44,9 +44,9 @@ def getUSEvents(status, idNum, state, city, rating, members):
 	#Starting Page
 	off = 0
 	
-	US_groups = open('FullCOEvents/{}-{}Events.json'.format(city, state), 'a')
+	US_groups = open('LrgCityEvents/{}-{}Events.json'.format(city, state), 'a')
 	
-	if not (os.path.getsize('FullCOEvents/{}-{}Events.json'.format(city, state))):
+	if not (os.path.getsize('LrgCityEvents/{}-{}Events.json'.format(city, state))):
 		US_groups.write('{"events":[')
 	
 	#Get Events		
@@ -68,11 +68,16 @@ def getUSEvents(status, idNum, state, city, rating, members):
 		del parsed_json['results'][x]['group']['created']
 		del parsed_json['results'][x]['group']['group_lat']
 		del parsed_json['results'][x]['group']['group_lon']
-		del parsed_json['results'][x]['group']['who']
+		
+		#Because apparently 'who' is optional
+		if 'who' in parsed_json['results'][x]['group']:
+			del parsed_json['results'][x]['group']['who']
 		
 		#Write out JSON object
 		event_json = json.dumps(parsed_json['results'][x])
 		US_groups.write(event_json + ',')
+		
+	print("Wrote out offset: {}".format(off))
 	
 	#While there's a next page to go to		
 	while (parsed_json['meta']['next']):
@@ -98,11 +103,16 @@ def getUSEvents(status, idNum, state, city, rating, members):
 			del parsed_json['results'][x]['group']['created']
 			del parsed_json['results'][x]['group']['group_lat']
 			del parsed_json['results'][x]['group']['group_lon']
-			del parsed_json['results'][x]['group']['who']
+			
+			#Because apparently 'who' is optional
+			if 'who' in parsed_json['results'][x]['group']:
+				del parsed_json['results'][x]['group']['who']
 		
 			#Write out JSON object
 			event_json = json.dumps(parsed_json['results'][x])
 			US_groups.write(event_json + ',')
+			
+		print("Wrote out offset: {}".format(off))
 			
 		#sleep prevents overuse of the API (200 calls/hr)
 		time.sleep(.40)
@@ -110,7 +120,7 @@ def getUSEvents(status, idNum, state, city, rating, members):
 	#sleep prevents overuse of the API (200 calls/hr)
 	time.sleep(.40)
 			
-	return 'FullCOEvents/{}-{}Events.json'.format(city, state)
+	return 'LrgCityEvents/{}-{}Events.json'.format(city, state)
 
 ''' getOtherEvents: This function makes a "get events" API call to the Meetup API.
 	Taking a given event status and group ID, inputted into the URL call,
@@ -146,11 +156,16 @@ def getOtherEvents(status, idNum, country, city, rating, members):
 		del parsed_json['results'][x]['group']['created']
 		del parsed_json['results'][x]['group']['group_lat']
 		del parsed_json['results'][x]['group']['group_lon']
-		del parsed_json['results'][x]['group']['who']
+		
+		#Because apparently 'who' is optional
+		if 'who' in parsed_json['results'][x]['group']:
+			del parsed_json['results'][x]['group']['who']
 		
 		#Write out JSON object
 		event_json = json.dumps(parsed_json['results'][x])
 		other_groups.write(',' + event_json)
+		
+	print("Wrote out offset: {}".format(off))
 	
 	#While there's a next page to go to		
 	while (parsed_json['meta']['next']):
@@ -176,29 +191,34 @@ def getOtherEvents(status, idNum, country, city, rating, members):
 			del parsed_json['results'][x]['group']['created']
 			del parsed_json['results'][x]['group']['group_lat']
 			del parsed_json['results'][x]['group']['group_lon']
-			del parsed_json['results'][x]['group']['who']
+			
+			#Because apparently 'who' is optional
+			if 'who' in parsed_json['results'][x]['group']:
+				del parsed_json['results'][x]['group']['who']
 		
 			#Write out JSON object
 			event_json = json.dumps(parsed_json['results'][x])
 			other_groups.write(',' + event_json)
 			
+		print("Wrote out offset: {}".format(off))
+			
 		#sleep prevents overuse of the API (200 calls/hr)
-		time.sleep(18)
+		time.sleep(.40)
 		
 	#sleep prevents overuse of the API (200 calls/hr)
-	time.sleep(18)
+	time.sleep(.40)
 			
 	return 0
 			
 def main():
 	
-	filesList = os.listdir('FullCOGroups')
+	filesList = os.listdir('LrgCityGroups')
 	
 	for x in filesList:
 		
 		
 		#Get US Events
-		json_str = open('FullCOGroups/{}'.format(x),'r').read()
+		json_str = open('LrgCityGroups/{}'.format(x),'r').read()
 		parsed_json = json.loads(json_str)
 		
 		

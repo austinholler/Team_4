@@ -8,32 +8,32 @@
     <title>Meetup Stuff</title>
 
     <!-- CSS -->
-        <!-- Bootstrap -->
-        <!--<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">-->
-        <!-- Materialize -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <!-- Bootstrap -->
+    <!--<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">-->
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
-        <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
 
     <!-- Javascript -->
-        <!-- Angular -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
 
-        <!-- Materialize -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
     <!-- Angular Scripts -->
 
-        <!-- Controllers -->
-        <script src="javascripts/angular/controllers/MainCtrl.js"></script>
-        <script src="javascripts/angular/controllers/CityCtrl.js"></script>
+    <!-- Controllers -->
+    <script src="javascripts/angular/controllers/MainCtrl.js"></script>
+    <script src="javascripts/angular/controllers/CityCtrl.js"></script>
 
-        <!-- Routes -->
-        <script src="javascripts/angular/routes.js"></script>
+    <!-- Routes -->
+    <script src="javascripts/angular/routes.js"></script>
 
-        <!-- App -->
-        <script src="javascripts/angular/app.js"></script>
+    <!-- App -->
+    <script src="javascripts/angular/app.js"></script>
 
 
 </head>
@@ -41,6 +41,7 @@
 
 <body ng-app="app">
 
+<header>
     <!-- NavBar -->
     <nav>
         <div class="nav-wrapper lime accent-3">
@@ -51,15 +52,25 @@
             </ul>
         </div>
     </nav>
+</header>
 
+<main>
     <!-- Content -->
 
     <!-- View -->
     <div ng-view></div>
+</main>
 
-
-    <!-- FOOTER -->
+<!-- FOOTER -->
+<footer class="page-footer lime accent-3 black-text">
+    <div class="footer-copyright black-text">
+        <div class="container black-text">
+            © 2016 Copyright Team_4
+        </div>
+    </div>
+</footer>
 
 </body>
 
 </html>
+

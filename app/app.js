@@ -7,6 +7,7 @@
 // 2/28    MB       Mongo Support
 // 3/1     MB       CORS Support + Additional Routes
 // 312     MB       Dynamo Support
+// 3/22    MB       Routing for index fix
 
 // Const
 const region = "us-west-2";
@@ -53,7 +54,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
-app.use('/', routes);
+app.use('/*', routes);
 app.use('/api/events*', events);
 app.use('/api/groups*', groups);
 app.use('/api/cities*', cities);

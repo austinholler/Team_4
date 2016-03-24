@@ -1,0 +1,5010 @@
+{
+    "01-04-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 15231
+        }
+    },
+    "01-04-2015": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.47684189230312013,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.47684189230312013,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.47684189230312013,
+            "topic_id": 389
+        }
+    },
+    "01-06-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 812
+        }
+    },
+    "01-07-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 15231
+        }
+    },
+    "01-07-2015": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 389
+        }
+    },
+    "01-12-2011": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 15231
+        }
+    },
+    "02-02-2012": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 15231
+        }
+    },
+    "02-06-2011": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 15231
+        }
+    },
+    "02-09-2015": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 389
+        }
+    },
+    "02-12-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 15231
+        }
+    },
+    "03-02-2011": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 17635
+        },
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 1138
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 19882
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 9876
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 10493
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 812
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 15231
+        }
+    },
+    "03-03-2011": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 15231
+        }
+    },
+    "03-06-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 15231
+        }
+    },
+    "03-06-2015": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 389
+        }
+    },
+    "03-12-2009": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.8515033791127146,
+            "topic_id": 15231
+        }
+    },
+    "03-12-2014": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 389
+        }
+    },
+    "04-02-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 15231
+        }
+    },
+    "04-02-2015": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 389
+        }
+    },
+    "04-02-2016": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 389
+        }
+    },
+    "04-03-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 15231
+        }
+    },
+    "04-03-2015": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 389
+        }
+    },
+    "04-04-2013": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.7711270285544463,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.7711270285544463,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.7711270285544463,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.7711270285544463,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.7711270285544463,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.7711270285544463,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.7711270285544463,
+            "topic_id": 15231
+        }
+    },
+    "04-05-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 812
+        }
+    },
+    "04-08-2011": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 15231
+        }
+    },
+    "04-09-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 812
+        }
+    },
+    "04-11-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.47684189230312013,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.47684189230312013,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.47684189230312013,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.47684189230312013,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.47684189230312013,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.47684189230312013,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.47684189230312013,
+            "topic_id": 15231
+        }
+    },
+    "04-11-2015": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 389
+        }
+    },
+    "04-12-2014": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 15231
+        }
+    },
+    "06-01-2011": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 15231
+        }
+    },
+    "06-01-2016": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 389
+        }
+    },
+    "06-03-2016": {
+        "adventure": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 15892
+        },
+        "backpacking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 18988
+        },
+        "camping": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 374
+        },
+        "dancing": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 17571
+        },
+        "diningout": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 713
+        },
+        "excercise": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 25375
+        },
+        "fitness": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 242
+        },
+        "fun-times": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 15117
+        },
+        "hiking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 638
+        },
+        "livemusic": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 8652
+        },
+        "music": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 15018
+        },
+        "newintown": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 1273
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 15046
+        },
+        "singles": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 498
+        },
+        "walkers": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 933
+        }
+    },
+    "06-04-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.408721621974103,
+            "topic_id": 15231
+        }
+    },
+    "06-05-2015": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 389
+        }
+    },
+    "06-10-2011": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 15231
+        }
+    },
+    "06-12-2012": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 15231
+        }
+    },
+    "07-01-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5790222977966459,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5790222977966459,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5790222977966459,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5790222977966459,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5790222977966459,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5790222977966459,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5790222977966459,
+            "topic_id": 15231
+        }
+    },
+    "07-01-2015": {
+        "business-referral-networking": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 15405
+        },
+        "connectors": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 120693
+        },
+        "smallbiz": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3746614868095944,
+            "topic_id": 389
+        }
+    },
+    "07-04-2011": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 15231
+        }
+    },
+    "07-06-2012": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.634886487896412,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.634886487896412,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.634886487896412,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.634886487896412,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.634886487896412,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.634886487896412,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.634886487896412,
+            "topic_id": 15231
+        }
+    },
+    "07-07-2011": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 15231
+        }
+    },
+    "07-10-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.9196236494417317,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.9196236494417317,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.9196236494417317,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.9196236494417317,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.9196236494417317,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.9196236494417317,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.9196236494417317,
+            "topic_id": 15231
+        }
+    },
+    "07-11-2013": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.10218040549352575,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.10218040549352575,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.10218040549352575,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.10218040549352575,
+            "topic_id": 812
+        }
+    },
+    "08-01-2016": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 15231
+        }
+    },
+    "08-03-2016": {
+        "adventure": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 15892
+        },
+        "backpacking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 18988
+        },
+        "camping": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 374
+        },
+        "dancing": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 17571
+        },
+        "diningout": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 713
+        },
+        "excercise": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 25375
+        },
+        "fitness": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 242
+        },
+        "fun-times": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 15117
+        },
+        "hiking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 638
+        },
+        "livemusic": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 8652
+        },
+        "music": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 15018
+        },
+        "newintown": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 1273
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 15046
+        },
+        "singles": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 498
+        },
+        "walkers": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.5790222977966459,
+            "topic_id": 933
+        }
+    },
+    "08-04-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 812
+        }
+    },
+    "08-10-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 812
+        }
+    },
+    "08-10-2013": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 15231
+        }
+    },
+    "08-12-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 812
+        }
+    },
+    "09-03-2016": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.1703006758225429,
+            "topic_id": 15231
+        }
+    },
+    "09-04-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 812
+        }
+    },
+    "09-06-2011": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 812
+        }
+    },
+    "09-07-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 812
+        }
+    },
+    "09-07-2013": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 15231
+        }
+    },
+    "09-09-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 812
+        }
+    },
+    "09-10-2013": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 812
+        }
+    },
+    "10-04-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 812
+        }
+    },
+    "10-06-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 812
+        }
+    },
+    "10-09-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 812
+        }
+    },
+    "10-09-2013": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 15231
+        }
+    },
+    "10-12-2008": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 1.1921047307578003,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 1.1921047307578003,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 1.1921047307578003,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 1.1921047307578003,
+            "topic_id": 812
+        }
+    },
+    "11-02-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 812
+        }
+    },
+    "11-03-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 812
+        }
+    },
+    "11-03-2016": {
+        "adventure": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15892
+        },
+        "backpacking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 18988
+        },
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 17635
+        },
+        "camping": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 374
+        },
+        "dancing": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 17571
+        },
+        "diningout": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 713
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 19882
+        },
+        "excercise": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 25375
+        },
+        "fitness": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 242
+        },
+        "fun-times": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15117
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 10493
+        },
+        "hiking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 638
+        },
+        "livemusic": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 8652
+        },
+        "music": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15018
+        },
+        "newintown": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 1273
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 9696
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15046
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 25673
+        },
+        "singles": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 498
+        },
+        "walkers": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 933
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 15231
+        }
+    },
+    "11-06-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 812
+        }
+    },
+    "11-08-2011": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 812
+        }
+    },
+    "11-12-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 812
+        }
+    },
+    "11-12-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 15231
+        }
+    },
+    "12-02-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 812
+        }
+    },
+    "12-02-2016": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 15231
+        }
+    },
+    "12-03-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 812
+        }
+    },
+    "12-03-2016": {
+        "adventure": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15892
+        },
+        "backpacking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 18988
+        },
+        "camping": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 374
+        },
+        "dancing": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 17571
+        },
+        "diningout": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 713
+        },
+        "excercise": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 25375
+        },
+        "fitness": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 242
+        },
+        "fun-times": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15117
+        },
+        "hiking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 638
+        },
+        "livemusic": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 8652
+        },
+        "music": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15018
+        },
+        "newintown": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 1273
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15046
+        },
+        "singles": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 498
+        },
+        "walkers": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 933
+        }
+    },
+    "12-05-2011": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 812
+        }
+    },
+    "12-11-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 812
+        }
+    },
+    "12-12-2013": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 812
+        }
+    },
+    "13-05-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 812
+        }
+    },
+    "13-08-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 812
+        }
+    },
+    "13-08-2015": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 812
+        }
+    },
+    "13-09-2012": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 17635
+        },
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 1138
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 19882
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 9876
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 10493
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 812
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3624054065803433,
+            "topic_id": 15231
+        }
+    },
+    "13-10-2011": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5790222977966459,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5790222977966459,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5790222977966459,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5790222977966459,
+            "topic_id": 812
+        }
+    },
+    "14-01-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.44278175713861156,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.44278175713861156,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.44278175713861156,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.44278175713861156,
+            "topic_id": 812
+        }
+    },
+    "14-04-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 4.393757436221607,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 4.393757436221607,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 4.393757436221607,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 4.393757436221607,
+            "topic_id": 812
+        }
+    },
+    "14-05-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 812
+        }
+    },
+    "14-10-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.2043608109870515,
+            "topic_id": 812
+        }
+    },
+    "15-01-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.0,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.0,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.0,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.0,
+            "topic_id": 812
+        }
+    },
+    "15-01-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 17635
+        },
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.0,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.0,
+            "topic_id": 1138
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 19882
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.0,
+            "topic_id": 9876
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 10493
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.0,
+            "topic_id": 812
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 15231
+        }
+    },
+    "15-10-2009": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5109020274676287,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5109020274676287,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5109020274676287,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5109020274676287,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5109020274676287,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5109020274676287,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5109020274676287,
+            "topic_id": 15231
+        }
+    },
+    "16-04-2012": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 1.3283452714158346,
+            "topic_id": 15231
+        }
+    },
+    "16-12-2014": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 15231
+        }
+    },
+    "17-01-2013": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 812
+        }
+    },
+    "17-03-2016": {
+        "adventure": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 15892
+        },
+        "backpacking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 18988
+        },
+        "camping": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 374
+        },
+        "dancing": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 17571
+        },
+        "diningout": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 713
+        },
+        "excercise": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 25375
+        },
+        "fitness": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 242
+        },
+        "fun-times": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 15117
+        },
+        "hiking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 638
+        },
+        "livemusic": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 8652
+        },
+        "music": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 15018
+        },
+        "newintown": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 1273
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 15046
+        },
+        "singles": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 498
+        },
+        "walkers": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6471425681256631,
+            "topic_id": 933
+        }
+    },
+    "17-06-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.30654121648057725,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.30654121648057725,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.30654121648057725,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.30654121648057725,
+            "topic_id": 812
+        }
+    },
+    "18-03-2016": {
+        "adventure": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15892
+        },
+        "backpacking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 18988
+        },
+        "camping": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 374
+        },
+        "dancing": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 17571
+        },
+        "diningout": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 713
+        },
+        "excercise": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 25375
+        },
+        "fitness": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 242
+        },
+        "fun-times": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15117
+        },
+        "hiking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 638
+        },
+        "livemusic": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 8652
+        },
+        "music": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15018
+        },
+        "newintown": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 1273
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15046
+        },
+        "singles": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 498
+        },
+        "walkers": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 933
+        }
+    },
+    "18-11-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.47684189230312013,
+            "topic_id": 812
+        }
+    },
+    "19-03-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 15231
+        }
+    },
+    "19-04-2012": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.13624054065803431,
+            "topic_id": 812
+        }
+    },
+    "19-11-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 15231
+        }
+    },
+    "20-02-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.13624054065803431,
+            "topic_id": 15231
+        }
+    },
+    "20-07-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.30654121648057725,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.30654121648057725,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.30654121648057725,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.30654121648057725,
+            "topic_id": 812
+        }
+    },
+    "20-11-2008": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 812
+        }
+    },
+    "21-08-2013": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 812
+        }
+    },
+    "22-04-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 812
+        }
+    },
+    "22-07-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5790222977966459,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5790222977966459,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5790222977966459,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5790222977966459,
+            "topic_id": 812
+        }
+    },
+    "23-06-2011": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3746614868095944,
+            "topic_id": 812
+        }
+    },
+    "23-07-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.44278175713861156,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.44278175713861156,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.44278175713861156,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.44278175713861156,
+            "topic_id": 812
+        }
+    },
+    "23-09-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 812
+        }
+    },
+    "23-10-2008": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 812
+        }
+    },
+    "23-10-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 15231
+        }
+    },
+    "24-03-2011": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5449621626321373,
+            "topic_id": 812
+        }
+    },
+    "24-04-2009": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.06812027032901716,
+            "topic_id": 812
+        }
+    },
+    "24-05-2012": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.6130824329611545,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.6130824329611545,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.6130824329611545,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.6130824329611545,
+            "topic_id": 812
+        }
+    },
+    "24-06-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.23842094615156006,
+            "topic_id": 812
+        }
+    },
+    "24-09-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.27248108131606863,
+            "topic_id": 15231
+        }
+    },
+    "25-02-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.27248108131606863,
+            "topic_id": 812
+        }
+    },
+    "25-02-2016": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.3406013516450858,
+            "topic_id": 15231
+        }
+    },
+    "25-03-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 812
+        }
+    },
+    "25-03-2015": {
+        "consciousness": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 4417
+        },
+        "lawofattraction": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 3382
+        },
+        "lifetransform": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 8702
+        },
+        "metaphysics": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 774
+        },
+        "personal-development": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 16468
+        },
+        "personal-spiritual-growth-spiritual-celebration": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 28423
+        },
+        "self-awareness": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 25179
+        },
+        "self-empowerment": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 38757
+        },
+        "self-exploration": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 29158
+        },
+        "self-improvement": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 3336
+        },
+        "spiritual-growth": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 17658
+        },
+        "spiritual-growth-and-development": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 103684
+        },
+        "spiritual-growth-through-classes-workshops": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 1332932
+        },
+        "spirituality": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 10290
+        },
+        "transformation": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.408721621974103,
+            "topic_id": 21591
+        }
+    },
+    "25-06-2013": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 15231
+        }
+    },
+    "25-06-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.30654121648057725,
+            "topic_id": 15231
+        }
+    },
+    "25-07-2013": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 2.997291894476755,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 2.997291894476755,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 2.997291894476755,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 2.997291894476755,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 2.997291894476755,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 2.997291894476755,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 2.997291894476755,
+            "topic_id": 15231
+        }
+    },
+    "25-09-2008": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.5109020274676287,
+            "topic_id": 812
+        }
+    },
+    "26-02-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.23842094615156006,
+            "topic_id": 15231
+        }
+    },
+    "26-03-2016": {
+        "adventure": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15892
+        },
+        "backpacking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 18988
+        },
+        "camping": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 374
+        },
+        "dancing": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 17571
+        },
+        "diningout": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 713
+        },
+        "excercise": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 25375
+        },
+        "fitness": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 242
+        },
+        "fun-times": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15117
+        },
+        "hiking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 638
+        },
+        "livemusic": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 8652
+        },
+        "music": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15018
+        },
+        "newintown": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 1273
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 15046
+        },
+        "singles": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 498
+        },
+        "walkers": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.6130824329611545,
+            "topic_id": 933
+        }
+    },
+    "26-05-2011": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.3406013516450858,
+            "topic_id": 812
+        }
+    },
+    "26-10-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 812
+        }
+    },
+    "27-05-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 812
+        }
+    },
+    "27-08-2009": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 15231
+        }
+    },
+    "28-01-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.03406013516450858,
+            "topic_id": 812
+        }
+    },
+    "28-04-2011": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.408721621974103,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.408721621974103,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.408721621974103,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.408721621974103,
+            "topic_id": 812
+        }
+    },
+    "28-05-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.06812027032901716,
+            "topic_id": 15231
+        }
+    },
+    "28-10-2010": {
+        "creativecircle": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.408721621974103,
+            "topic_id": 10447
+        },
+        "culturalcreatives": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.408721621974103,
+            "topic_id": 1138
+        },
+        "freelance": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.408721621974103,
+            "topic_id": 9876
+        },
+        "indiemusic": {
+            "category": "music",
+            "category_id": 21,
+            "score": 0.408721621974103,
+            "topic_id": 812
+        }
+    },
+    "30-03-2010": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.5449621626321373,
+            "topic_id": 15231
+        }
+    },
+    "30-04-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.10218040549352575,
+            "topic_id": 15231
+        }
+    },
+    "30-07-2009": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.0,
+            "topic_id": 15231
+        }
+    },
+    "30-07-2015": {
+        "business-strategy": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 17635
+        },
+        "entrepreneurship": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 19882
+        },
+        "geek": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 10493
+        },
+        "newtech": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 9696
+        },
+        "remote-workers": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 25673
+        },
+        "web": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 10209
+        },
+        "young-professionals": {
+            "category": "career-business",
+            "category_id": 2,
+            "score": 0.2043608109870515,
+            "topic_id": 15231
+        }
+    }
+}

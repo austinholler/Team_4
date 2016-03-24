@@ -1,0 +1,5008 @@
+{
+    "01-10-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "02-04-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "02-07-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "03-09-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "03-12-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "04-02-2017": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "04-06-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "05-11-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "06-08-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "07-01-2017": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "07-05-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "08-10-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "09-04-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "09-07-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "10-09-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "10-12-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "11-02-2017": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "11-06-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "12-11-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "13-02-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.5,
+            "topic_id": 15123
+        }
+    },
+    "13-08-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "14-01-2017": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "14-05-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "14-09-2013": {
+        "donkey": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 1436672
+        },
+        "equestrian": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 15063
+        },
+        "equestrian-endurance-riding": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 26831
+        },
+        "equestrian-trail-riding": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 15946
+        },
+        "horse-lovers": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 65356
+        },
+        "horseback-riding": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 15232
+        },
+        "horses": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 449
+        },
+        "natural-horsemanship": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 20998
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 15046
+        },
+        "playdates-for-horses": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 26750
+        },
+        "regional-equestrian-activities": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 98437
+        },
+        "women-equestrian": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 5.0,
+            "topic_id": 33509
+        }
+    },
+    "15-10-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "16-04-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "16-07-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "17-09-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "17-12-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "18-02-2017": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "18-06-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "19-03-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "19-11-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "20-02-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.0,
+            "topic_id": 15123
+        }
+    },
+    "20-08-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "20-10-2013": {
+        "donkey": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 1436672
+        },
+        "equestrian": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 15063
+        },
+        "equestrian-endurance-riding": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 26831
+        },
+        "equestrian-trail-riding": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 15946
+        },
+        "horse-lovers": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 65356
+        },
+        "horseback-riding": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 15232
+        },
+        "horses": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 449
+        },
+        "natural-horsemanship": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 20998
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 15046
+        },
+        "playdates-for-horses": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 26750
+        },
+        "regional-equestrian-activities": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 98437
+        },
+        "women-equestrian": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5,
+            "topic_id": 33509
+        }
+    },
+    "21-01-2017": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "21-05-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "22-10-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "23-04-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "23-07-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "24-09-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "24-12-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "25-06-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "26-03-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "26-10-2013": {
+        "donkey": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 1436672
+        },
+        "equestrian": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 15063
+        },
+        "equestrian-endurance-riding": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 26831
+        },
+        "equestrian-trail-riding": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 15946
+        },
+        "horse-lovers": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 65356
+        },
+        "horseback-riding": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 15232
+        },
+        "horses": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 449
+        },
+        "natural-horsemanship": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 20998
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 15046
+        },
+        "playdates-for-horses": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 26750
+        },
+        "regional-equestrian-activities": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 98437
+        },
+        "women-equestrian": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.0,
+            "topic_id": 33509
+        }
+    },
+    "26-11-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "27-02-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.0,
+            "topic_id": 15123
+        }
+    },
+    "27-08-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "28-01-2017": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "28-05-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "29-10-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "30-04-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "30-07-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    },
+    "31-12-2016": {
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 25375
+        },
+        "healthy-living": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 20221
+        },
+        "healthy-weight-loss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 58776
+        },
+        "holistic-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15478
+        },
+        "natural-health": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17124
+        },
+        "nutrition": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10161
+        },
+        "self-improvement": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 3336
+        },
+        "support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 19925
+        },
+        "weight-loss-challenge": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 14998
+        },
+        "weight-loss-solution": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 22936
+        },
+        "weight-loss-support": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15538
+        },
+        "weight-management": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 17373
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 10306
+        },
+        "womens-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0,
+            "topic_id": 15123
+        }
+    }
+}

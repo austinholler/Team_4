@@ -6,11 +6,11 @@ REGION = "us-west-2"
 
 conn = dynamodb2.connect_to_region(
     REGION,
-    aws_access_key_id='xxxxxxxxx',
-    aws_secret_access_key='xxxxxxxxxxxxxxx',
+    aws_access_key_id='***REMOVED***',
+    aws_secret_access_key='***REMOVED***',
 )
 events = Table(
-    'events',
+    'processed-Arvada-CO',
     connection=conn
 )
 groups = Table(

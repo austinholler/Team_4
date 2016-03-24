@@ -18,7 +18,7 @@ angular.module('routes', []).config(['$routeProvider', '$locationProvider', func
             templateUrl: 'pages/splash.html',
             controller: 'MainController'
         })
-        .when('/city.html', {
+        .when('/city/:cityState/:cityName', {
             templateUrl: 'pages/city.html',
             controller: 'CityController'
         })

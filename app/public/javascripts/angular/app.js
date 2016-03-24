@@ -8,5 +8,5 @@
 // 3/2    MB       Added ngRoute
 
 var app = angular.module("app",
-    ['ngRoute','routes','MainCtrl','CityCtrl']);
+    ['ngRoute','routes','MainCtrl','CityCtrl','DBService']);
 

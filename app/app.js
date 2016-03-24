@@ -11,7 +11,11 @@
 
 // Const
 const region = "us-west-2";
-const dbLocation = "http://localhost:8000";
+//const dbLocation = "http://localhost:8000";
+const accessKey = "XXXXXX";
+const secretAccessKey =  "XXXXXXXXXXXXXXX";
+
+
 
 // Modules
 //var mongoose = require("mongoose");
@@ -23,9 +27,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require("cors");
 var routes = require('./routes/index');
-var events = require('./routes/events');
-var groups = require('./routes/groups');
-var cities = require('./routes/cities');
 var api = require('./routes/api');
 var dbHandler = require("./dbHandler")
 
@@ -34,12 +35,11 @@ var dbHandler = require("./dbHandler")
 // Application
 var app = express();
 
+// Set dbHandler so it can be accessed in routes.
+app.set('dbHandler',dbHandler)
+
 // DB Connection
-dbHandler.connect(region,dbLocation);
-//dbHandler.deleteTable("events");
-//dbHandler.createTable("events");
-dbHandler.put("events");
-dbHandler.get("events");
+dbHandler.connect(region,accessKey,secretAccessKey);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -54,11 +54,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
-app.use('/*', routes);
-app.use('/api/events*', events);
-app.use('/api/groups*', groups);
-app.use('/api/cities*', cities);
 app.use('/api*', api);
+app.use('/*', routes);
+
 
 
 // catch 404 and forward to error handler

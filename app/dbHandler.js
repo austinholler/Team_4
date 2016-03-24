@@ -6,53 +6,55 @@
 // =========================================================
 // 3/12    MB       DB Handler to abstract the implementation
 //                  of database connection/use.
-
+// 3/24    MB       get method is callback function now.
 // Required for Dynamo Connection
 var AWS = require("aws-sdk");
 var DBHandler = new Object();
 var dynamodb;
 var docClient;
 
-
 // Method for connecting to our DB instance
-DBHandler.connect = function(inputParam,endpointParam) {
+DBHandler.connect = function(inputParam,accessKey,secretAccessKey) {
     console.log('Connecting...');
     AWS.config.update({
         // Not sure if we will need access keys
-        accessKeyId: "fakeAccessKey",
-        secretAccessKey: "fakeSecretAccessKey",
+        accessKeyId: accessKey,
+        secretAccessKey: secretAccessKey,
         // Region/Endpoint must be specified by user.
         region: inputParam,
-        endpoint: endpointParam
+        //endpoint: endpointParam
     });
 
     dynamodb = new AWS.DynamoDB();
     docClient = new AWS.DynamoDB.DocumentClient();
 
-    console.log('Connected to Dynamo DB at: ' + endpointParam);
+    console.log('Connected to Dynamo DB');
 }
 
 // Method for querrying the db
-DBHandler.get = function(tableParam) {
+DBHandler.get = function(tableName,tableParams,callback) {
     console.log("getting the data...");
-
+    var outData = null
+    // tableParams should be a dictionary of key->values, not currently using until DB format is finalized.
     var params = {
-        TableName : tableParam,
+        TableName : tableName,
     };
+    var error = "none"
 
     // Scan for retreiving all documents
     // Query for retreiving specific documents.
     docClient.scan(params, function(err, data) {
         if (err) {
+            var error = "Unable to query. Error:" + JSON.stringify(err, null, 2)
             console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+            callback(err,null)
         } else {
             console.log("Query succeeded.");
-            data.Items.forEach(function(item) {
-                console.log(item);
-            });
+            callback(null,data)
         }
 
     });
+
 }
 
 // Method for putting item into the database

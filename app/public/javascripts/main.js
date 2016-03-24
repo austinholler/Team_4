@@ -9,4 +9,3 @@ $(document).ready(function(){
     });
     console.log('set');
 });
-console.log('wattup');

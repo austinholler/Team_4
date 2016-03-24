@@ -17,7 +17,6 @@ var docClient;
 DBHandler.connect = function(inputParam,accessKey,secretAccessKey) {
     console.log('Connecting...');
     AWS.config.update({
-        // Not sure if we will need access keys
         accessKeyId: accessKey,
         secretAccessKey: secretAccessKey,
         // Region/Endpoint must be specified by user.

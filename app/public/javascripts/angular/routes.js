@@ -7,6 +7,7 @@
 // 3/1    MB       File Creation
 // 3/2    MB       Router no longer explodes the page.
 // 3/22   MB       Added route for index and about
+// 3/24   MB       Parameters for city routing.
 
 angular.module('routes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider

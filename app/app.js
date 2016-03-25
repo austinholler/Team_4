@@ -12,8 +12,8 @@
 // Const
 const region = "us-west-2";
 //const dbLocation = "http://localhost:8000";
-const accessKey = "XXXXXX";
-const secretAccessKey =  "XXXXXXXXXXXXXXXXXX";
+const accessKey = "XXXXX";
+const secretAccessKey =  "XXXXX";
 
 
 // Modules

@@ -1,2 +1,9 @@
-<h3>City: {{cityName}} State: {{cityState}}</h3>
+<h3><b>City:</b>{{cityName}} <b>State:</b> {{cityState}}</h3>
 {{ test }}
+
+<p class="text-center center-align" ng-hide="dataLoaded">
+    <i class="fa fa-refresh fa-spin fa-5x"></i>
+</p>
+<div ng-show="dataLoaded">
+    {{cityData}}
+</div>

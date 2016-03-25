@@ -1,13 +1,13 @@
-<h3>Splash</h3>
+<h3 >Splash</h3>
 
 <div class="center-align" style="font-size: 20px;">
 
     <!-- Dropdown Trigger -->
-    <a class='dropdown-button btn ' href='#' data-activates='dropdown1'>Select a City</a>
+    <a class='dropdown-button btn red lighten-2 ' href='#' data-activates='dropdown1'>Select a City</a>
     <!-- Dropdown Structure -->
     <ul id='dropdown1' class='dropdown-content '>
         <div ng-repeat="city in cities | orderBy : 'city'">
-            <li><a href="city/{{city.state}}/{{city.city}}">{{city.city +  " - " + city.state}}</a></li>
+            <li><a href="city/{{city.state}}/{{city.city}}" class="red-text lighten-2">{{city.city +  " - " + city.state}}</a></li>
         </div>
     </ul>
 </div>

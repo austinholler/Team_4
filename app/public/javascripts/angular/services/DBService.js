@@ -20,7 +20,7 @@ angular.module('DBService', []).service('DatabaseService', function($http,$q) {
         this.state = StateEnum.Loading;
 
         // Put in some sample data for now...
-        $http.get('http://localhost:3000/api/cities/boulder/co').then(function (data) {
+        $http.get('http://ec2-52-36-192-18.us-west-2.compute.amazonaws.com/api/cities/boulder/co').then(function (data) {
             // Update data
             this.data = data;
             // Update state to loaded.

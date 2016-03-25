@@ -3,10 +3,21 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: #eeeeee;
 }
 
 a {
   color: #00B7FF;
+}
+
+h3 {
+  margin-left: 20px;
+  color: #616161;
+}
+
+.brand-logo {
+  display:inline;
+  margin-left: 20px;
 }
 
 main {

@@ -9,11 +9,12 @@
 //                  types of requests.
 
 
+
 var StateEnum = {Loaded:1, Loading:2, NotLoaded:3}
 
 angular.module('DBService', []).service('DatabaseService', function($http,$q) {
     this.data = [];
-    this.state = StateEnum.NotLoaded
+    this.state = StateEnum.NotLoaded;
     /*
     this.init = function(callback) {
         console.log('inside init');
@@ -64,7 +65,5 @@ angular.module('DBService', []).service('DatabaseService', function($http,$q) {
             callback(null, data)
         })
 
-        //callback(null,this.data)
-        //}
     }
 })

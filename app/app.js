@@ -10,12 +10,12 @@
 // 3/22    MB       Routing for index fix
 // 3/25    MB       CORS usage implemented.
 
+
 // Const
 const region = "us-west-2";
 //const dbLocation = "http://localhost:8000";
 const accessKey = "";
 const secretAccessKey =  "";
-
 
 
 // Modules

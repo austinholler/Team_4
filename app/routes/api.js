@@ -11,7 +11,6 @@
 var express = require('express');
 var router = express.Router();
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   console.log('reached api');
@@ -27,6 +26,7 @@ router.get('/', function(req, res, next) {
 
   // Split the url to determine all the parts.
   var parts = req.baseUrl.split('/');
+
   console.log('parts:' + parts);
 
   // Query for a city
@@ -63,20 +63,19 @@ router.get('/', function(req, res, next) {
   else if (parts[2] == "citylist") {
     console.log("API Request for city list");
     dbHandler.get("Cities", reqObj, function (err, data) {
-      if (err) {
-        res.send("Query Fialed")
-      }
-      else {
-        console.log('got the data back');
-        res.send(data)
-      }
-    })
+        if (err) {
+          res.send("Query Fialed")
+        }
+        else {
+          res.send(data)
+        }
+      })
 
   }
   else {
     res.send("Invalid endpoint. Valid Endpoints: api/cities , api/citylist")
-  }
-
+        res.send(data)
+      }
 });
 
 module.exports = router;

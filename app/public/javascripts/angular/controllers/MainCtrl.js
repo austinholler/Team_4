@@ -26,7 +26,5 @@
             console.log(data.data.Items)
         })
 
-
-
     }]);
 })(window.angular);

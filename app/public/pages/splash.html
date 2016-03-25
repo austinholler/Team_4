@@ -1,14 +1,17 @@
 <h3>Splash</h3>
 
-<!-- Dropdown Trigger -->
-<a class='dropdown-button btn' href='#' data-activates='dropdown1'>Select a City</a>
+<div class="center-align" style="font-size: 20px;">
 
-<!-- Dropdown Structure -->
-<ul id='dropdown1' class='dropdown-content'>
-    <div ng-repeat="city in cities | orderBy : 'city'">
-    <li><a href="city/{{city.state}}/{{city.city}}">{{city.city +  " - " + city.state}}</a></li>
-    </div>
-</ul>
+    <!-- Dropdown Trigger -->
+    <a class='dropdown-button btn ' href='#' data-activates='dropdown1'>Select a City</a>
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content '>
+        <div ng-repeat="city in cities | orderBy : 'city'">
+            <li><a href="city/{{city.state}}/{{city.city}}">{{city.city +  " - " + city.state}}</a></li>
+        </div>
+    </ul>
+</div>
+
 
 
 

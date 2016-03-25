@@ -8,12 +8,14 @@
 // 3/1     MB       CORS Support + Additional Routes
 // 312     MB       Dynamo Support
 // 3/22    MB       Routing for index fix
+// 3/25    MB       CORS usage implemented.
 
 // Const
 const region = "us-west-2";
 //const dbLocation = "http://localhost:8000";
-const accessKey = "XXXXX";
-const secretAccessKey =  "XXXXX";
+const accessKey = "";
+const secretAccessKey =  "";
+
 
 
 // Modules
@@ -56,7 +58,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api*', api);
 app.use('/*', routes);
 
-
+// CORS
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

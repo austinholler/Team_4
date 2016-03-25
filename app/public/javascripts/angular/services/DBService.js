@@ -3,8 +3,10 @@
  */
 // Edit History
 // Date    Author   Description
-// =================================================
+// ==========================================================
 // 3/24    MB       File Creation
+// 3/25    MB       No longer caches data. Works for multiple
+//                  types of requests.
 
 
 var StateEnum = {Loaded:1, Loading:2, NotLoaded:3}
@@ -12,7 +14,7 @@ var StateEnum = {Loaded:1, Loading:2, NotLoaded:3}
 angular.module('DBService', []).service('DatabaseService', function($http,$q) {
     this.data = [];
     this.state = StateEnum.NotLoaded
-
+    /*
     this.init = function(callback) {
         console.log('inside init');
 
@@ -30,18 +32,39 @@ angular.module('DBService', []).service('DatabaseService', function($http,$q) {
         })
 
     }
-    this.getData = function(callback){
+    */
+    this.getData = function(db,params,callback){
         console.log('inside getData');
 
         // If we haven't yet loaded the data into the service.
-        if (this.state == StateEnum.NotLoaded)
-        {
-            this.init(callback)
-        }
+        //if (this.state == StateEnum.NotLoaded)
+        //{
+        //    this.init(callback)
+        //}
 
         // If the data has already been loaded into the service.
-        if (this.state == StateEnum.Loaded) {
-            callback(null,this.data)
+        //if (this.state == StateEnum.Loaded) {
+        //
+        var queryURL = ""
+        var queryURLBase = 'http://localhost:3000/api/'
+        if (db == "cities") {
+            var queryURL = queryURLBase + "cities/" + params['state'] + "/" + params['name']
         }
+        if (db == "citylist") {
+            var queryURL = queryURLBase + "citylist"
+        }
+
+        $http.get(queryURL).then(function (data) {
+            // Update data
+            //this.data = data;
+            // Update state to loaded.
+            //this.state = StateEnum.Loaded;
+            // Call the callback.
+            console.log('got the data back');
+            callback(null, data)
+        })
+
+        //callback(null,this.data)
+        //}
     }
 })

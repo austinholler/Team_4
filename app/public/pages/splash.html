@@ -1,18 +1,21 @@
 <h3 >Splash</h3>
 
-<div class="center-align" style="font-size: 20px;">
+<p class="text-center center-align" ng-hide="dataLoaded">
+    <i class="fa fa-refresh fa-spin fa-5x"></i>
+    <h5 class = "text-center center-align" ng-hide="dataLoaded"><b>Loading City List</b></h5>
+</p>
 
-    <!-- Dropdown Trigger -->
-    <a class='dropdown-button btn red lighten-2 ' href='#' data-activates='dropdown1'>Select a City</a>
-    <!-- Dropdown Structure -->
-    <ul id='dropdown1' class='dropdown-content '>
-        <div ng-repeat="city in cities | orderBy : 'city'">
-            <li><a href="city/{{city.state}}/{{city.city}}" class="red-text lighten-2">{{city.city +  " - " + city.state}}</a></li>
-        </div>
-    </ul>
+<div ng-show="dataLoaded">
+
+    <div class="center-align" style="font-size: 20px;">
+        <a class='dropdown-button btn red lighten-2 ' href='#' data-activates='dropdown1'>Select a City</a>
+        <ul id='dropdown1' class='dropdown-content '>
+            <div ng-repeat="city in cityListData | orderBy : 'city'">
+                <li><a href="city/{{city.state}}/{{city.name}}" class="red-text lighten-2">{{city.name +  " - " + city.state}}</a></li>
+            </div>
+        </ul>
+    </div>
 </div>
-
-
 
 
 <script>
@@ -28,4 +31,5 @@
                 alignment: 'left' // Displays dropdown with edge aligned to the left of button
             }
     );
+    //$('.dropdown-button').show()
 </script>

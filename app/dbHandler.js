@@ -7,6 +7,11 @@
 // 3/12    MB       DB Handler to abstract the implementation
 //                  of database connection/use.
 // 3/24    MB       get method is callback function now.
+
+
+
+
+
 // Required for Dynamo Connection
 var AWS = require("aws-sdk");
 var DBHandler = new Object();

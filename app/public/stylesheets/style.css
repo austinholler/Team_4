@@ -24,3 +24,5 @@ main {
   flex: 1 0 auto;
 }
 
+#mapid { height: 180px; }
+

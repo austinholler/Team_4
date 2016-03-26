@@ -1,38 +1,51 @@
 <br></br>
 <div class="row">
     <div class="col s4 grey lighten-2">
-        <h4><i class="fa fa-map-pin fa-1x"></i> Discover</h4>
-        <p style="min-height:60px">We make it easier than ever to find a city that fits your interests. </p>
+        <h5 class="text-center center-align"><i class="fa fa-map-pin fa-2x" style="color:#e57373"></i></h5>
+        <h5 class="text-center center-align"><b>Discover Places</b></h5>
+        <p style="min-height:60px" class="text-center center-align">We make it easier than ever to find a city that fits your interests. </p>
     </div>
 
     <div class="col s4 grey lighten-2">
-        <h4><i class="fa fa-line-chart fa-1x"></i> History</h4>
-        <p style="min-height:60px">Learn about the interest trends for cities. We can tell you how a city is changing.</p>
+        <h5 class="text-center center-align"><i class="fa fa-line-chart fa-2x" style="color:#e57373"></i></h5>
+        <h5 class="text-center center-align"><b>View Trends</b></h5>
+        <p style="min-height:60px" class="text-center center-align">Learn about the interest trends for cities. We can tell you how a city is changing.</p>
     </div>
 
     <div class="col s4 grey lighten-2">
-        <h4><i class="fa fa-pie-chart fa-1x "></i> Interests</h4>
-        <p style="min-height:60px">Learn about the current 'pulse' of the city. We know whats popular, right now. </p>
+        <h5 class="text-center center-align"><i class="fa fa-pie-chart fa-2x" style="color:#e57373"></i></h5>
+        <h5 class="text-center center-align"><b>See Interests</b></h5>
+        <p style="min-height:60px" class="text-center center-align">Learn about the current 'pulse' of the city. We know whats popular, right now. </p>
     </div>
 </div>
 
-<div id="mapid"></div>
+<div class="row">
+    <div class="col s8">
+        <div id="mapid" style="width:100%; margin-left:auto; margin-right:auto;"></div>
+        <div><p style="text-align: center; color:#616161">We support all cities displayed above.</p></div>
+    </div>
 
-<p class="text-center center-align" ng-hide="dataLoaded">
-    <i class="fa fa-refresh fa-spin fa-5x"></i>
-    <h5 class = "text-center center-align" ng-hide="dataLoaded"><b>Loading City List</b></h5>
-</p>
+    <div class="col s4">
+        <p class="text-center center-align" ng-hide="dataLoaded">
+            <i class="fa fa-refresh fa-spin fa-5x"></i>
+        <h5 class = "text-center center-align" ng-hide="dataLoaded"><b>Loading City List</b></h5>
+        </p>
 
-<div ng-show="dataLoaded">
-    <div class="center-align" style="font-size: 20px;">
-        <a class='dropdown-button btn red lighten-2 ' href='#' data-activates='dropdown1'>Select a City</a>
-        <ul id='dropdown1' class='dropdown-content '>
-            <div ng-repeat="city in cityListData | orderBy : 'city'">
-                <li><a href="city/{{city.state}}/{{city.name}}" class="red-text lighten-2">{{city.name +  " - " + city.state}}</a></li>
+        <div ng-show="dataLoaded">
+            <div class="center-align" style="font-size: 20px;">
+                <a class='dropdown-button btn red lighten-2 ' href='#' data-activates='dropdown1'>Select a City</a>
+                <ul id='dropdown1' class='dropdown-content '>
+                    <div ng-repeat="city in cityListData | orderBy : 'name'">
+                        <li><a href="city/{{city.state}}/{{city.name}}" class="red-text lighten-2">{{city.name +  " - " + city.state}}</a></li>
+                    </div>
+                </ul>
             </div>
-        </ul>
+        </div>
     </div>
+
 </div>
+
+
 
 
 

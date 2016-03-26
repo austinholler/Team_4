@@ -3,6 +3,5 @@
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{app node_modules}" />
     <file url="PROJECT" libraries="{angular, angular-route, angularjs-DefinitelyTyped, materialize}" />
-    <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

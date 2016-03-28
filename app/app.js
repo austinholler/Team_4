@@ -13,7 +13,7 @@
 
 // Const
 const region = "us-west-2";
-//const dbLocation = "http://localhost:8000";
+//const dbLocatsion = "http://localhost:8000";
 const accessKey = "";
 const secretAccessKey =  "";
 

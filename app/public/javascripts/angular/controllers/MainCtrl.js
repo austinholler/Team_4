@@ -3,9 +3,10 @@
 
 // Edit History
 // Date    Author   Description
-// ==========================================================
+// ==============================================================
 // 3/1    MB       File Creation
 // 3/25   MB       Live datta now pulled from server.
+// 3/27   MB       Modified pin selection to redirect using code.
 
 (function(angular) {
     'use strict';
@@ -32,7 +33,7 @@
             $scope.cityListData = data.data.Items;
             for (var i = 0; i < $scope.cityListData.length; i++){
                 var curCity = $scope.cityListData[i];
-                var marker = L.marker([curCity.lat, curCity.lon],{url:"city/" + curCity.state + "/" + curCity.name}).bindPopup(curCity.name)
+                var marker = L.marker([curCity.lat, curCity.lon],{url:"city/" + curCity.code}).bindPopup(curCity.name)
                 marker.on('mouseover', function (e) {
                         this.openPopup();
                     });

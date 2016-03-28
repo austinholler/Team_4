@@ -1,9 +1,22 @@
-<h3><b>City:</b>{{cityName}} <b>State:</b> {{cityState}}</h3>
-{{ test }}
+<h3><b>City:</b>{{code}}</h3>
 
 <p class="text-center center-align" ng-hide="dataLoaded">
     <i class="fa fa-refresh fa-spin fa-5x"></i>
 </p>
 <div ng-show="dataLoaded">
-    {{cityData}}
+    There are: {{recordCount}} entries for this city.
 </div>
+
+<div class="row">
+    <div class="col s6 ">
+        <h5 class="text-center center-align"><b>City Interests</b></h5>
+        <canvas class="text-center" id="pieChart" width="400" height="400"></canvas>
+    </div>
+
+    <div class="col s6 ">
+        <h5 class="text-center center-align"><b>Historic Trends</b></h5>
+        <canvas class="text-center" id="lineChart" width="400" height="400"></canvas>
+
+    </div>
+</div>
+

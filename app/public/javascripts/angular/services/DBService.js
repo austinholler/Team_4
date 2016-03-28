@@ -7,6 +7,7 @@
 // 3/24    MB       File Creation
 // 3/25    MB       No longer caches data. Works for multiple
 //                  types of requests.
+// 3/27    MB       Supports topics query.
 
 
 
@@ -48,8 +49,8 @@ angular.module('DBService', []).service('DatabaseService', function($http,$q) {
         //
         var queryURL = ""
         var queryURLBase = 'http://localhost:3000/api/'
-        if (db == "cities") {
-            var queryURL = queryURLBase + "cities/" + params['state'] + "/" + params['name']
+        if (db == "topics") {
+            var queryURL = queryURLBase + "topics/" + params['code']
         }
         if (db == "citylist") {
             var queryURL = queryURLBase + "citylist"

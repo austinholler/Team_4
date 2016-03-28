@@ -7,6 +7,7 @@
 // 3/1    MB        Catches any api failures.
 // 3/24   MB        Works with Dynamo connections, and all API paths.
 // 3/25   MB        Added support for cityList query.
+// 3/27   MB        API now supports topics instead of cities query.
 
 var express = require('express');
 var router = express.Router();
@@ -30,21 +31,16 @@ router.get('/', function(req, res, next) {
   console.log('parts:' + parts);
 
   // Query for a city
-  if (parts[2] == "cities") {
-    if (parts.length != 5) {
+  if (parts[2] == "topics") {
+    if (parts.length != 4) {
       validQuery = false;
     }
-    if (parts.length > 3) {
-      reqObj["state"] = parts[3];
-    }
-    if (parts.length > 4) {
-      reqObj["city"] = parts[4];
-    }
+    reqObj["code"] = parts[3];
 
     // Process the query if it's actually valid.
     if (validQuery) {
       console.log("API Request for: " + "city: " + reqObj["city"] + " state: " + reqObj["state"]);
-      dbHandler.get("events", reqObj, function (err, data) {
+      dbHandler.get("topics_" + reqObj["code"], reqObj, function (err, data) {
         if (err) {
           res.send("Query Fialed")
         }

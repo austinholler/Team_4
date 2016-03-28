@@ -36,7 +36,7 @@
                 <a class='dropdown-button btn red lighten-2 ' href='#' data-activates='dropdown1'>Select a City</a>
                 <ul id='dropdown1' class='dropdown-content '>
                     <div ng-repeat="city in cityListData | orderBy : 'name'">
-                        <li><a href="city/{{city.state}}/{{city.name}}" class="red-text lighten-2">{{city.name +  " - " + city.state}}</a></li>
+                        <li><a href="city/{{city.code}}" class="red-text lighten-2">{{city.name +  " - " + city.state}}</a></li>
                     </div>
                 </ul>
             </div>

@@ -26,8 +26,9 @@ def printProgress (iteration, total, prefix = '', suffix = '', decimals = 2, bar
 REGION = "us-west-2"
 conn = dynamodb2.connect_to_region(
     REGION,
-    aws_access_key_id='xxxxxxxxxx',
-    aws_secret_access_key='xxxxxxxxxxxxxxxxxx',
+    aws_access_key_id='xxxxxxxxxxxxxx',
+    aws_secret_access_key='xxxxxxxxxxxxxxxxxxxx',
+    is_secure = False,
 )
 
 #DynamoDB Table
@@ -49,11 +50,19 @@ with open(js) as json_file :
 	  i = 0
 	  printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
           for date in data:
-	     try :
-                for topic in data[date] :
-                	topics.put_item(data={'Id': data[date][topic]["topic_id"]  ,'Name' : topic , 'Category' : data[date][topic]['category'] ,'Date' : date, 'Score' : Decimal(str(data[date][topic]["score"])) } )
-	                #print data[date][topic]["topic_id"]  , topic ,data[date][topic]["category"] ,  date
-	     except : 
-		pass
-	     printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
-             i += 1
+		topics_list = []
+                for index,topic in enumerate(data[date]) :
+		   topics_list.append(str(data[date][topic]["topic_id"]) + '#' + topic + '#' + data[date][topic]['category'] + '#' + date + '#' + str(data[date][topic]["score"]))
+                   if len(topics_list) == 20 or index == len(data[date]) - 1 :
+                     try:
+                        with topics.batch_write() as batch:
+                            for item in topics_list:
+				items = item.split('#')
+                                batch.put_item(data={'Id': items[0] ,'Name' : items[1] , 'Category' : items[2] ,'Date' : items[3] ,'Score': Decimal(items[4])})
+                            	#print items
+			    topics_list = []
+                     except :
+                            print sys.exc_info()[0]
+
+		printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
+                i += 1

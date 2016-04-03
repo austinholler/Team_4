@@ -9,6 +9,7 @@
 // 312     MB       Dynamo Support
 // 3/22    MB       Routing for index fix
 // 3/25    MB       CORS usage implemented.
+// 4/2     MB       LoDash module
 
 
 // Const
@@ -16,8 +17,6 @@ const region = "us-west-2";
 //const dbLocatsion = "http://localhost:8000";
 const accessKey = "";
 const secretAccessKey =  "";
-
-
 
 
 // Modules
@@ -32,6 +31,7 @@ var cors = require("cors");
 var routes = require('./routes/index');
 var api = require('./routes/api');
 var dbHandler = require("./dbHandler")
+var _ = require('lodash');
 
 
 

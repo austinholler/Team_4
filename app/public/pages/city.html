@@ -1,4 +1,27 @@
-<h3><b>City:</b>{{code}}</h3>
+<div ng-show="infoLoaded">
+    <div class="row ">
+        <div class="col s4 grey lighten-2" style="min-height:150px" >
+            <div class="wow fadeInDown">
+                <h5 class="text-center center-align">City</h5>
+                <h5 class="text-center center-align"><b>{{cityInfo.name}}</b></h5>
+            </div>
+        </div>
+
+        <div class="col s4 grey lighten-2" style="min-height:150px">
+            <div class="wow fadeInDown">
+                <h5 class="text-center center-align">State</h5>
+                <h5 class="text-center center-align"><b>{{cityInfo.stateFull}}</b></h5>
+            </div>
+        </div>
+
+        <div class="col s4 grey lighten-2" style="min-height:150px">
+            <div class="wow fadeInDown text-center center-align">
+                <img class="text-center center-align" style= "margin-top:10px" src= {{cityInfo.imgURL}}>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <p class="text-center center-align" ng-hide="dataLoaded">
     <i class="fa fa-refresh fa-spin fa-5x"></i>
@@ -15,7 +38,6 @@
         <h5 class="text-center center-align"><b>City Interests</b></h5>
         <canvas class="text-center" id="pieChart" width="400" height="400"></canvas>
     </div>
-
 
 
     <div class="col s6 ">

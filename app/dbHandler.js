@@ -14,6 +14,8 @@ var AWS = require("aws-sdk");
 var DBHandler = new Object();
 var dynamodb;
 var docClient;
+var _ = require('lodash');
+
 
 // Method for connecting to our DB instance
 DBHandler.connect = function(inputParam,accessKey,secretAccessKey) {
@@ -34,27 +36,58 @@ DBHandler.connect = function(inputParam,accessKey,secretAccessKey) {
 
 // Method for querrying the db
 DBHandler.get = function(tableName,tableParams,callback) {
-    console.log("getting the data...");
+    console.log("DB Handler GET called:");
+    console.log("Table: " + tableName);
+    console.log("Params");
+    console.log(tableParams);
+
     var outData = null
     // tableParams should be a dictionary of key->values, not currently using until DB format is finalized.
-    var params = {
-        TableName : tableName,
-    };
-    var error = "none"
 
     // Scan for retreiving all documents
-    // Query for retreiving specific documents.
-    docClient.scan(params, function(err, data) {
-        if (err) {
-            var error = "Unable to query. Error:" + JSON.stringify(err, null, 2)
-            console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
-            callback(err,null)
-        } else {
-            console.log("Query succeeded.");
-            callback(null,data)
-        }
+    if (_.isEmpty(tableParams)) {
+        console.log('Query using Scan');
+        var params = {
+            TableName : tableName,
+        };
+        docClient.scan(params, function (err, data) {
+            if (err) {
+                var error = "Unable to query. Error:" + JSON.stringify(err, null, 2)
+                console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+                callback(err, null)
+            } else {
+                console.log("Query succeeded.");
+                callback(null, data)
+            }
 
-    });
+        });
+    }
+    // Query for retreiving specific documents.
+    else {
+        console.log('Query using Params');
+        var params = {
+            TableName : tableName,
+            KeyConditionExpression: "#fld = :val",
+            ExpressionAttributeNames:{
+                "#fld": "code"
+            },
+            ExpressionAttributeValues: {
+                ":val":tableParams['code']
+            }
+        };
+        docClient.query(params, function (err, data) {
+            if (err) {
+                var error = "Unable to query. Error:" + JSON.stringify(err, null, 2)
+                console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+                callback(err, null)
+            } else {
+                console.log("Query succeeded.");
+                console.log(data);
+                callback(null, data)
+            }
+
+        });
+    }
 
 }
 

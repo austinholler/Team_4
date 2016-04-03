@@ -8,6 +8,7 @@
 // 3/25    MB       No longer caches data. Works for multiple
 //                  types of requests.
 // 3/27    MB       Supports topics query.
+// 4/2     MB       Supports more robust city query.
 
 
 
@@ -53,9 +54,15 @@ angular.module('DBService', []).service('DatabaseService', function($http,$q) {
             var queryURL = queryURLBase + "topics/" + params['code']
         }
         if (db == "citylist") {
-            var queryURL = queryURLBase + "citylist"
+            console.log(params['code']);
+            if (params['code'] != undefined) {
+                var queryURL = queryURLBase + "citylist/" + params['code']
+            }
+            else {
+                var queryURL = queryURLBase + "citylist"
+            }
         }
-
+        console.log("Query URL: " + queryURL);
         $http.get(queryURL).then(function (data) {
             // Update data
             //this.data = data;

@@ -8,6 +8,7 @@
 // 3/24   MB        Works with Dynamo connections, and all API paths.
 // 3/25   MB        Added support for cityList query.
 // 3/27   MB        API now supports topics instead of cities query.
+// 4/2    MB        Supports more robust city query.
 
 var express = require('express');
 var router = express.Router();
@@ -40,7 +41,7 @@ router.get('/', function(req, res, next) {
     // Process the query if it's actually valid.
     if (validQuery) {
       console.log("API Request for: " + "city: " + reqObj["city"] + " state: " + reqObj["state"]);
-      dbHandler.get("topics_" + reqObj["code"], reqObj, function (err, data) {
+      dbHandler.get("topics_" + reqObj["code"], {}, function (err, data) {
         if (err) {
           res.send("Query Fialed")
         }
@@ -58,6 +59,9 @@ router.get('/', function(req, res, next) {
   // Query for city list
   else if (parts[2] == "citylist") {
     console.log("API Request for city list");
+    if (parts.length > 3) {
+      reqObj["code"] = parts[3];
+    }
     dbHandler.get("Cities", reqObj, function (err, data) {
         if (err) {
           res.send("Query Fialed")
@@ -69,8 +73,7 @@ router.get('/', function(req, res, next) {
 
   }
   else {
-    res.send("Invalid endpoint. Valid Endpoints: api/cities , api/citylist")
-        res.send(data)
+    res.send("Invalid endpoint. Valid Endpoints: api/cities , api/citylist");
       }
 });
 

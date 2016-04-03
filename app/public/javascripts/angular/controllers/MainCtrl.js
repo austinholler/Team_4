@@ -19,7 +19,7 @@
         $scope.cityListData = null;
 
         // Leaflet stuff
-        var mymap = L.map('mapid').setView([39.5, -98.35], 3);
+        var mymap = L.map('mapid').setView([39.5, -98.35], 4);
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution:'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
             maxZoom: 18,

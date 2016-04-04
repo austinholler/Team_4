@@ -3,6 +3,7 @@ from boto import dynamodb2
 from boto.dynamodb2.table import Table
 from decimal import Decimal
 import sys
+from time import sleep
 
 # Print iterations progress
 def printProgress (iteration, total, prefix = '', suffix = '', decimals = 2, barLength = 100):
@@ -46,23 +47,24 @@ js = sys.argv[2]
 #Loading data in Tables
 with open(js) as json_file :
           data = json.load(json_file)
-	  size = len(data)
-	  i = 0
-	  printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
+          size = len(data)
+          i = 0
+          printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
           for date in data:
-		topics_list = []
+                topics_list = []
                 for index,topic in enumerate(data[date]) :
-		   topics_list.append(str(data[date][topic]["topic_id"]) + '#' + topic + '#' + data[date][topic]['category'] + '#' + date + '#' + str(data[date][topic]["score"]))
-                   if len(topics_list) == 20 or index == len(data[date]) - 1 :
+                   topics_list.append(str(data[date][topic]["topic_id"]) + '#' + topic + '#' + data[date][topic]['category'] + '#' + ''.join(reversed(date.split('-'))) + '#' + str(data[date][topic]["score"]))
+                   if len(topics_list) == 10 or index == len(data[date]) - 1 :
                      try:
                         with topics.batch_write() as batch:
                             for item in topics_list:
-				items = item.split('#')
+                                items = item.split('#')
                                 batch.put_item(data={'Id': items[0] ,'Name' : items[1] , 'Category' : items[2] ,'Date' : items[3] ,'Score': Decimal(items[4])})
-                            	#print items
-			    topics_list = []
+                                #print items
+                            topics_list = []
+                        sleep(0.18)
                      except :
-                            print sys.exc_info()[0]
+                            print sys.exc_info()[0], items
 
-		printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
+                printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
                 i += 1

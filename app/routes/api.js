@@ -73,7 +73,7 @@ router.get('/', function(req, res, next) {
 
   }
   else {
-    res.send("Invalid endpoint. Valid Endpoints: api/cities , api/citylist");
+    res.send("Invalid endpoint. Valid Endpoints: api/topics , api/citylist");
       }
 });
 

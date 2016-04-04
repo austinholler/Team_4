@@ -9,6 +9,7 @@
 // 3/25   MB        Added support for cityList query.
 // 3/27   MB        API now supports topics instead of cities query.
 // 4/2    MB        Supports more robust city query.
+// 4/3    MB        Fixed error message to reference correct api path
 
 var express = require('express');
 var router = express.Router();

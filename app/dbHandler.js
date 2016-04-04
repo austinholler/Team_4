@@ -3,11 +3,11 @@
 
 // Edit History
 // Date    Author   Description
-// =========================================================
+// =====================================================================
 // 3/12    MB       DB Handler to abstract the implementation
 //                  of database connection/use.
 // 3/24    MB       get method is callback function now.
-
+// 4/3     MB       Support for recursive scans to get entire data sets.
 
 // Required for Dynamo Connection
 var AWS = require("aws-sdk");

@@ -3,21 +3,23 @@
 
 // Edit History
 // Date    Author   Description
-// =========================================================
+// =====================================================================
 // 3/12    MB       DB Handler to abstract the implementation
 //                  of database connection/use.
 // 3/24    MB       get method is callback function now.
-
+// 4/3     MB       Support for recursive scans to get entire data sets.
 
 // Required for Dynamo Connection
 var AWS = require("aws-sdk");
 var DBHandler = new Object();
 var dynamodb;
 var docClient;
+var _ = require('lodash');
+
 
 // Method for connecting to our DB instance
 DBHandler.connect = function(inputParam,accessKey,secretAccessKey) {
-    console.log('Connecting...');
+    console.log('DBHandler.Connect: Connecting...');
     AWS.config.update({
         accessKeyId: accessKey,
         secretAccessKey: secretAccessKey,
@@ -29,106 +31,95 @@ DBHandler.connect = function(inputParam,accessKey,secretAccessKey) {
     dynamodb = new AWS.DynamoDB();
     docClient = new AWS.DynamoDB.DocumentClient();
 
-    console.log('Connected to Dynamo DB');
+    console.log('DBHandler.Connect: Connected to Dynamo DB');
 }
 
 // Method for querrying the db
 DBHandler.get = function(tableName,tableParams,callback) {
-    console.log("getting the data...");
-    var outData = null
-    // tableParams should be a dictionary of key->values, not currently using until DB format is finalized.
-    var params = {
-        TableName : tableName,
-    };
-    var error = "none"
+    console.log("DBHandler.Get: New Get");
+    console.log("DBHandler.Get: Table: " + tableName);
+    console.log("DBHandler.Get: Params");
+    console.log(tableParams);
 
     // Scan for retreiving all documents
+    if (_.isEmpty(tableParams)) {
+        console.log('DBHandler.Get: Query using Scan');
+
+        var params = {
+            TableName : tableName,
+        };
+
+        // Call the recursive FullScan to ensure we get all of the data.
+        DBHandler.FullScan(params,callback);
+
+    }
     // Query for retreiving specific documents.
-    docClient.scan(params, function(err, data) {
+    else {
+        console.log('DBHandler.Get: Query using Params');
+        var params = {
+            TableName : tableName,
+            KeyConditionExpression: "#fld = :val",
+            ExpressionAttributeNames:{
+                "#fld": "code"
+            },
+            ExpressionAttributeValues: {
+                ":val":tableParams['code']
+            }
+        };
+        docClient.query(params, function (err, data) {
+            if (err) {
+                var error = "Unable to query. Error:" + JSON.stringify(err, null, 2)
+                console.error("DBHandler.Get: Unable to query. Error:", JSON.stringify(err, null, 2));
+                callback(err, null)
+            } else {
+                console.log("DBHandler.Get: Query succeeded.");
+                console.log(data);
+                callback(null, data)
+            }
+
+        });
+    }
+
+}
+
+// Method to be used when scan may exceed 1 MB limit. Recursively scans
+// until all data has been collected, and then returns it.
+DBHandler.FullScan = function(params,callback) {
+    console.log("DBHandler.FullScan: New FullScan");
+    console.log(params);
+    docClient.scan(params, function (err, data) {
         if (err) {
             var error = "Unable to query. Error:" + JSON.stringify(err, null, 2)
-            console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
-            callback(err,null)
+            console.error("DBHandler.FullScan: Unable to query. Error:", JSON.stringify(err, null, 2));
+            callback(err, null)
         } else {
-            console.log("Query succeeded.");
-            callback(null,data)
-        }
+            console.log("DBHandler.FullScan: Query succeeded.");
 
-    });
+            // If we haven't consumed all the data, do the next scan.
+            if (data.LastEvaluatedKey != null) {
+                console.log("DBHandler.FullScan: Scan was not exhaustive, recursing.");
+                var newParams = params
+                newParams['ExclusiveStartKey'] = data.LastEvaluatedKey;
+
+                DBHandler.FullScan(newParams, function (err,nextData) {
+                    var combinedData = nextData
+                    //console.log(Object.keys(nextData));
+                    combinedData['Items'] = nextData.Items.concat(data.Items)
+                    callback(null,combinedData);
+                })
+
+            }
+
+            // Else trigger the callback
+            else {
+                console.log("DBHandler.FullScan: Scan was exhaustive. Returning.");
+                callback(null, data)
+            }
+        }
+    })
 
 }
 
-// Method for putting item into the database
-DBHandler.put = function(tableName) {
-    console.log("putting in data...");
-
-    var params = {
-        TableName: tableName,
-        Item: {
-            "name":  "bowling",
-            "city": "denver"
-        }
-    };
-    docClient.put(params, function(err, data) {
-        if (err) {
-            console.error("Unable to add event", params.Item.name, " to", tableName , ". Error JSON:", JSON.stringify(err, null, 2));
-        } else {
-            console.log("PutItem succeeded:", params.Item.name);
-        }
-    });
-}
-
-//Method for creating a table
-DBHandler.createTable = function(tableName) {
-
-    var params = {
-        TableName: tableName,
-        KeySchema: [
-            {AttributeName: "name", KeyType: "HASH"},  //Partition key
-            {AttributeName: "city", KeyType: "RANGE"}  //Sort key
-        ],
-        AttributeDefinitions: [
-            {AttributeName: "name", AttributeType: "S"},
-            {AttributeName: "city", AttributeType: "S"}
-        ],
-        ProvisionedThroughput: {
-            ReadCapacityUnits: 10,
-            WriteCapacityUnits: 10
-        }
-    };
-
-    dynamodb.createTable(params, function (err, data) {
-        if (err) {
-            console.error("Unable to create table. Error JSON:", JSON.stringify(err, null, 2));
-        } else {
-            console.log("Created table. Table description JSON:", JSON.stringify(data, null, 2));
-        }
-    });
-}
-
-// Method for deleting a table.
-DBHandler.deleteTable = function(tableName) {
-    var AWS = require("aws-sdk");
-
-    AWS.config.update({
-        region: "us-west-2",
-        endpoint: "http://localhost:8000"
-    });
-
-    var dynamodb = new AWS.DynamoDB();
-
-    var params = {
-        TableName : tableName
-    };
-
-    dynamodb.deleteTable(params, function(err, data) {
-        if (err) {
-            console.error("Unable to delete table. Error JSON:", JSON.stringify(err, null, 2));
-        } else {
-            console.log("Deleted table. Table description JSON:", JSON.stringify(data, null, 2));
-        }
-    });
-}
 
 // Export the module
 module.exports = DBHandler;

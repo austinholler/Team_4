@@ -9,6 +9,7 @@
 // 3/25    MB       Modifications to how data is requested.
 // 3/27    MB       Added charts with sample data
 // 3/27    MB       Test run with real data.
+// 4/2     MB       Support for basic city information.
 
 angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseService','$routeParams',function($scope,DatabaseService,$routeParams) {
     // City Name
@@ -17,8 +18,16 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     // Data for the city, comes from DBService
     $scope.dataLoaded = false;
 
+    // Info about the city, comes from DBService
+    $scope.infoLoaded = false;
+
+    // Info about the city(i.e. lat/lon/name/etc)
+    $scope.cityInfo = null;
+
+    // Data for the city.
     $scope.cityData = null;
 
+    // Number of records we have for our data.
     $scope.recordCount = 0;
 
     // Category -> Sum of Scores
@@ -97,6 +106,16 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
 
     }
 
+
+    // Async call to load info for this city.
+    DatabaseService.getData("citylist",{'code':$scope.code},function(err,data) {
+        $scope.infoLoaded = true;
+        $scope.cityInfo = data.data.Items[0];
+        $scope.cityInfo.imgURL = "images/stateIcons/state-" + $scope.cityInfo.stateFull.toLowerCase() + ".png";
+        console.log($scope.cityData)
+    })
+
+    // Async call to load data for this city.
     DatabaseService.getData("topics",{'code':$scope.code},function(err,data) {
         $scope.dataLoaded = true;
         $scope.cityData = data.data.Items;
@@ -104,6 +123,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         $scope.drawLineChart($scope.cityData)
         $scope.drawPieChart($scope.cityData)
     })
+
 
 
     //var myNewChart = new Chart(ctx).PolarArea(data);

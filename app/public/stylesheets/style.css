@@ -30,11 +30,15 @@ canvas {
   display: block;
 }
 
-#mapid { height: 180px; }
+#mapid { height: 500px; }
 
 .chart-legend li span{
   display: inline-block;
   width: 12px;
   height: 12px;
   margin-right: 5px;
+}
+
+html, body {
+  height:100%
 }

@@ -10,9 +10,11 @@
 // 3/27   MB        API now supports topics instead of cities query.
 // 4/2    MB        Supports more robust city query.
 // 4/3    MB        Fixed error message to reference correct api path
+// 4/9    MB        Support for new category/topic queries.
 
 var express = require('express');
 var router = express.Router();
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -32,17 +34,60 @@ router.get('/', function(req, res, next) {
 
   console.log('parts:' + parts);
 
-  // Query for a city
+  // Query for a city topics
   if (parts[2] == "topics") {
-    if (parts.length != 4) {
+    if (parts.length != 5 && parts.length != 7) {
       validQuery = false;
     }
-    reqObj["code"] = parts[3];
+    var recCode = parts[3];
+    reqObj["Topic"] = parts[4];
+    reqObj["code"] = recCode;
+    if (parts.length == 7)
+    {
+
+      reqObj["start"] = recCode + parts[5];
+      reqObj["end"] = recCode + parts[6];
+    }
 
     // Process the query if it's actually valid.
     if (validQuery) {
-      console.log("API Request for: " + "city: " + reqObj["city"] + " state: " + reqObj["state"]);
-      dbHandler.get("topics_" + reqObj["code"], {}, function (err, data) {
+      console.log("API Request for: " + "city: " + recCode);
+      console.log(reqObj);
+      dbHandler.get("Topics", reqObj, function (err, data) {
+        if (err) {
+          res.send("Query Fialed")
+        }
+        else {
+          console.log('got the data back');
+          res.send(data)
+        }
+      })
+    }
+    else {
+      res.send("Invalid request to api.");
+    }
+  }
+
+  // Query for a city category
+  else if (parts[2] == "categories") {
+    if (parts.length != 5 && parts.length != 7) {
+      validQuery = false;
+    }
+    var recCode = parts[3];
+    reqObj["Category"] = parts[4];
+    reqObj["code"] = recCode;
+    if (parts.length == 7)
+    {
+
+      reqObj["start"] = recCode + parts[5];
+      reqObj["end"] = recCode + parts[6];
+    }
+
+    // Process the query if it's actually valid.
+    if (validQuery) {
+      console.log("API Request for: " + "city: " + recCode);
+      console.log(reqObj);
+      dbHandler.get("Topics", reqObj, function (err, data) {
         if (err) {
           res.send("Query Fialed")
         }

@@ -1,46 +1,46 @@
-<div ng-show="infoLoaded">
+<div ng-show="cityDataLoaded">
     <div class="row ">
-        <div class="col s3 grey lighten-2" style="min-height:150px" >
+        <div class="col s2 grey lighten-2" style="min-height:150px" >
             <div class="wow fadeInDown">
                 <h5 class="text-center center-align">City</h5>
-                <h5 class="text-center center-align"><b>{{cityInfo.name}}</b></h5>
-            </div>
-        </div>
-
-        <div class="col s2 grey lighten-2" style="min-height:150px">
-            <div class="wow fadeInDown">
-                <h5 class="text-center center-align">State</h5>
-                <h5 class="text-center center-align"><b>{{cityInfo.stateFull}}</b></h5>
+                <h5 class="text-center center-align red-text lighten-2"><b>{{cityData.name}}</b></h5>
             </div>
         </div>
 
         <div class="col s2 grey lighten-2" style="min-height:150px">
             <div class="wow fadeInDown">
                 <h5 class="text-center center-align">Latitude</h5>
-                <h5 class="text-center center-align"><b>{{cityInfo.lat}}</b></h5>
+                <h5 class="text-center center-align red-text lighten-2"><b>{{cityData.lat}}</b></h5>
             </div>
         </div>
 
         <div class="col s2 grey lighten-2" style="min-height:150px">
             <div class="wow fadeInDown">
                 <h5 class="text-center center-align">Longitude</h5>
-                <h5 class="text-center center-align"><b>{{cityInfo.lon}}</b></h5>
+                <h5 class="text-center center-align red-text lighten-2"><b>{{cityData.lon}}</b></h5>
             </div>
         </div>
 
-        <div class="col s3 grey lighten-2" style="min-height:150px">
+        <div class="col s2 grey lighten-2" style="min-height:150px">
+            <div class="wow fadeInDown">
+                <h5 class="text-center center-align">State</h5>
+                <h5 class="text-center center-align red-text lighten-2"><b>{{cityData.stateFull}}</b></h5>
+            </div>
+        </div>
+
+        <div class="col s4 grey lighten-2" style="min-height:150px">
             <div class="wow fadeInDown text-center center-align">
-                <img class="text-center center-align" style= "margin-top:10px" src= {{cityInfo.imgURL}}>
+                <img class="text-center center-align red-text lighten-2" style= "margin-top:10px" src= {{cityData.imgURL}}>
             </div>
         </div>
     </div>
 
 </div>
 
-<p class="text-center center-align" ng-hide="dataLoaded">
+<p class="text-center center-align" ng-hide="categoryDataLoaded">
     <i class="fa fa-refresh fa-spin fa-5x"></i>
 </p>
-<div ng-show="dataLoaded">
+<div ng-show="categoryDataLoaded">
     There are: {{recordCount}} entries for this city.
 </div>
 
@@ -51,6 +51,18 @@
     <div class="col s4 ">
         <h5 class="text-center center-align"><b>City Interests</b></h5>
         <canvas class="text-center" id="pieChart" width="400" height="400"></canvas>
+        <br>
+        <div ng-show="categoryDataLoaded" class="text-center center-align">
+            <a class="waves-effect waves-light btn grey lighten-2" ng-click="pieFilter = 'Week'"  ng-class="{activeButton:pieFilter == 'Week'}">Week</a>
+            <a class="waves-effect waves-light btn grey lighten-2" ng-click="pieFilter = 'Month'" ng-class="{activeButton:pieFilter == 'Month'}">Month</a>
+            <a class="waves-effect waves-light btn grey lighten-2" ng-click="pieFilter = 'Year'" ng-class="{activeButton:pieFilter == 'Year'}">Year</a>
+            <a class="waves-effect waves-light btn grey lighten-2" ng-click="pieFilter = 'Complete'" ng-class="{activeButton:pieFilter == 'Complete'}">History</a>
+
+        </div>
+        <br>
+        <div ng-show="categoryDataLoaded" class="text-center center-align">
+            <a class="waves-effect waves-light btn red lighten-2" ng-click="reloadPieChart()"><i class="material-icons left">loop</i>Reload</a>
+        </div>
     </div>
 
 
@@ -60,4 +72,13 @@
 
     </div>
 </div>
+
+<script>
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+    });
+</script>
+
+
 

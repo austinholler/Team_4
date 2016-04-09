@@ -9,67 +9,62 @@
 //                  types of requests.
 // 3/27    MB       Supports topics query.
 // 4/2     MB       Supports more robust city query.
-
+// 4/8     MB       Removed state related code, added support
+//                  for new query types.
 
 
 var StateEnum = {Loaded:1, Loading:2, NotLoaded:3}
 
 angular.module('DBService', []).service('DatabaseService', function($http,$q) {
     this.data = [];
-    this.state = StateEnum.NotLoaded;
-    /*
-    this.init = function(callback) {
-        console.log('inside init');
 
-        // Change state to loading...
-        this.state = StateEnum.Loading;
-
-        // Put in some sample data for now...
-        $http.get('http://ec2-52-36-192-18.us-west-2.compute.amazonaws.com/api/cities/boulder/co').then(function (data) {
-            // Update data
-            this.data = data;
-            // Update state to loaded.
-            this.state = StateEnum.Loaded;
-            // Call the callback.
-            callback(null, data)
-        })
-
-    }
-    */
     this.getData = function(db,params,callback){
-        console.log('inside getData');
-
-        // If we haven't yet loaded the data into the service.
-        //if (this.state == StateEnum.NotLoaded)
-        //{
-        //    this.init(callback)
-        //}
-
-        // If the data has already been loaded into the service.
-        //if (this.state == StateEnum.Loaded) {
-        //
+        console.log('DBService.getData: Inside getData');
         var queryURL = ""
+
+        // queryURLBase must be changed to ec2 URL for running in prod.
         var queryURLBase = 'http://localhost:3000/api/'
-        if (db == "topics") {
-            var queryURL = queryURLBase + "topics/" + params['code']
+
+        // Query to topics table.
+        if (db.toLowerCase() == "topics") {
+            if (params['start'] != undefined && params['end'] != undefined) {
+                var queryURL = queryURLBase + "topics/" + params['code'] + "/all/" + params['start'] + "/" + params['end']
+            }
+            else if (params['code'] != undefined && params['category'] != undefined) {
+                var queryURL = queryURLBase + "topics/" + params['code'] + "/" + params['category']
+            }
+            else {
+                console.log('DBService.getData: Invalid params for topics query.');
+            }
         }
-        if (db == "citylist") {
-            console.log(params['code']);
+
+        // Query to categories GSI
+        else if (db.toLowerCase() == "categories") {
+            if (params['start'] != undefined && params['end'] != undefined) {
+                var queryURL = queryURLBase + "categories/" + params['code'] + "/all/" + params['start'] + "/" + params['end']
+            }
+            else if (params['code'] != undefined && params['category'] != undefined) {
+                var queryURL = queryURLBase + "categories/" + params['code'] + "/" + params['category']
+            }
+            else {
+                console.log('DBService.getData: Invalid params for categories query.');
+            }
+        }
+
+        // Query for list of cities.
+        else if (db.toLowerCase() == "citylist") {
             if (params['code'] != undefined) {
                 var queryURL = queryURLBase + "citylist/" + params['code']
             }
+
             else {
                 var queryURL = queryURLBase + "citylist"
             }
         }
-        console.log("Query URL: " + queryURL);
+
+        // Execute the query.
+        console.log('DBService.getData: QueryURL: ' + queryURL);
         $http.get(queryURL).then(function (data) {
-            // Update data
-            //this.data = data;
-            // Update state to loaded.
-            //this.state = StateEnum.Loaded;
-            // Call the callback.
-            console.log('got the data back');
             callback(null, data)
         })
 

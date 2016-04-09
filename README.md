@@ -4,7 +4,14 @@
 Aggregate information about events/groups from Meetup API, visualize topic popularity in cities as well as historical trends.
 
 ## SW Stack / Frameworks
-MEAN Stack (Mongo / Node / Express / Angular) + Python for data aggregation. 
+#### Database
+DynamoDB
+#### Cache
+Redis
+#### Web Stack
+Node/Express/Angular
+#### Scripts
+Python
 
 ## Team
 * Matt Bubernak Bubernak

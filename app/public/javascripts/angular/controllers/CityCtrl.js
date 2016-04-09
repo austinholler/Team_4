@@ -10,6 +10,8 @@
 // 3/27    MB       Added charts with sample data
 // 3/27    MB       Test run with real data.
 // 4/2     MB       Support for basic city information.
+// 4/9     MB       Buttons for filtering pie chart, and correct
+//                  queries for pie chart data.
 
 angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseService','$routeParams',function($scope,DatabaseService,$routeParams) {
     // City Name

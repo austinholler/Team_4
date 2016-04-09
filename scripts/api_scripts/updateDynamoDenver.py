@@ -40,33 +40,37 @@ def getUSEvents():
 	current_time = int (round(time.time()))*1000
 	tomorrow = current_time - 86400000
 
-	json_str = urllib.urlopen('https://api.meetup.com/2/open_events?key=80248d92f41752948556153452941&sign=true&photo-host=public&country=us&city=denver&state=co&time={},{}&topic={}&page=200&radius=15.0'.format(tomorrow, current_time, happy)).read()
-	
+	json_str = urllib.urlopen('https://api.meetup.com/2/open_events?key=80248d92f41752948556153452941&sign=true&photo-host=public&country=us&city=denver&state=co&fields=topics,category&time={},{}&omit=description,how_to_find_us,&page=200&radius=15.0'.format(tomorrow, current_time)).read()
 	parsed_json = json.loads(json_str)
 	
-			
 	arr_len = len(parsed_json['results'])
-
+		
 	while (parsed_json['meta']['next']): #and (parsed_json['results'][arr_len - 1]['members'] > 99)):
 				
 		#go to the next page
 		off += 1
-		json_str = urllib.urlopen('https://api.meetup.com/2/open_events?key=80248d92f41752948556153452941&sign=true&photo-host=public&country=us&offset={}&city=denver&state=co&time={},{}&page=200&radius=15.0'.format(off, current_time, tomorrow)).read()
-		parsed_json = json.loads(json_str)
+		print(off)
 				
-		arr_len = len(parsed_json['results'])
+		json_str = urllib.urlopen('https://api.meetup.com/2/open_events?key=80248d92f41752948556153452941&sign=true&photo-host=public&country=us&offset={}&city=denver&state=co&fields=topics,category&time={},{}&omit=description,how_to_find_us,&page=200&radius=15.0'.format(off, tomorrow, current_time)).read()
+		parsed_json = json.loads(json_str)	
+		
 			
-		#for x in xrange(arr_len):
+	
 			
 		#sleep prevents overuse of the API (200 calls/hr)
 		time.sleep(.40)
-		return parsed_json
 		
-	
-	return 0
+	arr_len = len(parsed_json['results'])
+	#for x in xrange(arr_len):
+		#print parsed_json['results'][x]		
+	return (parsed_json)
 
-def Process(parsed_json):
+def processJson(parsed_json):
 	print ('hi')
+	
+	#Create a dictionary, later turned into the JSON object/file
+	topic_dict = {}
+	
 	#Create total events/rsvps keys for later use	
 	topic_dict['num_events'] = 0
 	topic_dict['total_rsvps'] = 0
@@ -144,21 +148,19 @@ def Process(parsed_json):
 	
 	#Create a pretty json object and write new JSON file	
 	cityEvents = json.dumps(topic_dict, sort_keys=True, indent=4, separators=(',', ': '))
-	post_file = open('ProcessedCOCities/processed-{}-{}.json'.format(city, state), 'a')
-	post_file.write(cityEvents)
+	print(cityEvents)
+	#post_file = open('ProcessedCOCities/processed-{}-{}.json'.format('Denver', 'Colorado'), 'w')
+	#post_file.write(cityEvents)
 	
 	print("Processed Stuff!!!")
-	
-	return 0
-	
+
 def main():
 	
 	
 	
 	
-	getUSEvents()
-	Process(parsed_json)
-	
+	toProcess = getUSEvents()
+	processJson(toProcess)
 	return 0
 
 if __name__ == '__main__':

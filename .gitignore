@@ -1,5 +1,11 @@
 node_modules
 logs
 app/.idea/
+redis
+boto
+boto-2.39.0
+.idea
+secret.js
+
 
 

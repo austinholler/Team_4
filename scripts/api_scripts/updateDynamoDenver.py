@@ -40,12 +40,15 @@ from time import sleep
 
 def getUSEvents():
     off = 0
+    cities = ['boston', 'chicago', 'denver', 'houston', 'las vegas', 'new york', 'orlando', 'portland', 'san fransisco', 'seattle']
+    states = ['ma','il','co','tx','nv','ny','fl','or','ca','wa']
     current_time = int (round(time.time()))*1000
     tomorrow = current_time - 86400000
-
+    print('json starts here')
+    for city in ci
     json_str = urllib.urlopen('https://api.meetup.com/2/open_events?key=80248d92f41752948556153452941&sign=true&photo-host=public&country=us&city=denver&state=co&fields=topics,category&time={},{}&omit=description,how_to_find_us,&page=200&radius=15.0'.format(tomorrow, current_time)).read()
     parsed_json = json.loads(json_str)
-    
+    print('fuck json')
     arr_len = len(parsed_json['results'])
 		
     while (parsed_json['meta']['next']): #and (parsed_json['results'][arr_len - 1]['members'] > 99)):
@@ -197,7 +200,7 @@ def printProgress (iteration, total, prefix = '', suffix = '', decimals = 2, bar
     if iteration == total:
         print("\n")
         
-'''#AWS Connection String
+#AWS Connection String
 REGION = "us-west-2"
 conn = dynamodb2.connect_to_region(
     REGION,
@@ -213,31 +216,36 @@ if len(sys.argv) < 2:
 topics = Table(
     'topics_' + sys.argv[1],
     connection=conn
-)'''
+)
 
 def loadToDB(parsed_json):
     print('hi4')
-    data = parsed_json
+    data = json.loads(parsed_json)
+    items =1
     size = len(data)
     i = 0
-    printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
+    
     topics_list = []
-    for index,topic in enumerate(data['date']) :
-        topics_list.append(str(data[date][topic]["topic_id"]) + '#' + topic + '#' + data[date][topic]['category'] + '#' + ''.join(reversed(date.split('-'))) + '#' + str(data[date][topic]["score"]))
-        if len(topics_list) == 10 or index == len(data[date]) - 1 :
-          try:
-             with topics.batch_write() as batch:
-                 for item in topics_list:
-                     items = item.split('#')
-                     batch.put_item(data={'Name' : items[1] , 'Category' : items[2] ,'Date' : sys.argv[1] + items[3] ,'Score': Decimal(items[4])})
-                     #print items
-                 topics_list = []
-             sleep(0.18)
-          except :
-                  print sys.exc_info()[0], items
+    for date in data:
+        topics_list = []
+        for index,topic in enumerate(data[date]) :
+            topics_list.append(str(data[date][topic]["topic_id"]) + '#' + topic + '#' + data[date][topic]['category'] + '#' + ''.join(reversed(date.split('-'))) + '#' + str(data[date][topic]["score"]))
+            if len(topics_list) == 10 or index == len(data[date]) - 1 :
+              try:
+                 with topics.batch_write() as batch:
+                    for item in topics_list:
+                        items = item.split('#')
+                        batch.put_item(data={'Name' : items[1] , 'Category' : items[2] ,'Date' : sys.argv[1] + items[3] ,'Score': Decimal(items[4])})
+                        #print items
+                    topics_list = []
+                 sleep(0.18)
+              except :
+                 print sys.exc_info()[0], items
 
     printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
     i += 1
+    print ('this is working')
+    return 0
 	
 	
 def main():

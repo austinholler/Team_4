@@ -28,139 +28,227 @@
 #    
 
 import urllib
-import json
 import time
-import os
 import math
+import os, json
+from boto import dynamodb2
+from boto.dynamodb2.table import Table
+from decimal import Decimal
+import sys
+from time import sleep
 
 
 def getUSEvents():
-	
-	off = 0
-	current_time = int (round(time.time()))*1000
-	tomorrow = current_time - 86400000
+    off = 0
+    current_time = int (round(time.time()))*1000
+    tomorrow = current_time - 86400000
 
-	json_str = urllib.urlopen('https://api.meetup.com/2/open_events?key=80248d92f41752948556153452941&sign=true&photo-host=public&country=us&city=denver&state=co&fields=topics,category&time={},{}&omit=description,how_to_find_us,&page=200&radius=15.0'.format(tomorrow, current_time)).read()
-	parsed_json = json.loads(json_str)
-	
-	arr_len = len(parsed_json['results'])
+    json_str = urllib.urlopen('https://api.meetup.com/2/open_events?key=80248d92f41752948556153452941&sign=true&photo-host=public&country=us&city=denver&state=co&fields=topics,category&time={},{}&omit=description,how_to_find_us,&page=200&radius=15.0'.format(tomorrow, current_time)).read()
+    parsed_json = json.loads(json_str)
+    
+    arr_len = len(parsed_json['results'])
 		
-	while (parsed_json['meta']['next']): #and (parsed_json['results'][arr_len - 1]['members'] > 99)):
-				
-		#go to the next page
-		off += 1
-		print(off)
-				
-		json_str = urllib.urlopen('https://api.meetup.com/2/open_events?key=80248d92f41752948556153452941&sign=true&photo-host=public&country=us&offset={}&city=denver&state=co&fields=topics,category&time={},{}&omit=description,how_to_find_us,&page=200&radius=15.0'.format(off, tomorrow, current_time)).read()
-		parsed_json = json.loads(json_str)	
-		
-			
-	
-			
-		#sleep prevents overuse of the API (200 calls/hr)
-		time.sleep(.40)
-		
-	arr_len = len(parsed_json['results'])
-	#for x in xrange(arr_len):
-		#print parsed_json['results'][x]		
-	return (parsed_json)
+    while (parsed_json['meta']['next']): #and (parsed_json['results'][arr_len - 1]['members'] > 99)):
+        		
+        #go to the next page
+        off += 1
+        print(off)
+        json_str = urllib.urlopen('https://api.meetup.com/2/open_events?key=80248d92f41752948556153452941&sign=true&photo-host=public&country=us&offset={}&city=denver&state=co&fields=topics,category&time={},{}&omit=description,how_to_find_us,&page=200&radius=15.0'.format(off, tomorrow, current_time)).read()
+        parsed_json = json.loads(json_str)
+        
+        #sleep prevents overuse of the API (200 calls/hr)
+        time.sleep(.40)
+    return (parsed_json)
 
 def processJson(parsed_json):
-	print ('hi')
+    
+    #Create a dictionary, later turned into the JSON object/file
+    topic_dict = {}
+    
+    #Create total events/rsvps keys for later use	
+    topic_dict['num_events'] = 0
+    topic_dict['total_rsvps'] = 0
+    
+    arr_len = len(parsed_json['results'])
+    
+    #Iterating through each event in event JSON file for processing
+    for x in xrange(arr_len):
+        event = parsed_json['results'][x]
+        #Keeping events w/no attendance out
+        if event['yes_rsvp_count']:
+            #Converts milliseconds since epoch to when event occured
+            secs = (event['time'] + event['utc_offset'])/1000
+            time_struct = time.gmtime(secs)
+            date_format = time.strftime("%d-%m-%Y", time_struct)
+            
+            #Add to total event and rsvp count for later use
+            topic_dict['num_events'] += 1
+            topic_dict['total_rsvps'] += event['yes_rsvp_count']
+            
+            #Check for converted date in the dict
+            if not date_format in topic_dict:
+                
+                #Date key added to new dict w/a dict as value	
+                topic_dict[date_format] = {}
+                
+                #Iterate through an events topics	
+                for topic in event['group']['topics']:       
+                    #Check for topic key in above date dict
+                    if not topic['urlkey'] in topic_dict[date_format]:
+                        	
+                        #Topic key created and value added
+                        topic_dict[date_format][topic['urlkey']] = {}
+                        topic_dict[date_format][topic['urlkey']]['topic_id'] = topic['id']
+                        
+                        #Check for existence of 'category' in the current event
+                        #Apparently some groups/events aren't categorized
+                        if 'category' in event['group']:
+                            
+                            #Added category name/id to the above date dict
+                            topic_dict[date_format][topic['urlkey']]['category'] = event['group']['category']['shortname']
+                            topic_dict[date_format][topic['urlkey']]['category_id'] = event['group']['category']['id']
+                            
+                        #Else create a null category name/id as holder
+                        else:
+                            topic_dict[date_format][topic['urlkey']]['category'] = 'null'
+                            topic_dict[date_format][topic['urlkey']]['category_id'] = 'null'
+                            
+                        #Add a score to the new topic based on rsvps
+                        topic_dict[date_format][topic['urlkey']]['score'] = event['yes_rsvp_count']
+                    
+                    #Else add to dates topic score based on rsvps	
+                    else:
+                        topic_dict[date_format][topic['urlkey']]['score'] += event['yes_rsvp_count']
+            
+            #Date key's in created dictionary; the same basic process is
+            #followed as above but adding to date instead of creating it
+            else:
+                for topic in event['group']['topics']:                
+                   if not topic['urlkey'] in topic_dict[date_format]:
+                       topic_dict[date_format][topic['urlkey']] = {}
+                       topic_dict[date_format][topic['urlkey']]['topic_id'] = topic['id']
+                       if 'category' in event['group']:
+                           topic_dict[date_format][topic['urlkey']]['category'] = event['group']['category']['shortname']
+                           topic_dict[date_format][topic['urlkey']]['category_id'] = event['group']['category']['id']
+                       else:
+                           topic_dict[date_format][topic['urlkey']]['category'] = 'null'
+                           topic_dict[date_format][topic['urlkey']]['category_id'] = 'null'
+                       topic_dict[date_format][topic['urlkey']]['score'] = event['yes_rsvp_count']
+                   else:
+                       topic_dict[date_format][topic['urlkey']]['score'] += event['yes_rsvp_count']
+                       
+    #Create a pretty json object and write new JSON file	
+    #cityEvents = json.dumps(topic_dict, sort_keys=True, indent=4, separators=(',', ': '))
+    
+    
+    #Assign total events/rsvps variables
+    total_events = topic_dict['num_events']
+    total_rsvps = topic_dict['total_rsvps']
 	
-	#Create a dictionary, later turned into the JSON object/file
-	topic_dict = {}
+    #Determine the population mean
+    mean = total_rsvps/total_events
 	
-	#Create total events/rsvps keys for later use	
-	topic_dict['num_events'] = 0
-	topic_dict['total_rsvps'] = 0
+    #Delete the keys, they're no longer needed
+    del topic_dict['num_events']
+    del topic_dict['total_rsvps']
+    
+    #Declare variance numerator and denominator	
+    var_num = 0
+    var_den = 0
+    
+    #First loop through data to determine population variance		
+    for entry in topic_dict:
+        for topic in topic_dict[entry]:
+            var_num += topic_dict[entry][topic]['score']**2
+            var_den += 1
+    
+    #Declare and calculate population deviation (i.e. sqrt variance)
+    deviation = math.sqrt(var_num/var_den)
+    
+    #Second loop through data to update score to a normalized z-score
+    # z-score = absolute value of (score - pop. mean)/pop. deviation	
+    for entry in topic_dict:
+        for topic in topic_dict[entry]:
+            topic_dict[entry][topic]['score'] = abs((topic_dict[entry][topic]['score'] - mean)/deviation)
+            
+    #Create a pretty json, overwrite old JSON w/new JSON object
+    cityEvents = json.dumps(topic_dict, sort_keys=True, indent=4, separators=(',', ': '))
+    post_file = open('Denver', 'a')
+    post_file.write(cityEvents)
+    print('dude your getting a del')
 	
-	arr_len = len(parsed_json['results'])
+    return cityEvents
 	
-	#Iterating through each event in event JSON file for processing
-	for x in xrange(arr_len):
-		event = parsed_json['results'][x]
-		#Keeping events w/no attendance out	
-		if event['yes_rsvp_count']:
-			
-			#Converts milliseconds since epoch to when event occured
-			secs = (event['time'] + event['utc_offset'])/1000
-			time_struct = time.gmtime(secs)
-			date_format = time.strftime("%d-%m-%Y", time_struct)
-			
-			#Add to total event and rsvp count for later use
-			topic_dict['num_events'] += 1
-			topic_dict['total_rsvps'] += event['yes_rsvp_count']
-			
-			#Check for converted date in the dict
-			if not date_format in topic_dict:
-				
-				#Date key added to new dict w/a dict as value	
-				topic_dict[date_format] = {}
-				
-				#Iterate through an events topics	
-				for topic in event['group']['topics']:
-					
-					#Check for topic key in above date dict
-					if not topic['urlkey'] in topic_dict[date_format]:
-						
-						#Topic key created and value added
-						topic_dict[date_format][topic['urlkey']] = {}
-						topic_dict[date_format][topic['urlkey']]['topic_id'] = topic['id']
-						
-						#Check for existence of 'category' in the current event
-						#Apparently some groups/events aren't categorized
-						if 'category' in event['group']:
-							
-							#Added category name/id to the above date dict
-							topic_dict[date_format][topic['urlkey']]['category'] = event['group']['category']['shortname']
-							topic_dict[date_format][topic['urlkey']]['category_id'] = event['group']['category']['id']
-							
-						#Else create a null category name/id as holder
-						else:
-							topic_dict[date_format][topic['urlkey']]['category'] = 'null'
-							topic_dict[date_format][topic['urlkey']]['category_id'] = 'null'
-						
-						#Add a score to the new topic based on rsvps
-						topic_dict[date_format][topic['urlkey']]['score'] = event['yes_rsvp_count']
-					
-					#Else add to dates topic score based on rsvps	
-					else:
-						topic_dict[date_format][topic['urlkey']]['score'] += event['yes_rsvp_count']
-			
-			#Date key's in created dictionary; the same basic process is
-			#followed as above but adding to date instead of creating it
-			else:
-				for topic in event['group']['topics']:
-				
-					if not topic['urlkey'] in topic_dict[date_format]:
-						topic_dict[date_format][topic['urlkey']] = {}
-						topic_dict[date_format][topic['urlkey']]['topic_id'] = topic['id']
-						if 'category' in event['group']:
-							topic_dict[date_format][topic['urlkey']]['category'] = event['group']['category']['shortname']
-							topic_dict[date_format][topic['urlkey']]['category_id'] = event['group']['category']['id']
-						else:
-							topic_dict[date_format][topic['urlkey']]['category'] = 'null'
-							topic_dict[date_format][topic['urlkey']]['category_id'] = 'null'
-						topic_dict[date_format][topic['urlkey']]['score'] = event['yes_rsvp_count']
-					else:
-						topic_dict[date_format][topic['urlkey']]['score'] += event['yes_rsvp_count']
-	
-	#Create a pretty json object and write new JSON file	
-	cityEvents = json.dumps(topic_dict, sort_keys=True, indent=4, separators=(',', ': '))
-	print(cityEvents)
-	#post_file = open('ProcessedCOCities/processed-{}-{}.json'.format('Denver', 'Colorado'), 'w')
-	#post_file.write(cityEvents)
-	
-	print("Processed Stuff!!!")
+# Print iterations progress
+def printProgress (iteration, total, prefix = '', suffix = '', decimals = 2, barLength = 100):
+    """
+    Call in a loop to create terminal progress bar
+    @params:
+        iterations  - Required  : current iteration (Int)
+        total       - Required  : total iterations (Int)
+        prefix      - Optional  : prefix string (Str)
+        suffix      - Optional  : suffix string (Str)
+    """
+    filledLength    = int(round(barLength * iteration / float(total)))
+    percents        = round(100.00 * (iteration / float(total)), decimals)
+    bar             = '#' * filledLength + '-' * (barLength - filledLength)
+    sys.stdout.write('%s [%s] %s%s %s\r' % (prefix, bar, percents, '%', suffix)),
+    sys.stdout.flush()
+    if iteration == total:
+        print("\n")
+        
+'''#AWS Connection String
+REGION = "us-west-2"
+conn = dynamodb2.connect_to_region(
+    REGION,
+    aws_access_key_id='xxxxxxxxxxxxxx',
+    aws_secret_access_key='xxxxxxxxxxxxxxxxxxxx',
+    is_secure = False,
+)
 
+#DynamoDB Table
+if len(sys.argv) < 2:
+    sys.exit('Usage: %s CityCode Filepath' % sys.argv[0])
+
+topics = Table(
+    'topics_' + sys.argv[1],
+    connection=conn
+)'''
+
+def loadToDB(parsed_json):
+    print('hi4')
+    data = parsed_json
+    size = len(data)
+    i = 0
+    printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
+    topics_list = []
+    for index,topic in enumerate(data['date']) :
+        topics_list.append(str(data[date][topic]["topic_id"]) + '#' + topic + '#' + data[date][topic]['category'] + '#' + ''.join(reversed(date.split('-'))) + '#' + str(data[date][topic]["score"]))
+        if len(topics_list) == 10 or index == len(data[date]) - 1 :
+          try:
+             with topics.batch_write() as batch:
+                 for item in topics_list:
+                     items = item.split('#')
+                     batch.put_item(data={'Name' : items[1] , 'Category' : items[2] ,'Date' : sys.argv[1] + items[3] ,'Score': Decimal(items[4])})
+                     #print items
+                 topics_list = []
+             sleep(0.18)
+          except :
+                  print sys.exc_info()[0], items
+
+    printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
+    i += 1
+	
+	
 def main():
 	
 	
 	
 	
 	toProcess = getUSEvents()
-	processJson(toProcess)
+	normalizedData = processJson(toProcess)
+	loadToDB(normalizedData)
+	
 	return 0
 
 if __name__ == '__main__':

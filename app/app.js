@@ -10,13 +10,7 @@
 // 3/22    MB       Routing for index fix
 // 3/25    MB       CORS usage implemented.
 // 4/2     MB       LoDash module
-
-
-// Const
-const region = "us-west-2";
-//const dbLocatsion = "http://localhost:8000";
-const accessKey = "";
-const secretAccessKey =  "";
+// 4/9     MB       cacheHandler connection
 
 
 // Modules
@@ -30,19 +24,30 @@ var bodyParser = require('body-parser');
 var cors = require("cors");
 var routes = require('./routes/index');
 var api = require('./routes/api');
-var dbHandler = require("./dbHandler")
+var dbHandler = require("./dbHandler");
+var cacheHandler = require("./cacheHandler");
+var secret = require("./secret.js");
 var _ = require('lodash');
 
-
+// Const
+const region = "us-west-2";
+const cacheURL = secret.cacheURL;
+const accessKey = secret.accessKey;
+const secretAccessKey =  secret.secretAccessKey;
 
 // Application
 var app = express();
 
-// Set dbHandler so it can be accessed in routes.
+// Set modules that need to be accessed in other routes.
 app.set('dbHandler',dbHandler)
+app.set('cacheHandler',cacheHandler)
+app.set('_',_)
 
 // DB Connection
 dbHandler.connect(region,accessKey,secretAccessKey);
+
+// Cache Connection
+cacheHandler.init(cacheURL);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

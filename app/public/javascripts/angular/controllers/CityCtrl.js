@@ -12,6 +12,7 @@
 // 4/2     MB       Support for basic city information.
 // 4/9     MB       Buttons for filtering pie chart, and correct
 //                  queries for pie chart data.
+// 4/9     MB       fixed accumulation of category hash bug.
 
 angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseService','$routeParams',function($scope,DatabaseService,$routeParams) {
     // City Name
@@ -21,6 +22,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     $scope.topicDataLoaded = false;
     $scope.categoryDataLoaded = false;
     $scope.cityDataLoaded = false;
+    $scope.topicCacheDataLoaded = false;
 
     //$scope.buttons = [{'text': 'week','selected':false},{'text': 'month','selected':true},{'text': 'year','selected':false},{'text': 'history','selected':false}]
     $scope.pieFilter = 'Month';
@@ -29,6 +31,8 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     $scope.cityData = null;
     var categoryData = null;
     var topicData = null;
+    var topicCacheDataMap = null;
+    $scope.topicCacheDataArr = null;
 
     // Pie Chart Vars
     var ctxPie = null;
@@ -76,6 +80,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     function drawPieChart(data) {
         var chartData = [];
         var scoreSum = 0;
+        $scope.categoryHash = {};
         // Sum up all same-category entries
         for (var i = 0; i < data.length; i++){
             scoreSum += data[i]['Score'];
@@ -130,6 +135,19 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         console.log($scope.cityData);
 
     })
+
+    // Async call to load cache data.
+    DatabaseService.getData("cache",{'code':$scope.code},function(err,data) {
+        topicCacheDataMap = data.data;
+        console.log("Got Cache Data:");
+        console.log(topicCacheDataMap);
+        $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {
+            return {"topic" : key, "score" : Number(topicCacheDataMap[key]) }
+        })
+        console.log($scope.topicCacheDataArr);
+        $scope.topicCacheDataLoaded = true;
+    });
+
 
 
     // Async call to load data for this city pie chart.

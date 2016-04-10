@@ -11,7 +11,7 @@
 // 4/2     MB       Supports more robust city query.
 // 4/8     MB       Removed state related code, added support
 //                  for new query types.
-
+// 4/9     MB       Supports basic cache query.
 
 var StateEnum = {Loaded:1, Loading:2, NotLoaded:3}
 
@@ -25,8 +25,18 @@ angular.module('DBService', []).service('DatabaseService', function($http,$q) {
         // queryURLBase must be changed to ec2 URL for running in prod.
         var queryURLBase = 'http://localhost:3000/api/'
 
+        // Query to cache endpoint.
+        if (db.toLowerCase() == "cache") {
+            if (params['code'] != undefined) {
+                var queryURL = queryURLBase + "cache/" + params['code'];
+            }
+            else {
+                console.log('DBService.getData: Invalid params for cache request.');
+            }
+        }
+
         // Query to topics table.
-        if (db.toLowerCase() == "topics") {
+        else if (db.toLowerCase() == "topics") {
             if (params['start'] != undefined && params['end'] != undefined) {
                 var queryURL = queryURLBase + "topics/" + params['code'] + "/all/" + params['start'] + "/" + params['end']
             }

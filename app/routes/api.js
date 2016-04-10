@@ -11,6 +11,7 @@
 // 4/2    MB        Supports more robust city query.
 // 4/3    MB        Fixed error message to reference correct api path
 // 4/9    MB        Support for new category/topic queries.
+// 4/10   MB        Supports request for cache data.
 
 var express = require('express');
 var router = express.Router();
@@ -23,8 +24,9 @@ router.get('/', function(req, res, next) {
   // Boolean indicating whether the query should be processed.
   var validQuery = true;
 
-  // get access to dbHandler
+  // get access to dbHandler and cacheHandler
   var dbHandler = req.app.get('dbHandler');
+  var cacheHandler = req.app.get('cacheHandler');
 
   // This contains all of the parameters from the api request.
   var reqObj = {}
@@ -118,8 +120,26 @@ router.get('/', function(req, res, next) {
       })
 
   }
+
+  // Query for cached data for city
+  else if (parts[2] == "cache") {
+    console.log("API Request for cache");
+    if (parts.length > 3) {
+      reqObj["code"] = parts[3];
+    }
+    cacheHandler.getCacheEntry(reqObj["code"], function (err, data) {
+      if (err) {
+        res.send("Cache Lookup Fialed")
+      }
+      else {
+        res.send(data)
+      }
+    })
+
+  }
+
   else {
-    res.send("Invalid endpoint. Valid Endpoints: api/topics , api/citylist");
+    res.send("Invalid endpoint. Valid Endpoints: api/topics , api/citylist, api/categories, api/cache/[cityCode]");
       }
 });
 

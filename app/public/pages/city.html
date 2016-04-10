@@ -46,6 +46,7 @@
 
 <div class="row">
     <div class="col s2 ">
+        <h5 class="text-center center-align"><b>Legend</b></h5>
         <div id="pieChartLegend" class="chart-legend"></div>
     </div>
     <div class="col s4 ">
@@ -66,10 +67,19 @@
     </div>
 
 
-    <div class="col s6 ">
+    <div class="col s4 ">
         <h5 class="text-center center-align"><b>Historic Trends</b></h5>
         <canvas class="text-center" id="lineChart" width="400" height="400"></canvas>
 
+    </div>
+
+    <div class="col s2 ">
+        <h5 class="text-center center-align"><b>Trending Topics</b></h5>
+        <div ng-show="topicCacheDataLoaded">
+            <ol>
+                <li ng-repeat="topic in topicCacheDataArr | orderBy:'-score':reverse | limitTo:10"> {{topic.topic}}</li>
+            </ol>
+        </div>
     </div>
 </div>
 

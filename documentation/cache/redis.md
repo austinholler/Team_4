@@ -9,4 +9,12 @@ set testkey "testvalue"
 # get element from redis: 
 get testkey
 
+# windows install of redis
+Download from: 
+https://github.com/dmajkic/redis/downloads
+Run: 
+redis-server.exe
+
+
+
 

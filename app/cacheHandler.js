@@ -14,30 +14,29 @@ var redis = require("redis");
 var productionMode = false;
 var client;
 
+// Connect to redis.
 CacheHandler.init = function(cacheURL) {
     console.log("CacheHandler: Initialized.")
-
     if (productionMode) {
         client = redis.createClient(6379, cacheURL, {no_ready_check: true});
     }
     else {
         client = redis.createClient();
     }
-
     client.on("error", function (err) {
         console.log("Error " + err);
     });
+    console.log("CacheHandler: Connected to REDIS.")
+};
 
-    CacheHandler.getCacheEntry("HOU");
-
-
-}
-
-CacheHandler.getCacheEntry = function(code){
+// Grabs all cache data for the following city code.
+CacheHandler.getCacheEntry = function(code, callback){
+    console.log("CacheHandler.getCacheEntry: Cache request for city:" + code);
     client.hgetall(code, function (err,obj) {
-        console.log(obj);
+        callback(null,obj);
     })
-}
+
+};
 
 // Export the module
 module.exports = CacheHandler;

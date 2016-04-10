@@ -10,22 +10,29 @@
 // 3/27    MB       Added charts with sample data
 // 3/27    MB       Test run with real data.
 // 4/2     MB       Support for basic city information.
+// 4/9     MB       Buttons for filtering pie chart, and correct
+//                  queries for pie chart data.
 
 angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseService','$routeParams',function($scope,DatabaseService,$routeParams) {
     // City Name
     $scope.code = $routeParams.code;
 
-    // Data for the city, comes from DBService
-    $scope.dataLoaded = false;
+    // Booleans that control content display.
+    $scope.topicDataLoaded = false;
+    $scope.categoryDataLoaded = false;
+    $scope.cityDataLoaded = false;
 
-    // Info about the city, comes from DBService
-    $scope.infoLoaded = false;
+    //$scope.buttons = [{'text': 'week','selected':false},{'text': 'month','selected':true},{'text': 'year','selected':false},{'text': 'history','selected':false}]
+    $scope.pieFilter = 'Month';
 
-    // Info about the city(i.e. lat/lon/name/etc)
-    $scope.cityInfo = null;
-
-    // Data for the city.
+    // Store data that has been loaded for this controller.
     $scope.cityData = null;
+    var categoryData = null;
+    var topicData = null;
+
+    // Pie Chart Vars
+    var ctxPie = null;
+    var myPieChart = null;
 
     // Number of records we have for our data.
     $scope.recordCount = 0;
@@ -60,7 +67,13 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     };
 
     // NOTE: Logic in here is pretty janky. Just testing things out.
-    $scope.drawPieChart = function(data) {
+
+    function initPieChart() {
+        ctxPie = document.getElementById("pieChart").getContext("2d");
+        $scope.reloadPieChart();
+    }
+
+    function drawPieChart(data) {
         var chartData = [];
         var scoreSum = 0;
         // Sum up all same-category entries
@@ -77,8 +90,6 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         // Count number of categories
         var keys = Object.keys($scope.categoryHash)
         var numKeys = keys.length;
-        //console.log('there are:' + numKeys + 'keys')
-        //console.log(keys)
         // Create a data point for each category
         for (var i = 0; i < numKeys; i++)
         {
@@ -92,15 +103,19 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
             })
         }
 
-        var ctxPie = document.getElementById("pieChart").getContext("2d");
-        var myPieChart = new Chart(ctxPie).Pie(chartData,{
+        // Load Chart
+        if (myPieChart != null) {
+            myPieChart.destroy();
+        }
+        myPieChart = new Chart(ctxPie).Pie(chartData, {
             tooltipTemplate: "<%= label %> : <%= value %>%"
         });
+
         document.getElementById('pieChartLegend').innerHTML = myPieChart.generateLegend();
 
     }
 
-    $scope.drawLineChart = function(data) {
+    function drawLineChart(data) {
         //var ctxLine = document.getElementById("lineChart").getContext("2d");
         //var myLineChart = new Chart(ctxLine).Line(data, {});
 
@@ -109,22 +124,49 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
 
     // Async call to load info for this city.
     DatabaseService.getData("citylist",{'code':$scope.code},function(err,data) {
-        $scope.infoLoaded = true;
-        $scope.cityInfo = data.data.Items[0];
-        $scope.cityInfo.imgURL = "images/stateIcons/state-" + $scope.cityInfo.stateFull.toLowerCase() + ".png";
-        console.log($scope.cityData)
-    })
+        $scope.cityDataLoaded = true;
+        $scope.cityData = data.data.Items[0];
+        $scope.cityData.imgURL = "images/stateIcons/state-" + $scope.cityData.stateFull.toLowerCase() + ".png";
+        console.log($scope.cityData);
 
-    // Async call to load data for this city.
-    DatabaseService.getData("topics",{'code':$scope.code},function(err,data) {
-        $scope.dataLoaded = true;
-        $scope.cityData = data.data.Items;
-        $scope.recordCount = $scope.cityData.length;
-        $scope.drawLineChart($scope.cityData)
-        $scope.drawPieChart($scope.cityData)
     })
 
 
+    // Async call to load data for this city pie chart.
+    function loadCategoryDataRange(start,end) {
+        DatabaseService.getData("categories", {
+            'code': $scope.code,
+            'category': 'all',
+            'start': start,
+            'end': end
+        }, function (err, data) {
+            $scope.categoryDataLoaded = true;
+            categoryData = data.data.Items;
+            $scope.recordCount = categoryData.length;
+            drawPieChart(categoryData)
+        })
+    }
+
+    $scope.reloadPieChart = function(){
+        console.log('Reloading chart');
+        $scope.categoryDataLoaded = false;
+        var start;
+        var rightNow = new Date();
+
+        // Calculate end
+        var end = rightNow.toISOString().slice(0,10).replace(/-/g,"");
+
+        // Calculate start
+        if ($scope.pieFilter == 'Week') { start = new Date(rightNow.setDate(rightNow.getDate() -7 )) }
+        else if ($scope.pieFilter == 'Month') { start = new Date(rightNow.setMonth(rightNow.getMonth() - 1)) }
+        else if ($scope.pieFilter == 'Year') { start = new Date(rightNow.setMonth(rightNow.getMonth() - 12)) }
+        else if ($scope.pieFilter == 'Complete') { start = new Date(rightNow.setMonth(rightNow.getMonth() - 120)) }
+        start = start.toISOString().slice(0,10).replace(/-/g,"");
+
+        loadCategoryDataRange(start,end);
+    }
+
+    initPieChart();
 
     //var myNewChart = new Chart(ctx).PolarArea(data);
 

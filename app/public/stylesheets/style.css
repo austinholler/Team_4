@@ -42,3 +42,8 @@ canvas {
 html, body {
   height:100%
 }
+
+.activeButton {
+  color: #e57373;
+  background-color: #e57373;
+}

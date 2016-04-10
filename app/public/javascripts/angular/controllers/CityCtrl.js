@@ -22,6 +22,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     $scope.topicDataLoaded = false;
     $scope.categoryDataLoaded = false;
     $scope.cityDataLoaded = false;
+    $scope.topicCacheDataLoaded = false;
 
     //$scope.buttons = [{'text': 'week','selected':false},{'text': 'month','selected':true},{'text': 'year','selected':false},{'text': 'history','selected':false}]
     $scope.pieFilter = 'Month';
@@ -30,6 +31,8 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     $scope.cityData = null;
     var categoryData = null;
     var topicData = null;
+    var topicCacheDataMap = null;
+    $scope.topicCacheDataArr = null;
 
     // Pie Chart Vars
     var ctxPie = null;
@@ -132,6 +135,19 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         console.log($scope.cityData);
 
     })
+
+    // Async call to load cache data.
+    DatabaseService.getData("cache",{'code':$scope.code},function(err,data) {
+        topicCacheDataMap = data.data;
+        console.log("Got Cache Data:");
+        console.log(topicCacheDataMap);
+        $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {
+            return {"topic" : key, "score" : Number(topicCacheDataMap[key]) }
+        })
+        console.log($scope.topicCacheDataArr);
+        $scope.topicCacheDataLoaded = true;
+    });
+
 
 
     // Async call to load data for this city pie chart.

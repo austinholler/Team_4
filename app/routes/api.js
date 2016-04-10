@@ -11,6 +11,7 @@
 // 4/2    MB        Supports more robust city query.
 // 4/3    MB        Fixed error message to reference correct api path
 // 4/9    MB        Support for new category/topic queries.
+// 4/10   MB        Supports request for cache data.
 
 var express = require('express');
 var router = express.Router();

@@ -12,6 +12,7 @@
 // 4/2     MB       Support for basic city information.
 // 4/9     MB       Buttons for filtering pie chart, and correct
 //                  queries for pie chart data.
+// 4/9     MB       fixed accumulation of category hash bug.
 
 angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseService','$routeParams',function($scope,DatabaseService,$routeParams) {
     // City Name
@@ -76,6 +77,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     function drawPieChart(data) {
         var chartData = [];
         var scoreSum = 0;
+        $scope.categoryHash = {};
         // Sum up all same-category entries
         for (var i = 0; i < data.length; i++){
             scoreSum += data[i]['Score'];

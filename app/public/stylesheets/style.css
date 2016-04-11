@@ -47,3 +47,24 @@ html, body {
   color: #e57373;
   background-color: #e57373;
 }
+
+.profileIconBar {
+  padding-bottom: 10px;
+}
+.profileFaceImg {
+  width:50%;
+}
+.profileName {
+  padding-top: 10px;
+}
+
+.aboutHeader {
+  color: #616161;
+}
+
+.aboutText {
+  color: #616161;
+  min-height: 75px;
+  padding-left: 5px;
+  padding-right: 5px;
+}

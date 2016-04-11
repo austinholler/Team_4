@@ -26,7 +26,16 @@
 </div>
 
 <div class="row">
-    <div class="col s9">
+    <div class="col s3 ">
+        <h5 class="text-center center-align"><b>Weekly Trending Topics USA</b></h5>
+        <div ng-show="topicTrendDataLoaded" class="wow slideInLeft">
+            <ol>
+                <li class="top-topic" ng-repeat="topic in topicCacheDataArr | orderBy:'-score':reverse | limitTo:10"> <div class="capitalize">{{topic.topic}}</div></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="col s6">
         <div id="mapid" style="width:100%; margin-left:auto; margin-right:auto;"></div>
         <div><p style="text-align: center; color:#616161">We support all cities displayed above.</p></div>
     </div>

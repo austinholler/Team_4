@@ -68,3 +68,20 @@ html, body {
   padding-left: 5px;
   padding-right: 5px;
 }
+.top-topic {
+  font-size: 20px;
+}
+
+ol { counter-reset: item; }
+ol li { display: block; }
+ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: red;
+}
+.capitalize {
+  display: inline-block;
+}
+.capitalize::first-letter {
+  text-transform: uppercase;
+}

@@ -1,10 +1,12 @@
-// loadCache.py
-// Created by: Matt Bubernak
+# loadCache.py
+# Created by: Matt Bubernak
 
-// Edit History
-// Date    Author   Description
-// =====================================================================
-// 4/9     MB       File Creation
+# Edit History
+# Date    Author   Description
+# =====================================================================
+# 4/9     MB       File Creation
+# 4/10    MB       Supports 'all' cache entries. 
+# 4/10    MB       Read keys from secret file. 
 
 import os, json
 from boto import dynamodb2
@@ -17,10 +19,17 @@ import redis
 
 #AWS Connection String
 REGION = "us-west-2"
+
+# Read secret data
+keyFile = open('secret.txt', 'r')
+aws_access = keyFile.readline().rstrip()
+aws_access_secret = keyFile.readline().rstrip()
+
+
 conn = dynamodb2.connect_to_region(
     REGION,
-    aws_access_key_id='',
-    aws_secret_access_key='',
+    aws_access_key_id=aws_access,
+    aws_secret_access_key=aws_access_secret,
     is_secure = False,
 )
 
@@ -61,6 +70,9 @@ def getDataWeek ():
 	
 	# Scan data for each city and add it to a hash. 
 	print("Start:" + start + " End: " + end)
+	# Add entry for "all"
+	masterHash['ALL'] = {}
+
 	for city in data:
 		code = city['code'] 
 		# New nested hash for this city.
@@ -77,6 +89,12 @@ def getDataWeek ():
 					masterHash[code][dataPoint['Name']] = dataPoint['Score']
 				else: 
 					masterHash[code][dataPoint['Name']] += dataPoint['Score']
+
+				# Also update the global cache: ALL
+				if dataPoint['Name'] not in masterHash['ALL']: 
+					masterHash['ALL'][dataPoint['Name']] = dataPoint['Score']
+				else: 
+					masterHash['ALL'][dataPoint['Name']] += dataPoint['Score']
 	return masterHash
 
 def loadDataRedis ():

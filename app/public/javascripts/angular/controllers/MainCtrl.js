@@ -7,16 +7,31 @@
 // 3/1    MB       File Creation
 // 3/25   MB       Live datta now pulled from server.
 // 3/27   MB       Modified pin selection to redirect using code.
+// 4/10   MB       Load trending global topics from cache.
 
 (function(angular) {
     'use strict';
     angular.module('MainCtrl', []).controller('MainController',['$scope','DatabaseService', function($scope,DatabaseService) {
-        console.log('back');
-        $scope.test = 'nud';
+
         // Data for the city, comes from DBService
         $scope.dataLoaded = false;
+        $scope.topicTrendDataLoaded = false;
 
         $scope.cityListData = null;
+        $scope.topicCacheDataArr = null;
+        var topicCacheDataMap = null;
+
+        // Async call to load cache data.
+        DatabaseService.getData("cache",{'code':'ALL'},function(err,data) {
+            topicCacheDataMap = data.data;
+            $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {
+                return {"topic" : key, "score" : Number(topicCacheDataMap[key]) }
+            })
+            $scope.topicTrendDataLoaded = true;
+        });
+
+
+
 
         // Leaflet stuff
         var mymap = L.map('mapid').setView([39.5, -98.35], 4);
@@ -24,9 +39,6 @@
             attribution:'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
             maxZoom: 18,
         }).addTo(mymap);
-
-        // Should figure this out dynamically in future
-        //$scope.cities = [{city:'Denver',state:'CO'},{city:'Boulder',state:'CO'},{city:'Broomfield',state:'CO'},{city:'Superior',state:'CO'},{city:'Austin',state:'TX'}];
 
         DatabaseService.getData('citylist',{},function(err,data) {
             $scope.dataLoaded = true;
@@ -41,11 +53,6 @@
                     this.closePopup();
                 });
                 marker.on('click',markerOnClick);
-
-                /*function (e) {
-                    console.log("city/" + curCity.state + "/" + curCity.name);
-                    document.location.href = "city/" + curCity.state + "/" + curCity.name;
-                });*/
 
                 marker.addTo(mymap);
             }

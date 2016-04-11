@@ -12,6 +12,7 @@
 // 4/3    MB        Fixed error message to reference correct api path
 // 4/9    MB        Support for new category/topic queries.
 // 4/10   MB        Supports request for cache data.
+// 4/10   MB        Support 'all' request.
 
 var express = require('express');
 var router = express.Router();
@@ -125,17 +126,19 @@ router.get('/', function(req, res, next) {
   else if (parts[2] == "cache") {
     console.log("API Request for cache");
     if (parts.length > 3) {
-      reqObj["code"] = parts[3];
+      var code = parts[3];
+      cacheHandler.getCacheEntry(code, function (err, data) {
+        if (err) {
+          res.send("Cache Lookup Fialed")
+        }
+        else {
+          res.send(data)
+        }
+      })
     }
-    cacheHandler.getCacheEntry(reqObj["code"], function (err, data) {
-      if (err) {
-        res.send("Cache Lookup Fialed")
-      }
-      else {
-        res.send(data)
-      }
-    })
-
+    else {
+      res.send("Invalid request to cache. /api/cache/[code] OR /api/cache/ALL")
+    }
   }
 
   else {

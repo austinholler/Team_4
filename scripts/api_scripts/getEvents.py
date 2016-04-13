@@ -239,9 +239,9 @@ def main():
 			print("Working with group id: " + str(idNum))
 		
 			print("Doing Past")
-			getUSEvents("past", idNum, state, city, rating, mem_count)
-			print("Doing Upcoming")
-			filehandle = getUSEvents("upcoming", idNum, state, city, rating, mem_count)
+			filehandle = getUSEvents("past", idNum, state, city, rating, mem_count)
+			'''print("Doing Upcoming")
+			getUSEvents("upcoming", idNum, state, city, rating, mem_count)'''
 		
 		#This gets rid of the last comma and puts the end on the JSON
 		with open(filehandle, 'rb+') as x:

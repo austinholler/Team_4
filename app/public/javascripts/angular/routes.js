@@ -10,6 +10,7 @@
 // 3/24   MB       Parameters for city routing.
 // 3/27   MB       Route for city changes to use code.
 // 4/14   MB       Support for topic page.
+// 4/14   MB       Fixed link for topic page.
 
 angular.module('routes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
@@ -25,7 +26,7 @@ angular.module('routes', []).config(['$routeProvider', '$locationProvider', func
             templateUrl: 'pages/city.html',
             controller: 'CityController'
         })
-        .when('/topic/:topicName', {
+        .when('/topic/:topic', {
             templateUrl: 'pages/topic.html',
             controller: 'TopicController'
         })

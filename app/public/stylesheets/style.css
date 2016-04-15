@@ -85,3 +85,14 @@ ol li:before {
 .capitalize::first-letter {
   text-transform: uppercase;
 }
+
+.topicTitle {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.rankNumber {
+  font-size: 75px;
+  color: #e57373;
+}

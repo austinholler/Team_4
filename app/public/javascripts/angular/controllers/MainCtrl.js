@@ -8,6 +8,7 @@
 // 3/25   MB       Live datta now pulled from server.
 // 3/27   MB       Modified pin selection to redirect using code.
 // 4/10   MB       Load trending global topics from cache.
+// 4/14   MB       Added links to topics.
 
 (function(angular) {
     'use strict';
@@ -25,7 +26,7 @@
         DatabaseService.getData("cache",{'code':'ALL'},function(err,data) {
             topicCacheDataMap = data.data;
             $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {
-                return {"topic" : key, "score" : Number(topicCacheDataMap[key]) }
+                return {"topic" : key, "score" : Number(topicCacheDataMap[key]), "url" : "topic/" + key}
             })
             $scope.topicTrendDataLoaded = true;
         });

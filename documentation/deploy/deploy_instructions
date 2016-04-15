@@ -1,7 +1,8 @@
 1. SSH to AWS
 2. From Team_4 directory, "git pull" (may need to git stash first)
-3. Modify secret.js to have correct secret keys. 
+3. Modify secret.js to have correct secret keys. (if it doesn't already)
 4. Modify app/public/javascripts/services/DBService to point to ec2 public url instead of localhost
 5. Edit cacheHandler.js and switch "prod" boolean. 
-6. Sudo forever start app.js
+6. Edit scripts/loadCache.py and switch localhost to the URL of the redis cluster
+7. Sudo forever start app.js
 

@@ -125,9 +125,10 @@ router.get('/', function(req, res, next) {
   // Query for cached data for city
   else if (parts[2] == "cache") {
     console.log("API Request for cache");
+    todayString = (new Date()).toISOString().slice(0,10).replace(/-/g,"")
     if (parts.length > 3) {
       var code = parts[3];
-      cacheHandler.getCacheEntry(code, function (err, data) {
+      cacheHandler.getCacheEntry('TOP',code,todayString, function (err, data) {
         if (err) {
           res.send("Cache Lookup Fialed")
         }

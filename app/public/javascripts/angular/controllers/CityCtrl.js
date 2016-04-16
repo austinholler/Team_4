@@ -13,6 +13,7 @@
 // 4/9     MB       Buttons for filtering pie chart, and correct
 //                  queries for pie chart data.
 // 4/9     MB       fixed accumulation of category hash bug.
+// 4/15    MB       Support for topic links.
 
 angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseService','$routeParams',function($scope,DatabaseService,$routeParams) {
     // City Name
@@ -142,7 +143,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         console.log("Got Cache Data:");
         console.log(topicCacheDataMap);
         $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {
-            return {"topic" : key, "score" : Number(topicCacheDataMap[key]) }
+            return {"topic" : key, "score" : Number(topicCacheDataMap[key]), "url" : "topic/" + key}
         })
         console.log($scope.topicCacheDataArr);
         $scope.topicCacheDataLoaded = true;

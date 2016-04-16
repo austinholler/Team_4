@@ -77,7 +77,7 @@
         <h5 class="text-center center-align"><b>Trending Topics</b></h5>
         <div ng-show="topicCacheDataLoaded" class="wow slideInRight">
             <ol>
-                <li ng-repeat="topic in topicCacheDataArr | orderBy:'-score':reverse | limitTo:10"> <div class="capitalize">{{topic.topic}}</div></li>
+                <li ng-repeat="topic in topicCacheDataArr | orderBy:'-score':reverse | limitTo:10"> <div class="capitalize"><a href={{topic.url}}> {{topic.topic}}</a></div></li>
             </ol>
         </div>
     </div>

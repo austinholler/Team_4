@@ -140,7 +140,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
 
     // Async call to load cache data.
     var yearMonth = (new Date()).toISOString().slice(0,10).replace(/-/g,"").slice(0, -2);
-    DatabaseService.getData("cache",{'code':$scope.code,'type':'cat','time':yearMonth},function(err,data) {
+    DatabaseService.getData("cache",{'code':$scope.code,'type':'top','time':yearMonth},function(err,data) {
         topicCacheDataMap = data.data;
         console.log("Got Cache Data:");
         console.log(topicCacheDataMap);

@@ -13,6 +13,7 @@
 // 4/9    MB        Support for new category/topic queries.
 // 4/10   MB        Supports request for cache data.
 // 4/10   MB        Support 'all' request.
+// 4/17   MB        New cache reqest format.
 
 var express = require('express');
 var router = express.Router();
@@ -126,9 +127,15 @@ router.get('/', function(req, res, next) {
   else if (parts[2] == "cache") {
     console.log("API Request for cache");
     todayString = (new Date()).toISOString().slice(0,10).replace(/-/g,"")
-    if (parts.length > 3) {
-      var code = parts[3];
-      cacheHandler.getCacheEntry('TOP',code,todayString, function (err, data) {
+    if (parts.length >4) {
+      var type = parts[3];
+      var code = parts[4];
+      var date = ""
+      if (parts.length > 5) {
+        var date = parts[5]
+      }
+
+      cacheHandler.getCacheEntry(type,code,date, function (err, data) {
         if (err) {
           res.send("Cache Lookup Fialed")
         }
@@ -138,7 +145,7 @@ router.get('/', function(req, res, next) {
       })
     }
     else {
-      res.send("Invalid request to cache. /api/cache/[code] OR /api/cache/ALL")
+      res.send("Invalid request to cache. /api/cache/[type]/[code]/[yyyy OR YYYYMM OR YYYYMMDD]")
     }
   }
 

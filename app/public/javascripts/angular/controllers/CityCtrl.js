@@ -14,6 +14,7 @@
 //                  queries for pie chart data.
 // 4/9     MB       fixed accumulation of category hash bug.
 // 4/15    MB       Support for topic links.
+// 4/17    MB       Queries for cache for the month.
 
 angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseService','$routeParams',function($scope,DatabaseService,$routeParams) {
     // City Name
@@ -138,7 +139,8 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     })
 
     // Async call to load cache data.
-    DatabaseService.getData("cache",{'code':$scope.code},function(err,data) {
+    var yearMonth = (new Date()).toISOString().slice(0,10).replace(/-/g,"").slice(0, -2);
+    DatabaseService.getData("cache",{'code':$scope.code,'type':'cat','time':yearMonth},function(err,data) {
         topicCacheDataMap = data.data;
         console.log("Got Cache Data:");
         console.log(topicCacheDataMap);

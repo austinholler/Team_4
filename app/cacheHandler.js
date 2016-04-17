@@ -6,6 +6,7 @@
 // =====================================================================
 // 4/9     MB       File Creation
 // 4/16    MB       Support for more complicated cache entries.
+// 4/17    MB       Further updates for cache entries with type,time,code.
 
 // Required for Dynamo Connection
 var AWS = require("aws-sdk");
@@ -32,9 +33,9 @@ CacheHandler.init = function(cacheURL) {
 
 // Grabs all cache data for the following city code.
 CacheHandler.getCacheEntry = function(type,code,time, callback){
-    console.log("CacheHandler.getCacheEntry: Cache request.")
-    var cacheEntry = type + "-" + code + time
-    console.log("CacheHandler.getCacheEntry: Searching cache for " + cacheEntry)
+    console.log("CacheHandler.getCacheEntry: Cache request. Type:" + type)
+    var cacheEntry = type.toUpperCase() + "-" + code + time;
+    console.log("CacheHandler.getCacheEntry: Searching cache for " + cacheEntry);
     // Codes should look like: CAT-DEN2016 or TOP-DEN20160101
     client.hgetall(cacheEntry, function (err,obj) {
         callback(null,obj);

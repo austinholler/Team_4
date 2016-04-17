@@ -8,6 +8,7 @@
 # 4/10    MB       Supports 'all' cache entries. 
 # 4/10    MB       Read keys from secret file. 
 # 4/16    MB       Support for seperate topic/category queries. 
+# 4/17    MB       For history, we now just add month/year data. 
 
 import os, json
 from boto import dynamodb2
@@ -92,10 +93,10 @@ def populateCacheCities ():
 			for dataPoint in topicsData:
 				entryYear = dataPoint['Date'][3:][:-4]
 				entryMonth = dataPoint['Date'][7:][:-2]
-				entryDay = dataPoint['Date'][9:]
+				#entryDay = dataPoint['Date'][9:]
 				
 				# Populate the topic hash. 
-				codes = ["TOP-"+code, "TOP-"+code+entryYear, "TOP-"+code+entryYear+entryMonth, "TOP-"+code+entryYear+entryMonth+entryDay]
+				codes = ["TOP-"+code, "TOP-"+code+entryYear, "TOP-"+code+entryYear+entryMonth]
 				for curCode in codes:
 					if curCode not in masterHash: 
 						masterHash[curCode]={}
@@ -105,7 +106,7 @@ def populateCacheCities ():
 						masterHash[curCode][dataPoint['Name']] += dataPoint['Score']
 				
 				# Populate the category hash. 
-				codes = ["CAT-"+code, "CAT-"+code+entryYear, "CAT-"+code+entryYear+entryMonth, "CAT-"+code+entryYear+entryMonth+entryDay]
+				codes = ["CAT-"+code, "CAT-"+code+entryYear, "CAT-"+code+entryYear+entryMonth]
 				for curCode in codes:
 					if curCode not in masterHash: 
 						masterHash[curCode]={}
@@ -148,10 +149,10 @@ def populateCacheALL ():
 			for dataPoint in topicsData:
 				entryYear = dataPoint['Date'][3:][:-4]
 				entryMonth = dataPoint['Date'][7:][:-2]
-				entryDay = dataPoint['Date'][9:]
+				#entryDay = dataPoint['Date'][9:]
 			
 				# Populate the topic hash. 
-				codes = ['ALL', 'ALL'+entryYear, 'ALL'+entryYear+entryMonth, 'ALL'+entryYear+entryMonth+entryDay]
+				codes = ['ALL', 'ALL'+entryYear, 'ALL'+entryYear+entryMonth]
 				for curCode in codes:
 					if curCode not in masterHash: masterHash[curCode]={}
 					if dataPoint['Name'] not in masterHash[curCode]: 
@@ -160,7 +161,7 @@ def populateCacheALL ():
 				 		masterHash[curCode][dataPoint['Name']] += dataPoint['Score']
 				
 				# Populate the category cache. 
-				codes = ["CAT-"+'ALL', "CAT-"+'ALL'+entryYear, "CAT-"+'ALL'+entryYear+entryMonth, "CAT-"+'ALL'+entryYear+entryMonth+entryDay]
+				codes = ["CAT-"+'ALL', "CAT-"+'ALL'+entryYear, "CAT-"+'ALL'+entryYear+entryMonth]
 				for curCode in codes:
 					if curCode not in masterHash: 
 						masterHash[curCode]={}

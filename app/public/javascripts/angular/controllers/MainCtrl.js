@@ -9,7 +9,7 @@
 // 3/27   MB       Modified pin selection to redirect using code.
 // 4/10   MB       Load trending global topics from cache.
 // 4/14   MB       Added links to topics.
-// 4/17   MB       Updated cache query. Top topics for the month.
+// 4/17   MB       Updated cache query. Top topics for the day.
 
 (function(angular) {
     'use strict';
@@ -24,8 +24,8 @@
         var topicCacheDataMap = null;
 
         // Async call to load cache data.
-        var yearMonth = (new Date()).toISOString().slice(0,10).replace(/-/g,"").slice(0, -2);
-        DatabaseService.getData("cache",{'code':'ALL','type':'TOP','time':yearMonth},function(err,data) {
+        var todayString = (new Date()).toISOString().slice(0,10).replace(/-/g,"");
+        DatabaseService.getData("cache",{'code':'ALL','type':'TOP','time':todayString},function(err,data) {
             topicCacheDataMap = data.data;
             $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {
                 return {"topic" : key, "score" : Number(topicCacheDataMap[key]), "url" : "topic/" + key}

@@ -6,7 +6,7 @@
 // ==========================================================
 // 4/14    MB       File creation.
 // 4/14    MB       Now loads cache and displays rank.
-// 4/17    MB       Supports topic rank for current month.
+// 4/17    MB       Supports topic rank for current day.
 
 angular.module('TopicCtrl', []).controller('TopicController', ['$scope','DatabaseService','$routeParams',
 function($scope,DatabaseService,$routeParams) {
@@ -19,8 +19,8 @@ function($scope,DatabaseService,$routeParams) {
     var topicCacheDataMap = null;
 
     // Async call to load cache data.
-    var yearMonth = (new Date()).toISOString().slice(0,10).replace(/-/g,"").slice(0, -2);
-    DatabaseService.getData("cache",{'code':'ALL','type':'top','time':yearMonth},function(err,data) {
+    var todayString = (new Date()).toISOString().slice(0,10).replace(/-/g,"")
+    DatabaseService.getData("cache",{'code':'ALL','type':'top','time':todayString},function(err,data) {
         topicCacheDataMap = data.data;
         $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {
             return {"topic" : key, "score" : Number(topicCacheDataMap[key]), "url" : "topic/" + key}

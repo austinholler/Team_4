@@ -46,7 +46,7 @@ def doesntExist(fileName, city, state):
 	topic_dict = {}
 	
 	#Get Events
-	json_events = open('FullCOEvents/{}'.format(fileName),'r').read()
+	json_events = open('LrgCityEvents/{}'.format(fileName),'r').read()
 	parsed_events = json.loads(json_events)
 	
 	#Create total events/rsvps keys for later use	
@@ -124,7 +124,7 @@ def doesntExist(fileName, city, state):
 	
 	#Create a pretty json object and write new JSON file	
 	cityEvents = json.dumps(topic_dict, sort_keys=True, indent=4, separators=(',', ': '))
-	post_file = open('ProcessedCOCities/processed-{}-{}.json'.format(city, state), 'a')
+	post_file = open('ProcessedCities/processed-{}-{}.json'.format(city, state), 'a')
 	post_file.write(cityEvents)
 	
 	print("Processed Stuff!!!")
@@ -142,7 +142,7 @@ def doesntExist(fileName, city, state):
 def jsonExists(fileName, city, state):
 	
 	#Opens and loads existing JSON file into usable dictionary
-	post_json = open('ProcessedCOCities/processed-{}-{}.json'.format(city, state), 'r').read()
+	post_json = open('ProcessedCities/processed-{}-{}.json'.format(city, state), 'r').read()
 	parsed_post = json.loads(post_json)
 	
 	#Get JSON events file
@@ -221,7 +221,7 @@ def jsonExists(fileName, city, state):
 	
 	#Create a pretty json, overwrite old JSON w/new JSON object	
 	cityEvents = json.dumps(parsed_post, sort_keys=True, indent=4, separators=(',', ': '))
-	post_file = open('ProcessedCOCities/processed-{}-{}.json'.format(city, state), 'w')
+	post_file = open('ProcessedCities/processed-{}-{}.json'.format(city, state), 'w')
 	post_file.write(cityEvents)
 	
 	print("Processed Stuff!!!")
@@ -235,7 +235,7 @@ def jsonExists(fileName, city, state):
 def normalizeData(fileName):
 	
 	#Open processed JSON file and create a dictionary
-	json_str = open('ProcessedCOCities/{}'.format(fileName),'r').read()
+	json_str = open('ProcessedCities/{}'.format(fileName),'r').read()
 	topic_dict = json.loads(json_str)
 	
 	#Assign total events/rsvps variables
@@ -270,7 +270,7 @@ def normalizeData(fileName):
 	
 	#Create a pretty json, overwrite old JSON w/new JSON object
 	cityEvents = json.dumps(topic_dict, sort_keys=True, indent=4, separators=(',', ': '))
-	post_file = open('ProcessedCOCities/{}'.format(fileName), 'w')
+	post_file = open('ProcessedCities/{}'.format(fileName), 'w')
 	post_file.write(cityEvents)
 	
 	return 0
@@ -279,7 +279,7 @@ def normalizeData(fileName):
 def main():
 	
 	#Create a list of events from given folder
-	filesList = os.listdir('FullCOEvents')
+	filesList = os.listdir('LrgCityEvents')
 	
 	for x in filesList:
 		
@@ -292,13 +292,13 @@ def main():
 		
 		#If a processed city file already exists use jsonExists
 		#Else use doesntExist
-		if (os.path.isfile('ProcessedCOCities/processed-{}-{}.json'.format(city, state))):
+		if (os.path.isfile('ProcessedCities/processed-{}-{}.json'.format(city, state))):
 			jsonExists(x, city, state)
 		else:
 			doesntExist(x, city, state)
 	
 	#Create a list of processed city events files from given folder	
-	fileList = os.listdir('ProcessedCOCities')
+	fileList = os.listdir('ProcessedCities')
 	
 	for x in fileList:
 		

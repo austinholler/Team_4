@@ -15,6 +15,10 @@
 // 4/9     MB       fixed accumulation of category hash bug.
 // 4/15    MB       Support for topic links.
 // 4/17    MB       Queries for cache for the day.
+// 4/17    MB       Controls updated and reduced to 10 entries.
+
+const COLORS = ['#4D4D4D','#5DA5DA','#FAA43A','#60BD68', '#F17CB0', '#B2912F', '#B276B2', '#DECF3F', '#F15854','#e0e0e0']
+
 
 angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseService','$routeParams',function($scope,DatabaseService,$routeParams) {
     // City Name
@@ -26,7 +30,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     $scope.cityDataLoaded = false;
     $scope.topicCacheDataLoaded = false;
 
-    //$scope.buttons = [{'text': 'week','selected':false},{'text': 'month','selected':true},{'text': 'year','selected':false},{'text': 'history','selected':false}]
+    //$scope.buttons = [{'text': 'today','selected':false},{'text': 'month','selected':true},{'text': 'year','selected':false},{'text': 'history','selected':false}]
     $scope.pieFilter = 'Month';
 
     // Store data that has been loaded for this controller.
@@ -80,35 +84,50 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     }
 
     function drawPieChart(data) {
+        console.log('inside draw pie chart')
+        console.log(data);
         var chartData = [];
         var scoreSum = 0;
-        $scope.categoryHash = {};
-        // Sum up all same-category entries
-        for (var i = 0; i < data.length; i++){
-            scoreSum += data[i]['Score'];
-            if (data[i]['Category'] in $scope.categoryHash) {
-                $scope.categoryHash[data[i]['Category']] += data[i]['Score']
-            }
-            else {
-                $scope.categoryHash[data[i]['Category']] = data[i]['Score']
-            }
-        }
 
         // Count number of categories
         var keys = Object.keys($scope.categoryHash)
         var numKeys = keys.length;
+
+        for (var i = 0; i < numKeys; i++) {
+            scoreSum += parseFloat($scope.categoryHash[Object.keys($scope.categoryHash)[i]])
+        }
+        console.log("SUM:" + scoreSum)
+
         // Create a data point for each category
         for (var i = 0; i < numKeys; i++)
         {
             var key = Object.keys($scope.categoryHash)[i]
-            console.log($scope.categoryHash[key])
+            //console.log($scope.categoryHash[key])
+            var curPercent = parseFloat((100 * ($scope.categoryHash[key] / scoreSum)).toFixed(2));
+            console.log(curPercent);
             chartData.push({
-                value: (100 * ($scope.categoryHash[key] / scoreSum)).toFixed(2),
-                color: randomColor(),
+                value: curPercent,
                 highlight: "#1E1E1E",
                 label: Object.keys($scope.categoryHash)[i]
             })
         }
+
+        // Aggregate anything not in top-10.
+        chartData = _.sortBy(chartData, 'value').reverse();
+        console.log(chartData[0])
+        for (var i = 0; i < chartData.length; i++)
+        {
+            if (i < 10) {
+                chartData[i].color = COLORS[i];
+            }
+            if (i == 9) {
+                chartData[i].label = "Other";
+            }
+            if (i > 9) {
+                chartData[9].value += chartData[i].value;
+            }
+        }
+        chartData.length = 10;
 
         // Load Chart
         if (myPieChart != null) {
@@ -154,16 +173,15 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
 
 
     // Async call to load data for this city pie chart.
-    function loadCategoryDataRange(start,end) {
-        DatabaseService.getData("categories", {
+    function loadCategoryDataRange(start) {
+        DatabaseService.getData("cache", {
             'code': $scope.code,
-            'category': 'all',
-            'start': start,
-            'end': end
+            'type': 'cat',
+            'time': start,
         }, function (err, data) {
             $scope.categoryDataLoaded = true;
-            categoryData = data.data.Items;
-            $scope.recordCount = categoryData.length;
+            categoryData = data.data;
+            $scope.categoryHash = categoryData;
             drawPieChart(categoryData)
         })
     }
@@ -175,16 +193,31 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         var rightNow = new Date();
 
         // Calculate end
-        var end = rightNow.toISOString().slice(0,10).replace(/-/g,"");
+        //var end = rightNow.toISOString().slice(0,10).replace(/-/g,"");
 
         // Calculate start
-        if ($scope.pieFilter == 'Week') { start = new Date(rightNow.setDate(rightNow.getDate() -7 )) }
-        else if ($scope.pieFilter == 'Month') { start = new Date(rightNow.setMonth(rightNow.getMonth() - 1)) }
-        else if ($scope.pieFilter == 'Year') { start = new Date(rightNow.setMonth(rightNow.getMonth() - 12)) }
-        else if ($scope.pieFilter == 'Complete') { start = new Date(rightNow.setMonth(rightNow.getMonth() - 120)) }
-        start = start.toISOString().slice(0,10).replace(/-/g,"");
+        if ($scope.pieFilter == 'Today')
+        {
+            start = new Date(rightNow)
+            start = start.toISOString().slice(0,10).replace(/-/g,"");
 
-        loadCategoryDataRange(start,end);
+        }
+        else if ($scope.pieFilter == 'Month')
+        {
+            start = new Date(rightNow)
+            start = start.toISOString().slice(0,10).replace(/-/g,"").slice(0, -2);
+        }
+        else if ($scope.pieFilter == 'Year')
+        {
+            start = new Date(rightNow)
+            start = start.toISOString().slice(0,10).replace(/-/g,"").slice(0, -4);
+        }
+        else if ($scope.pieFilter == 'Complete')
+        {
+            start = ""
+        }
+
+        loadCategoryDataRange(start);
     }
 
     initPieChart();

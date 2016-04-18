@@ -7,6 +7,7 @@
 # 4/16    MB       Creation
 # 4/17    MB       Support for daily query and update. 
 # 4/17    MB       Support for update of previous redis entries. 
+# 4/17    MB       Removed redundant connection to redis. 
 
 import os, json
 from boto import dynamodb2
@@ -142,7 +143,6 @@ def populateCacheToday ():
 
 # Creates new entries for all of the objects in our hash. 
 def loadDataRedis (sourceHash):
-	r = redis.StrictRedis(host='localhost', port=6379, db=0)
 	for key in sourceHash.keys():
 		if sourceHash[key]:
 			print(key)

@@ -10,6 +10,7 @@
 // 4/10   MB       Load trending global topics from cache.
 // 4/14   MB       Added links to topics.
 // 4/17   MB       Updated cache query. Top topics for the day.
+// 4/17   MB       Updated time to reflect UTC offset.
 
 (function(angular) {
     'use strict';
@@ -24,7 +25,9 @@
         var topicCacheDataMap = null;
 
         // Async call to load cache data.
-        var todayString = (new Date()).toISOString().slice(0,10).replace(/-/g,"");
+        var today = new Date();
+        today.setHours(today.getHours()-6); // UTC Offset for MT
+        var todayString = today.toISOString().slice(0,10).replace(/-/g,"");
         DatabaseService.getData("cache",{'code':'ALL','type':'TOP','time':todayString},function(err,data) {
             topicCacheDataMap = data.data;
             $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {

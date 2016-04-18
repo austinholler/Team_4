@@ -13,6 +13,10 @@
 //                  for new query types.
 // 4/9     MB       Supports basic cache query.
 // 4/17    MB       Support new cache query.
+// 4/17    MB       support for prod mode.
+
+const PRODMODE = true;
+const EC2URL = "ec2-52-38-5-96.us-west-2.compute.amazonaws.com"
 
 var StateEnum = {Loaded:1, Loading:2, NotLoaded:3}
 
@@ -24,7 +28,12 @@ angular.module('DBService', []).service('DatabaseService', function($http,$q) {
         var queryURL = ""
 
         // queryURLBase must be changed to ec2 URL for running in prod.
-        var queryURLBase = 'http://localhost:3000/api/'
+        if (PRODMODE == false) {
+            var queryURLBase = 'http://localhost:3000/api/'
+        }
+        else {
+            var queryURLBase = 'http://' +EC2URL + ':3000/api/';
+        }
 
         // Query to cache endpoint.
         if (db.toLowerCase() == "cache") {

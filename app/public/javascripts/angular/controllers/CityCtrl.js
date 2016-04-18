@@ -16,9 +16,9 @@
 // 4/15    MB       Support for topic links.
 // 4/17    MB       Queries for cache for the day.
 // 4/17    MB       Controls updated and reduced to 10 entries.
+// 4/17    MB       Fixed bug with percent calculation.
 
 const COLORS = ['#4D4D4D','#5DA5DA','#FAA43A','#60BD68', '#F17CB0', '#B2912F', '#B276B2', '#DECF3F', '#F15854','#e0e0e0']
-
 
 angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseService','$routeParams',function($scope,DatabaseService,$routeParams) {
     // City Name
@@ -127,6 +127,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
                 chartData[9].value += chartData[i].value;
             }
         }
+        chartData[9].value = chartData[9].value.toFixed(2)
         chartData.length = 10;
 
         // Load Chart
@@ -158,7 +159,9 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     })
 
     // Async call to load cache data.
-    var todayString = (new Date()).toISOString().slice(0,10).replace(/-/g,"")
+    var today = new Date();
+    today.setHours(today.getHours()-6); // UTC Offset for MT
+    var todayString = today.toISOString().slice(0,10).replace(/-/g,"");
     DatabaseService.getData("cache",{'code':$scope.code,'type':'top','time':todayString},function(err,data) {
         topicCacheDataMap = data.data;
         console.log("Got Cache Data:");

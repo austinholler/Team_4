@@ -7,6 +7,7 @@
 // 4/14    MB       File creation.
 // 4/14    MB       Now loads cache and displays rank.
 // 4/17    MB       Supports topic rank for current day.
+// 4/17    MB       Updated time to reflect UTC offset.
 
 angular.module('TopicCtrl', []).controller('TopicController', ['$scope','DatabaseService','$routeParams',
 function($scope,DatabaseService,$routeParams) {
@@ -19,7 +20,9 @@ function($scope,DatabaseService,$routeParams) {
     var topicCacheDataMap = null;
 
     // Async call to load cache data.
-    var todayString = (new Date()).toISOString().slice(0,10).replace(/-/g,"")
+    var today = new Date();
+    today.setHours(today.getHours()-6); // UTC Offset for MT
+    var todayString = today.toISOString().slice(0,10).replace(/-/g,"");
     DatabaseService.getData("cache",{'code':'ALL','type':'top','time':todayString},function(err,data) {
         topicCacheDataMap = data.data;
         $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {

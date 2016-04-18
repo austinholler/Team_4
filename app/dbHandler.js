@@ -10,6 +10,7 @@
 // 4/3     MB       Support for recursive scans to get entire data sets.
 // 4/9     MB       Support for queries for topics/categories, as well
 //                  as recursive queries for all categories.
+// 4/16    MB       Fixed query recursive bug.
 
 // Required for Dynamo Connection
 var AWS = require("aws-sdk");
@@ -23,7 +24,7 @@ var CATEGORY_LIST = ['new-age-spirituality', 'sci-fi-fantasy', 'socializing', 'o
     'education-learning', 'music', 'arts-culture', 'cars-motorcycles', 'community-environment', 'hobbies-crafts',
     'dancing', 'religion-beliefs', 'language', 'games', 'parents-family', 'fitness', 'lgbt', 'writing', 'fashion-beauty',
     'photography', 'support', 'movies-film', 'pets-animals'];
-
+//var CATEGORY_LIST =
 
 // Method for connecting to our DB instance
 DBHandler.connect = function(inputParam,accessKey,secretAccessKey) {
@@ -179,6 +180,7 @@ DBHandler.BatchCategoryQuery = function(params,list,callback) {
 
     // Pop the last thing in the list, for this queryRec parameter.
     params.ExpressionAttributeValues[":category"] = list.pop();
+    params.ExclusiveStartKey = null;
 
     DBHandler.QueryRec(params, function (err, data) {
         if (err) {
@@ -188,7 +190,7 @@ DBHandler.BatchCategoryQuery = function(params,list,callback) {
         } else {
             console.log("DBHandler.BatchCategoryQuery: Query succeeded.");
 
-            // If we haven't consumed all the data, do the next scan.
+            // If we haven't consumed all the data, do the next query.
             if (list.length > 0) {
                 console.log("DBHandler.BatchCategoryQuery: List is not empty, recursing.");
 

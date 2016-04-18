@@ -44,9 +44,23 @@ html, body {
 }
 
 .activeButton {
-  color: #e57373;
+  color: white;
   background-color: #e57373;
 }
+.activeButton:hover {
+  color: white;
+  background-color: #e57373;
+}
+
+.nonActiveButton {
+  color: grey;
+  background-color: #e0e0e0;
+}
+.nonActiveButton:hover {
+  color: white;
+  background-color: #e57373;
+}
+
 
 .profileIconBar {
   padding-bottom: 10px;

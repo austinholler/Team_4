@@ -9,6 +9,7 @@
 # 4/10    MB       Read keys from secret file. 
 # 4/16    MB       Support for seperate topic/category queries. 
 # 4/17    MB       For history, we now just add month/year data. 
+# 4/17    MB       Support for prod mode. 
 
 import os, json
 from boto import dynamodb2
@@ -19,6 +20,15 @@ import sys
 import re
 import redis
 
+PRODMODE = True
+CACHEURL = 'citypulse-cache.ci54cw.0001.usw2.cache.amazonaws.com'
+
+# Decide which cache to connect to. 
+if PRODMODE == True: 
+	hostURL = 'localhost'
+else PRODMODE: 
+	hostURL = CACHEURL
+r = redis.StrictRedis(host=hostURL, port=6379, db=0)
 
 # Info for today. 
 today = DT.date.today()
@@ -175,7 +185,6 @@ def populateCacheALL ():
 
 
 def loadDataRedis (sourceHash):
-	r = redis.StrictRedis(host='localhost', port=6379, db=0)
 	for key in sourceHash.keys():
 		if sourceHash[key]:
 			#print(key)
@@ -185,7 +194,6 @@ def loadDataRedis (sourceHash):
 
 def main(): 
 	print("flushing redis")
-	r = redis.StrictRedis(host='localhost', port=6379, db=0)
 	r.flushdb()
 	print("Load Cache History")
 	print("==================")

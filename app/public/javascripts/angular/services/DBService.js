@@ -32,7 +32,7 @@ angular.module('DBService', []).service('DatabaseService', function($http,$q) {
             var queryURLBase = 'http://localhost:3000/api/'
         }
         else {
-            var queryURLBase = 'http://' +EC2URL + ':3000/api/';
+            var queryURLBase = 'http://' +EC2URL + '/api/';
         }
 
         // Query to cache endpoint.

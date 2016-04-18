@@ -13,7 +13,7 @@ var AWS = require("aws-sdk");
 var CacheHandler = new Object();
 var _ = require('lodash');
 var redis = require("redis");
-var productionMode = false;
+var productionMode = true;
 var client;
 
 // Connect to redis.

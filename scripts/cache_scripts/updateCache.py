@@ -8,6 +8,7 @@
 # 4/17    MB       Support for daily query and update. 
 # 4/17    MB       Support for update of previous redis entries. 
 # 4/17    MB       Removed redundant connection to redis. 
+# 4/17    MB       Spport for prod mode. 
 
 import os, json
 from boto import dynamodb2
@@ -18,6 +19,9 @@ import sys
 import re
 import redis
 from decimal import *
+
+PRODMODE = True
+CACHEURL = 'citypulse-cache.ci54cw.0001.usw2.cache.amazonaws.com'
 
 # Info for today. 
 today = DT.date.today()
@@ -63,8 +67,13 @@ masterHash = {'HOU':{'football':3,'soccer':2,'baseball':.5,'bla':1,
 'PDX':{'football':3,'soccer':2,'baseball':.5,'bla':1,
 'bl2a':1.2,'bl2a':.1,'bl23a':.3,'bl2a':1}}
 
-# connect to redis. 
-r = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+# Decide which cache to connect to. 
+if PRODMODE == True: 
+	hostURL = 'localhost'
+else PRODMODE: 
+	hostURL = CACHEURL
+r = redis.StrictRedis(host=hostURL, port=6379, db=0)
 
 
 def populateCacheToday ():

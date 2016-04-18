@@ -199,20 +199,19 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         //var end = rightNow.toISOString().slice(0,10).replace(/-/g,"");
 
         // Calculate start
+        start = new Date(rightNow)
+        start.setHours(start.getHours()-6); // UTC Offset for MT
         if ($scope.pieFilter == 'Today')
         {
-            start = new Date(rightNow)
             start = start.toISOString().slice(0,10).replace(/-/g,"");
 
         }
         else if ($scope.pieFilter == 'Month')
         {
-            start = new Date(rightNow)
             start = start.toISOString().slice(0,10).replace(/-/g,"").slice(0, -2);
         }
         else if ($scope.pieFilter == 'Year')
         {
-            start = new Date(rightNow)
             start = start.toISOString().slice(0,10).replace(/-/g,"").slice(0, -4);
         }
         else if ($scope.pieFilter == 'Complete')

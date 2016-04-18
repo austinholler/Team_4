@@ -9,6 +9,7 @@
 # 4/17    MB       Support for update of previous redis entries. 
 # 4/17    MB       Removed redundant connection to redis. 
 # 4/17    MB       Spport for prod mode. 
+# 4/18    MB       Bug fixes.
 
 import os, json
 from boto import dynamodb2
@@ -33,7 +34,17 @@ todayMonth = (today).strftime("%m")
 REGION = "us-west-2"
 
 # Read secret data
-keyFile = open('secret.txt', 'r')
+# Decide which cache to connect to. 
+if PRODMODE != True: 
+	hostURL = 'localhost'
+	secretURL = "secret.txt"
+else: 
+	hostURL = CACHEURL
+	secretURL = "/home/ec2-user/Team_4/scripts/cache_scripts/secret.txt"
+r = redis.StrictRedis(host=hostURL, port=6379, db=0)
+
+
+keyFile = open(secretURL, 'r')
 aws_access = keyFile.readline().rstrip()
 aws_access_secret = keyFile.readline().rstrip()
 

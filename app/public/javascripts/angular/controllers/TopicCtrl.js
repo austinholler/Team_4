@@ -25,7 +25,7 @@ function($scope,DatabaseService,$routeParams) {
 
     // Topic Cache request
     var topicDataMonthlyMap = {}
-    var topicDataMonthlyMapLoaded = false;
+    $scope.lineChartReady = false;
 
     $scope.topicCacheArrToday = null;
     var topicCacheMapToday = null;
@@ -70,7 +70,7 @@ function($scope,DatabaseService,$routeParams) {
 
     function getMonthDataRec(numMonthsBack, callback) {
         console.log('TopicCtrl.getMonthDataRec: ' + numMonthsBack + " months back.");
-        if (numMonthsBack > -1) {
+        if (numMonthsBack > 0) {
             var newToday = new Date();
             newToday.setHours(newToday.getHours() - 6); // UTC Offset for MT
             newToday.setMonth(newToday.getMonth() - numMonthsBack); // X number of months into the past.
@@ -103,10 +103,9 @@ function($scope,DatabaseService,$routeParams) {
     function loadMonthlyLineChartData(range) {
         console.log("TopicCtrl.loadCategoryDataRange: Called")
 
-        getMonthDataRec(3, function(err,data) {
+        getMonthDataRec(range, function(err,data) {
             // Indicate we have the data loaded.
-            topicDataMonthlyMapLoaded = true;
-
+            $scope.lineChartReady = true;
             // Draw the line chart with the data we receive.
             drawLineChart(data);
         })
@@ -155,12 +154,14 @@ function($scope,DatabaseService,$routeParams) {
                 maintainAspectRatio: true
             }
         };
+
         var ctxLine = document.getElementById("lineChart").getContext("2d");
 
         // Load Chart
         if (myLineChart != null) {
             myLineChart.destroy();
         }
+
 
         myLineChart = new Chart(ctxLine).Line(dataLine, {});
 

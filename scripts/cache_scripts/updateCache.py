@@ -21,7 +21,7 @@ import re
 import redis
 from decimal import *
 
-PRODMODE = True
+PRODMODE = False
 CACHEURL = 'citypulse-cache.ci54cw.0001.usw2.cache.amazonaws.com'
 
 # Info for today. 
@@ -77,14 +77,6 @@ masterHash = {'HOU':{'football':3,'soccer':2,'baseball':.5,'bla':1,
 'bl2a':1.2,'bl2a':.1,'bl23a':.3,'bl2a':1},
 'PDX':{'football':3,'soccer':2,'baseball':.5,'bla':1,
 'bl2a':1.2,'bl2a':.1,'bl23a':.3,'bl2a':1}}
-
-
-# Decide which cache to connect to. 
-if PRODMODE == True: 
-	hostURL = 'localhost'
-else PRODMODE: 
-	hostURL = CACHEURL
-r = redis.StrictRedis(host=hostURL, port=6379, db=0)
 
 
 def populateCacheToday ():

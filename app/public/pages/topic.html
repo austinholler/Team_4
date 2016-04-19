@@ -5,32 +5,37 @@
 </div>
 
 <div class="row center-align text-center">
-    <div class="col s4">
-        <div class="card white ">
-            <div class="card-content">
-                <div class="text-black">Global Daily Rank</div>
-                <div class="rankNumber">{{globalRankDay}}</div>
+    <div class="row">
+        <div class="col s4">
+            <div class="card white ">
+                <div class="card-content">
+                    <div class="text-black">Global Daily Rank</div>
+                    <div class="rankNumber">{{globalRankDay}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card white ">
+                <div class="card-content">
+                    <div class="text-black">Global Monthly Rank</div>
+                    <div class="rankNumber">{{globalRankMonth}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card white ">
+                <div class="card-content">
+                    <div class="text-black">Global Yearly Rank</div>
+                    <div class="rankNumber">{{globalRankYear}}</div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col s4">
-        <div class="card white ">
-            <div class="card-content">
-                <div class="text-black">Global Monthly Rank</div>
-                <div class="rankNumber">{{globalRankMonth}}</div>
-            </div>
+    <div class="row">
+        Monthly Popularity
+        <div >
+            <canvas id="lineChart" ></canvas>
         </div>
-    </div>
-    <div class="col s4">
-        <div class="card white ">
-            <div class="card-content">
-                <div class="text-black">Global Yearly Rank</div>
-                <div class="rankNumber">{{globalRankYear}}</div>
-            </div>
-        </div>
-    </div>
-    <div class="col s8">
-        <canvas class="text-center" id="lineChart" width="400" height="400"></canvas>
     </div>
 </div>
 

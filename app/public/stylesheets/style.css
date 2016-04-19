@@ -105,8 +105,16 @@ ol li:before {
   font-size: 40px;
   text-align: center;
   font-weight: bold;
+  margin-top: 10px;
 }
 .rankNumber {
   font-size: 75px;
   color: #e57373;
+}
+.lineChart {
+  width:100%;
+}
+canvas#lineChart {
+  width:75%;
+  height:50%;
 }

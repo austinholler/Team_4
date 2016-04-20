@@ -62,7 +62,7 @@ with open(js) as json_file :
                                 batch.put_item(data={'Name' : items[1] , 'Category' : items[2] ,'Date' : sys.argv[1] + items[3] ,'Score': Decimal(items[4])})
                                 #print items
                             topics_list = []
-                        sleep(0.18)
+                        sleep(0.1)
                      except :
                             print sys.exc_info()[0], items
 

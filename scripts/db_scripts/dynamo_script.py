@@ -37,7 +37,7 @@ if len(sys.argv) < 3:
     sys.exit('Usage: %s CityCode Filepath' % sys.argv[0])
 
 topics = Table(
-    'topics_' + sys.argv[1],
+    'Topics',
     connection=conn
 )
 

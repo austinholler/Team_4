@@ -12,6 +12,7 @@
 // 4/17   MB       Updated cache query. Top topics for the day.
 // 4/17   MB       Updated time to reflect UTC offset.
 // 4/23   MB       Added search.
+// 4/23   MB       Fixed bug with trending topics.
 
 (function(angular) {
     'use strict';
@@ -42,7 +43,7 @@
         // Load topic list.
         DatabaseService.getData("cache",{'code':'ALL','type':'TOP'},function(err,data) {
             $scope.topicList = data.data;
-            $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {
+            $scope.topicList = Object.keys($scope.topicList).map(function(key) {
                 return {"topic" : key, "url" : "topic/" + key}
             })
             $scope.topicListLoaded = true;

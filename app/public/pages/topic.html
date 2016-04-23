@@ -11,6 +11,7 @@
                 <div class="card-content">
                     <div class="text-black">Global Daily Rank</div>
                     <div class="rankNumber">{{globalRankDay}}</div>
+                    <img class="topic-page-icon" ng-src="{{globalRankDayIcon}}">
                 </div>
             </div>
         </div>
@@ -19,6 +20,8 @@
                 <div class="card-content">
                     <div class="text-black">Global Monthly Rank</div>
                     <div class="rankNumber">{{globalRankMonth}}</div>
+                    <img class="topic-page-icon" ng-src="{{globalRankMonthIcon}}">
+
                 </div>
             </div>
         </div>
@@ -27,12 +30,13 @@
                 <div class="card-content">
                     <div class="text-black">Global Yearly Rank</div>
                     <div class="rankNumber">{{globalRankYear}}</div>
+                    <img class="topic-page-icon" ng-src="{{globalRankYearIcon}}">
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        Monthly Popularity
+        Monthly Popularity Rank
         <p class="text-center center-align" ng-hide="lineChartReady" >
             <i class="fa fa-refresh fa-spin fa-5x"></i>
         </p>

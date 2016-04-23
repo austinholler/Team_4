@@ -68,14 +68,14 @@ def populateSampleData ():
 		for category in CATEGORY_LIST: 
 			entryYear = "2016"
 			for entryMonth in MONTHLIST:
-				codes = ['TOP-ALL', 'TOP-ALL'+entryYear, 'TOP-ALL'+entryYear+entryMonth]
+				codes = ['TOP-ALL', 'TOP-ALL'+entryYear, 'TOP-ALL'+entryYear+entryMonth, 'TOP-ALL'+entryYear+entryMonth+'23']
 				for curCode in codes:
 						if curCode not in masterHash: masterHash[curCode]={}
 						if category not in masterHash[curCode]: 
 							masterHash[curCode][category] = random.uniform(0, 1)
 						else: 
 					 		masterHash[curCode][category] += random.uniform(0, 1)
-				codes = ["CAT-"+'ALL', "CAT-"+'ALL'+entryYear, "CAT-"+'ALL'+entryYear+entryMonth]
+				codes = ["CAT-"+'ALL', "CAT-"+'ALL'+entryYear,"CAT-"+'ALL'+entryYear+entryMonth, "CAT-"+'ALL'+entryYear+entryMonth+'23']
 				for curCode in codes:
 					if curCode not in masterHash: 
 						masterHash[curCode]={}
@@ -83,14 +83,14 @@ def populateSampleData ():
 						masterHash[curCode][category] = random.uniform(0, 1)
 					else: 
 						masterHash[curCode][category] += random.uniform(0, 1)
-				codes = ['TOP-'+city, 'TOP-'+city+entryYear, 'TOP-'+city+entryYear+entryMonth]
+				codes = ['TOP-'+city, 'TOP-'+city+entryYear, 'TOP-'+city+entryYear+entryMonth, 'TOP-'+city+entryYear+entryMonth+'23']
 				for curCode in codes:
 						if curCode not in masterHash: masterHash[curCode]={}
 						if category not in masterHash[curCode]: 
 							masterHash[curCode][category] = random.uniform(0, 1)
 						else: 
 					 		masterHash[curCode][category] += random.uniform(0, 1)
-				codes = ["CAT-"+city, "CAT-"+city+entryYear, "CAT-"+city+entryYear+entryMonth]
+				codes = ["CAT-"+city, "CAT-"+city+entryYear, "CAT-"+city+entryYear+entryMonth,"CAT-"+city+entryYear+entryMonth+'23']
 				for curCode in codes:
 					if curCode not in masterHash: 
 						masterHash[curCode]={}

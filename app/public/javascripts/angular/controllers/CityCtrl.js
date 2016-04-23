@@ -130,6 +130,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         chartData[9].value = chartData[9].value.toFixed(2)
         chartData.length = 10;
 
+
         // Load Chart
         if (myPieChart != null) {
             myPieChart.destroy();

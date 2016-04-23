@@ -118,3 +118,9 @@ canvas#lineChart {
   width:75%;
   height:50%;
 }
+.topic-page-icon {
+  width:10%;
+}
+.topic-list {
+  min-height: 325px;
+}

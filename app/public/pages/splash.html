@@ -11,7 +11,7 @@
     <div class="col s4 grey lighten-2">
         <div class="wow fadeInDown" data-wow-delay=".5s">
             <h5 class="text-center center-align"><i class="fa fa-line-chart fa-2x" style="color:#e57373"></i></h5>
-            <h5 class="text-center center-align"><b>View Trends</b></h5>
+            <h5 class="text-center center-align"><b>View Trendz</b></h5>
             <p style="min-height:60px" class="text-center center-align">Learn about the interest trends for cities. We can tell you how a city is changing.</p>
         </div>
     </div>
@@ -32,6 +32,13 @@
             <ol>
                 <li class="top-topic" ng-repeat="topic in topicCacheDataArr | orderBy:'-score':reverse | limitTo:10"> <div class="capitalize"><a href={{topic.url}}> {{topic.topic}}</a></div></li>
             </ol>
+        </div>
+        <h5 class="text-center center-align"><b>Topic Search</b></h5>
+        <div ng-show="topicListLoaded" class="wow slideInLeft topic-list">
+            <div>Search: <input type="text" ng-model="topicFilter"></div>
+            <ul>
+                <li class="top-topic" ng-repeat="topic in topicCacheDataArr | filter:{topic: topicFilter} | limitTo:10"> <div class="capitalize"><a href={{topic.url}}> {{topic.topic}}</a></div></li>
+            </ul>
         </div>
     </div>
 

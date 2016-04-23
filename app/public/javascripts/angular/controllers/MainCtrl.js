@@ -11,6 +11,7 @@
 // 4/14   MB       Added links to topics.
 // 4/17   MB       Updated cache query. Top topics for the day.
 // 4/17   MB       Updated time to reflect UTC offset.
+// 4/23   MB       Added search.
 
 (function(angular) {
     'use strict';
@@ -19,9 +20,11 @@
         // Data for the city, comes from DBService
         $scope.dataLoaded = false;
         $scope.topicTrendDataLoaded = false;
+        $scope.topicListLoaded = false;
 
         $scope.cityListData = null;
         $scope.topicCacheDataArr = null;
+        $scope.topicList = null;
         var topicCacheDataMap = null;
 
         // Async call to load cache data.
@@ -34,6 +37,15 @@
                 return {"topic" : key, "score" : Number(topicCacheDataMap[key]), "url" : "topic/" + key}
             })
             $scope.topicTrendDataLoaded = true;
+        });
+
+        // Load topic list.
+        DatabaseService.getData("cache",{'code':'ALL','type':'TOP'},function(err,data) {
+            $scope.topicList = data.data;
+            $scope.topicCacheDataArr = Object.keys(topicCacheDataMap).map(function(key) {
+                return {"topic" : key, "url" : "topic/" + key}
+            })
+            $scope.topicListLoaded = true;
         });
 
 

@@ -9,18 +9,20 @@
         <div class="col s4">
             <div class="card white ">
                 <div class="card-content">
-                    <div class="text-black">Global Daily Rank</div>
+                    <div class="text-black"><b>Global Daily Rank</b></div>
                     <div class="rankNumber">{{globalRankDay}}</div>
                     <img class="topic-page-icon" ng-src="{{globalRankDayIcon}}">
+                    <div class="rank-sub-text">Previous: {{globalRankYesterday}}</div>
                 </div>
             </div>
         </div>
         <div class="col s4">
             <div class="card white ">
                 <div class="card-content">
-                    <div class="text-black">Global Monthly Rank</div>
+                    <div class="text-black"><b>Global Monthly Rank</b></div>
                     <div class="rankNumber">{{globalRankMonth}}</div>
                     <img class="topic-page-icon" ng-src="{{globalRankMonthIcon}}">
+                    <div class="rank-sub-text">Previous: {{globalRankLastMonth}}</div>
 
                 </div>
             </div>
@@ -28,21 +30,43 @@
         <div class="col s4">
             <div class="card white ">
                 <div class="card-content">
-                    <div class="text-black">Global Yearly Rank</div>
+                    <div class="text-black"><b>Global Yearly Rank</b></div>
                     <div class="rankNumber">{{globalRankYear}}</div>
                     <img class="topic-page-icon" ng-src="{{globalRankYearIcon}}">
+                    <div class="rank-sub-text">Previous: {{globalRankLastYear}}</div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        Monthly Popularity Rank
-        <p class="text-center center-align" ng-hide="lineChartReady" >
-            <i class="fa fa-refresh fa-spin fa-5x"></i>
-        </p>
-        <div >
-            <canvas id="lineChart" ></canvas>
+        <div class="col s2">
+            <h5 class="text-center center-align"><b>Switch Topic</b></h5>
+            <div ng-show="topicListLoaded" class="wow slideInLeft topic-list" style="text-align:left">
+                <div>Search: <input type="text" ng-model="topicFilter"></div>
+                <ul>
+                    <li ng-show="topicFilter.length" class="top-topic unordered-list-search" ng-repeat="topic in topicList | filter:{topic: topicFilter} | limitTo:10"> <div class="capitalize"><a href={{topic.url}}> {{topic.topic}}</a></div></li>
+                </ul>
+            </div>
         </div>
+        <div class="col s8 center">
+
+            Monthly Popularity Rank
+            <p class="text-center center-align" ng-hide="lineChartReady" >
+                <i class="fa fa-refresh fa-spin fa-5x"></i>
+            </p>
+            <div >
+                <canvas id="lineChart" ></canvas>
+            </div>
+        </div>
+        <div class="col s2">
+            <h5 class="text-center center-align"><b>Popularity by City</b></h5>
+            <div ng-show="cityListRankingLoaded" class="wow slideInRight left-align">
+                <ol>
+                    <li ng-repeat="city in cityRankArr | orderBy:'-score' | limitTo: 10 " ng-if="city.score > 0"> <div class="capitalize"><a href={{city.url}}> {{city.city}}</a></div></li>
+                </ol>
+            </div>
+        </div>
+
     </div>
 </div>
 

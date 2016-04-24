@@ -115,7 +115,7 @@ ol li:before {
   width:100%;
 }
 canvas#lineChart {
-  width:75%;
+  width:95%;
   height:50%;
 }
 .topic-page-icon {
@@ -126,4 +126,8 @@ canvas#lineChart {
 }
 .unordered-list-search {
   margin-left: 10%;
+}
+.rank-sub-text {
+  font-size: 10px;
+  color: #616161;
 }

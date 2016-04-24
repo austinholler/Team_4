@@ -37,7 +37,7 @@
         <div ng-show="topicListLoaded" class="wow slideInLeft topic-list">
             <div>Search: <input type="text" ng-model="topicFilter"></div>
             <ul>
-                <li ng-show="topicFilter.length" class="top-topic unordered-list-search" ng-repeat="topic in topicCacheDataArr | filter:{topic: topicFilter} | limitTo:10"> <div class="capitalize"><a href={{topic.url}}> {{topic.topic}}</a></div></li>
+                <li ng-show="topicFilter.length" class="top-topic unordered-list-search" ng-repeat="topic in topicList | filter:{topic: topicFilter} | limitTo:10"> <div class="capitalize"><a href={{topic.url}}> {{topic.topic}}</a></div></li>
             </ul>
         </div>
     </div>

@@ -43,14 +43,19 @@ function($scope,DatabaseService,$routeParams) {
     $scope.globalRankDay = "N/A";
     $scope.globalRankMonth = "N/A";
     $scope.globalRankYear = "N/A";
+    $scope.globalRankYesterday = "N/A";
+    $scope.globalRankLastMonth = "N/A";
+    $scope.globalRankLastYear = "N/A";
     $scope.globalRankDayIcon = "images/arrow/SAME.png";
     $scope.globalRankMonthIcon = "images/arrow/SAME.png";
     $scope.globalRankYearIcon = "images/arrow/SAME.png";
     $scope.globalRankHash = {};
+    $scope.cityRankArr = [];
 
     // Topic Cache request
     var topicDataMonthlyMap = {}
     $scope.lineChartReady = false;
+    var topicCitiesMapMonth = {}
 
     var topicCacheMapToday = null;
     var topicCacheMapMonth = null;
@@ -63,6 +68,21 @@ function($scope,DatabaseService,$routeParams) {
     var ctxLine = null;
     var myLineChart = null;
 
+    $scope.topicListLoaded = false;
+    $scope.topicList = null;
+    $scope.cityListRankingLoaded = false;
+
+
+    // Load topic list.
+    DatabaseService.getData("cache",{'code':'ALL','type':'TOP'},function(err,data) {
+        $scope.topicList = data.data;
+        $scope.topicList = Object.keys($scope.topicList).map(function(key) {
+            return {"topic" : key, "url" : "topic/" + key}
+        })
+        $scope.topicListLoaded = true;
+    });
+
+
     // Async calls to load all of the ranks fro the ranking bar.
     // =========================================================
     DatabaseService.getData("cache",{'code':'ALL','type':'top','time':todayString},function(err,data) {
@@ -71,9 +91,9 @@ function($scope,DatabaseService,$routeParams) {
         DatabaseService.getData("cache",{'code':'ALL','type':'top','time':yesterdayString},function(err,data) {
             topicCacheMapYesterday = data.data;
             if (topicCacheMapYesterday[$scope.topic] != null) {
-                var yesterdayRank = getRank(topicCacheMapYesterday, $scope.topic)
-                if (yesterdayRank == $scope.globalRankDay) {$scope.globalRankDayIcon = "images/arrow/SAME.png"}
-                else $scope.globalRankDayIcon = yesterdayRank > $scope.globalRankDay ? "images/arrow/UP.png" : "images/arrow/DOWN.png"
+                $scope.globalRankYesterday = getRank(topicCacheMapYesterday, $scope.topic)
+                if ($scope.globalRankYesterday == $scope.globalRankDay) {$scope.globalRankDayIcon = "images/arrow/SAME.png"}
+                else $scope.globalRankDayIcon = $scope.globalRankYesterday > $scope.globalRankDay ? "images/arrow/UP.png" : "images/arrow/DOWN.png"
             }
             else $scope.globalRankDayIcon = "images/arrow/UP.png"
         });
@@ -87,9 +107,9 @@ function($scope,DatabaseService,$routeParams) {
         DatabaseService.getData("cache",{'code':'ALL','type':'top','time':lastMonthString},function(err,data) {
             topicCacheMapLastMonth = data.data;
             if (topicCacheMapLastMonth[$scope.topic] != null) {
-                var lastMonthRank = getRank(topicCacheMapLastMonth, $scope.topic)
-                if (lastMonthRank == $scope.globalRankMonth) {$scope.globalRankMonthIcon = "images/arrow/SAME.png"}
-                else $scope.globalRankMonthIcon = lastMonthRank > $scope.globalRankMonth ? "images/arrow/UP.png" : "images/arrow/DOWN.png"
+                $scope.globalRankLastMonth = getRank(topicCacheMapLastMonth, $scope.topic)
+                if ($scope.globalRankLastMonth == $scope.globalRankMonth) {$scope.globalRankMonthIcon = "images/arrow/SAME.png"}
+                else $scope.globalRankMonthIcon = $scope.globalRankLastMonth > $scope.globalRankMonth ? "images/arrow/UP.png" : "images/arrow/DOWN.png"
             }
             else $scope.globalRankMonthIcon = "images/arrow/UP.png"
         });
@@ -101,9 +121,9 @@ function($scope,DatabaseService,$routeParams) {
         DatabaseService.getData("cache",{'code':'ALL','type':'top','time':lastYearString},function(err,data) {
             topicCacheMapLastYear = data.data;
             if (topicCacheMapLastYear[$scope.topic] != null) {
-                var lastYearRank = getRank(topicCacheMapLastYear, $scope.topic)
-                if (lastYearRank == $scope.globalRankYear) {$scope.globalRankYearIcon = "images/arrow/SAME.png"}
-                $scope.globalRankYearIcon = lastYearRank > $scope.globalRankYear ? "images/arrow/UP.png" : "images/arrow/DOWN.png"
+                $scope.globalRankLastYear = getRank(topicCacheMapLastYear, $scope.topic)
+                if ($scope.globalRankLastYear == $scope.globalRankYear) {$scope.globalRankYearIcon = "images/arrow/SAME.png"}
+                $scope.globalRankYearIcon = $scope.globalRankLastYear > $scope.globalRankYear ? "images/arrow/UP.png" : "images/arrow/DOWN.png"
             }
             else $scope.globalRankYearIcon = "images/arrow/UP.png"
         });
@@ -133,6 +153,27 @@ function($scope,DatabaseService,$routeParams) {
         }
     }
 
+    // Function used for grabbing all of the city entries for a given month.
+    function getCityDataRec(cityList,time, callback) {
+        if (cityList.length > 0) {
+            var curCity = cityList.pop();
+            console.log('TopicCtrl.getCityDataRec: ' + curCity.name);
+
+            DatabaseService.getData("cache", {'code': curCity.code, 'type': 'top', 'time': time}, function (err, data) {
+                console.log('TopicCtrl.getCityDataRec: ' + curCity.name);
+                console.log(data.data);
+                topicCitiesMapMonth[curCity.code] = data.data;
+                topicCitiesMapMonth[curCity.code].NAME = curCity.name;
+                getCityDataRec(cityList,time, function (err, data2) {
+                    callback(null,data2)
+                });
+            });
+        }
+        else {
+            callback(null,topicCitiesMapMonth);
+        }
+    }
+
 
     // Takes a topic array and a topic and returns it's rank in that array.
     function getRank(topicMap,topic) {
@@ -145,9 +186,13 @@ function($scope,DatabaseService,$routeParams) {
             for (var x in topicMap) {
                 if (Number(topicMap[x]) > curScore) rank++;
             }
+            //console.log('TopicCtrl.getRank: Returning:' + rank)
             return rank;
         }
-        else return "N/A"
+        else {
+            //console.log('TopicCtrl.getRank: Returning: N/A');
+            return "N/A"
+        }
     }
 
 
@@ -168,22 +213,22 @@ function($scope,DatabaseService,$routeParams) {
 
             $scope.lineChartReady = true;
             // Add ranks to the data.
-            console.log("Topic: " + $scope.topic)
-            console.log(data);
-            for (var x in (data))
+            //console.log("Topic: " + $scope.topic)
+            //console.log(data);
+            /*for (var x in (data))
             {
                 console.log(x);
-                /*if (data[x] != null && data[x] != "")
+                if (data[x] != null && data[x] != "")
                 {
                     console.log("NOT NULL");
                     console.log(data[x]);
                     data[x].RANK = getRank(data[x],$scope.topic);
                     console.log(getRank(22000 - data[x],$scope.topic));
-                }*/
+                }
                 //else {
                     //data[x] = {rank: 22000 }
                 //}
-            }
+            }*/
 
             // Draw the line chart with the data we receive.
             //console.log(data);
@@ -208,8 +253,9 @@ function($scope,DatabaseService,$routeParams) {
         console.log("TopicCtrl.drawLineChart: Called")
         console.log(data);
         var dataPoints = Object.keys(data).map(function(key) {
+            console.log(data[key])
             return (data[key] != undefined && data[key][$scope.topic] != undefined) ? data[key][$scope.topic] : 0;
-            return (data[key] != undefined && data[key]['RANK'] != undefined) ? data[key]['RANK'] : 0;
+            //return (data[key] != undefined && data[key]['RANK'] != undefined) ? data[key]['RANK'] : 0;
         });
         var labelPoints = Object.keys(data).map(function(key) {
             return MONTH_NAMES[(parseInt(key.slice(-2))-1)%12]
@@ -258,6 +304,21 @@ function($scope,DatabaseService,$routeParams) {
         loadMonthlyLineChartData(12);
     }
 
+    function loadTopCityList() {
+        DatabaseService.getData('citylist', {}, function (err, data) {
+            var cityListData = data.data.Items;
+            getCityDataRec(cityListData.slice(),monthString, function (err, data) {
+                $scope.cityRankArr = Object.keys(topicCitiesMapMonth).map(function(key) {
+                    var scr = Number(topicCitiesMapMonth[key][$scope.topic])
+                    if (isNaN(scr)) scr = 0;
+                    return {"city" : topicCitiesMapMonth[key].NAME, "score" : scr, "url" : "city/" + key}
+                })
+               $scope.cityListRankingLoaded = true;
+            })
+        })
+    }
+
+    loadTopCityList();
     initLineChart();
 
 

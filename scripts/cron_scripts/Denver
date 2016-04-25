@@ -1,0 +1,2637 @@
+{
+    "23-04-2016": {
+        "20s-30s-social": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.3810448103562465,
+            "topic_id": 17201
+        },
+        "Lesbian": {
+            "category": "lifestyle",
+            "category_id": 17,
+            "score": 0.287717668824218,
+            "topic_id": 742
+        },
+        "adventure": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 15892
+        },
+        "alternative-lifestyles": {
+            "category": "lifestyle",
+            "category_id": 17,
+            "score": 0.287717668824218,
+            "topic_id": 24818
+        },
+        "asteroid-mining": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 1231522
+        },
+        "asteroids": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 33438
+        },
+        "astronomy": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 485
+        },
+        "astrophotography": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 20452
+        },
+        "astrophysics": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 34455
+        },
+        "bike": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 579
+        },
+        "bisexual-friends": {
+            "category": "lifestyle",
+            "category_id": 17,
+            "score": 0.287717668824218,
+            "topic_id": 29289
+        },
+        "bisexual-women": {
+            "category": "lifestyle",
+            "category_id": 17,
+            "score": 0.287717668824218,
+            "topic_id": 21737
+        },
+        "bookclub": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.287717668824218,
+            "topic_id": 2767
+        },
+        "breathing-meditation": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 19570
+        },
+        "call-of-cthulhu-rpg": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 76124
+        },
+        "camping": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 374
+        },
+        "canoeing-canoe-camping": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 18989
+        },
+        "christian-singles": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 16271
+        },
+        "christiansocial": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 10187
+        },
+        "commercial-space-travel": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 46023
+        },
+        "consciousness": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 4417
+        },
+        "continuing-education": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.287717668824218,
+            "topic_id": 30093
+        },
+        "cooking-dinner-parties": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.2301741350593744,
+            "topic_id": 21684
+        },
+        "craftswap": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.287717668824218,
+            "topic_id": 10099
+        },
+        "diningout": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 713
+        },
+        "divorcesupport": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 1570
+        },
+        "dnd": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 553
+        },
+        "eating-drinking-talking-laughing-etc": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.2301741350593744,
+            "topic_id": 19130
+        },
+        "exploring-new-restaurants": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.2301741350593744,
+            "topic_id": 20704
+        },
+        "french": {
+            "category": "language",
+            "category_id": 16,
+            "score": 0.0575435337648436,
+            "topic_id": 185
+        },
+        "french-culture": {
+            "category": "language",
+            "category_id": 16,
+            "score": 0.0575435337648436,
+            "topic_id": 21183
+        },
+        "french-speaking-community": {
+            "category": "language",
+            "category_id": 16,
+            "score": 0.0575435337648436,
+            "topic_id": 52971
+        },
+        "game-design": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 19225
+        },
+        "gamedev": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 496
+        },
+        "games": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 15992
+        },
+        "gaming": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 18071
+        },
+        "geek": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.287717668824218,
+            "topic_id": 10493
+        },
+        "geek-girls": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.287717668824218,
+            "topic_id": 371581
+        },
+        "geeks-nerds": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.287717668824218,
+            "topic_id": 32623
+        },
+        "girl-nerds": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.287717668824218,
+            "topic_id": 277791
+        },
+        "guided-meditation": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 21628
+        },
+        "healthy-eating": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.2301741350593744,
+            "topic_id": 19630
+        },
+        "healthy-living": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.2301741350593744,
+            "topic_id": 20221
+        },
+        "hiking": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 638
+        },
+        "holistic-health": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.2301741350593744,
+            "topic_id": 15478
+        },
+        "ladies-in-their-20s-and-30s": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 1251582
+        },
+        "larp": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 1456
+        },
+        "late-20s-early-30s": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 16345
+        },
+        "lgbt-social-group": {
+            "category": "lifestyle",
+            "category_id": 17,
+            "score": 0.287717668824218,
+            "topic_id": 17665
+        },
+        "lgbtfriends": {
+            "category": "lifestyle",
+            "category_id": 17,
+            "score": 0.287717668824218,
+            "topic_id": 10050
+        },
+        "life-balance": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.3452612025890616,
+            "topic_id": 25949
+        },
+        "meditation": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 1322
+        },
+        "men-who-like-men-women": {
+            "category": "lifestyle",
+            "category_id": 17,
+            "score": 0.287717668824218,
+            "topic_id": 44772
+        },
+        "moon-and-mars-colonization": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 1231542
+        },
+        "movies-bowling-concerts-and-local-events": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 23747
+        },
+        "nasa": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 78890
+        },
+        "nerd": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.287717668824218,
+            "topic_id": 82277
+        },
+        "nerd-culture": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.287717668824218,
+            "topic_id": 84926
+        },
+        "nerds-girls": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.287717668824218,
+            "topic_id": 606822
+        },
+        "newly-divorced": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 16687
+        },
+        "nightlife": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 4392
+        },
+        "nutrition": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.2301741350593744,
+            "topic_id": 10161
+        },
+        "pathfinder-roleplaying-game": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 27294
+        },
+        "professional-networking": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 15720
+        },
+        "rafting": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 9728
+        },
+        "recipes": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.2301741350593744,
+            "topic_id": 50709
+        },
+        "rocketry": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 10284
+        },
+        "role-playing-games-rpgs": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 52140
+        },
+        "roleplaying-games-rpgs": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 16425
+        },
+        "scifi": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.5178918038835925,
+            "topic_id": 317
+        },
+        "self-empowerment": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.575435337648436,
+            "topic_id": 38757
+        },
+        "self-exploration": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.575435337648436,
+            "topic_id": 29158
+        },
+        "self-improvement": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 1.2659577428265592,
+            "topic_id": 3336
+        },
+        "singles": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 498
+        },
+        "singles-20s-30s": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 23012
+        },
+        "singles-20s-and-30s": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 16727
+        },
+        "singles-dating": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 104844
+        },
+        "singles-events": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 29852
+        },
+        "social": {
+            "category": "lifestyle",
+            "category_id": 17,
+            "score": 0.6905224051781232,
+            "topic_id": 10581
+        },
+        "socialnetwork": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 2.07156721553437,
+            "topic_id": 4422
+        },
+        "space": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 5933
+        },
+        "space-robotics": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 1231532
+        },
+        "space-science": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 70677
+        },
+        "space-tourism": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 78891
+        },
+        "spaceflight": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 117408
+        },
+        "spiritual-growth": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 17658
+        },
+        "spirituality": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 10290
+        },
+        "stargazing": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1150870675296872,
+            "topic_id": 34441
+        },
+        "strategy-games": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 17785
+        },
+        "stress-relief": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 17075
+        },
+        "tabletop-role-playing-and-board-games": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 16714
+        },
+        "transformation": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 21591
+        },
+        "travel": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 1998
+        },
+        "volunteering": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 16645
+        },
+        "walkers": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 1.0933271415320285,
+            "topic_id": 933
+        },
+        "weightloss": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.2301741350593744,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.2301741350593744,
+            "topic_id": 10306
+        },
+        "wod": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.2301741350593744,
+            "topic_id": 1437
+        },
+        "women": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.6905224051781232,
+            "topic_id": 10232
+        },
+        "women-20s-30s": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 41903
+        },
+        "women-learning-from-each-other": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.3452612025890616,
+            "topic_id": 1013202
+        },
+        "women-who-like-men-women": {
+            "category": "lifestyle",
+            "category_id": 17,
+            "score": 0.287717668824218,
+            "topic_id": 44771
+        },
+        "womens-empowerment": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.3452612025890616,
+            "topic_id": 17933
+        },
+        "womens-peer-support-group": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.3452612025890616,
+            "topic_id": 21160
+        },
+        "womens-support-and-resources": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.3452612025890616,
+            "topic_id": 65041
+        },
+        "womens-support-groups": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.3452612025890616,
+            "topic_id": 119109
+        },
+        "young-professional-singles": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 58259
+        }
+    },
+    "24-04-2016": {
+        "20s-30s-social": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.863153006472654,
+            "topic_id": 17201
+        },
+        "20s-and-30s": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.863153006472654,
+            "topic_id": 29541
+        },
+        "Euro-games": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.0,
+            "topic_id": 16814
+        },
+        "activedogs": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 9772
+        },
+        "adventure": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 3.3950684921257723,
+            "topic_id": 15892
+        },
+        "alternativeenergy": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 1980
+        },
+        "animal-advocacy": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.1150870675296872,
+            "topic_id": 27464
+        },
+        "animal-protection": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.1150870675296872,
+            "topic_id": 32320
+        },
+        "animal-rights-activism": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.1150870675296872,
+            "topic_id": 101649
+        },
+        "animal-rights-welfare": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.1150870675296872,
+            "topic_id": 50952
+        },
+        "animalrescue": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.1150870675296872,
+            "topic_id": 10495
+        },
+        "animalrights": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.5178918038835925,
+            "topic_id": 2349
+        },
+        "animals": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 1.323501276591403,
+            "topic_id": 37663
+        },
+        "animalwelfare": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.1150870675296872,
+            "topic_id": 92
+        },
+        "art": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.1150870675296872,
+            "topic_id": 1502
+        },
+        "art-of-living": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 18437
+        },
+        "arts": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.7480659389429668,
+            "topic_id": 10574
+        },
+        "asteroid-mining": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 1231522
+        },
+        "asteroids": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 33438
+        },
+        "astronomy": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 485
+        },
+        "astrophotography": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 20452
+        },
+        "astrophysics": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 34455
+        },
+        "automotive": {
+            "category": "cars-motorcycles",
+            "category_id": 3,
+            "score": 0.0575435337648436,
+            "topic_id": 20533
+        },
+        "babyboomer": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.7480659389429668,
+            "topic_id": 2611
+        },
+        "backpacking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.287717668824218,
+            "topic_id": 18988
+        },
+        "beer-and-food": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.863153006472654,
+            "topic_id": 84291
+        },
+        "beer-and-wine": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.863153006472654,
+            "topic_id": 72952
+        },
+        "bfl": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.287717668824218,
+            "topic_id": 482
+        },
+        "bike": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.287717668824218,
+            "topic_id": 579
+        },
+        "bisexual-women": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 21737
+        },
+        "board-games": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 1.323501276591403,
+            "topic_id": 19585
+        },
+        "bookclub": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.0,
+            "topic_id": 2767
+        },
+        "books-and-drinks": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.287717668824218,
+            "topic_id": 38966
+        },
+        "boston-artists": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.1150870675296872,
+            "topic_id": 16573
+        },
+        "breathing-exercises": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 19168
+        },
+        "breathing-meditation": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 19570
+        },
+        "call-of-cthulhu-rpg": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 76124
+        },
+        "camping": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 1.0933271415320285,
+            "topic_id": 374
+        },
+        "cardgame": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.0,
+            "topic_id": 9792
+        },
+        "cars": {
+            "category": "cars-motorcycles",
+            "category_id": 3,
+            "score": 0.0575435337648436,
+            "topic_id": 20578
+        },
+        "catrescue": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.1150870675296872,
+            "topic_id": 120
+        },
+        "charity-events": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.8056094727078105,
+            "topic_id": 54006
+        },
+        "chihuahua": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 106
+        },
+        "coffee": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.863153006472654,
+            "topic_id": 235
+        },
+        "commercial-space-travel": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 46023
+        },
+        "community-building": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.8056094727078105,
+            "topic_id": 20727
+        },
+        "community-gardening": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 74771
+        },
+        "community-service": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.9782400740023413,
+            "topic_id": 18866
+        },
+        "communityorg": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.8056094727078105,
+            "topic_id": 10485
+        },
+        "consciousness": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.2301741350593744,
+            "topic_id": 4417
+        },
+        "continuing-education": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.1726306012945308,
+            "topic_id": 30093
+        },
+        "craft-beer": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.863153006472654,
+            "topic_id": 28718
+        },
+        "craftswap": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.1726306012945308,
+            "topic_id": 10099
+        },
+        "cultural-activities": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 1.5536754116507772,
+            "topic_id": 23884
+        },
+        "culture": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 20169
+        },
+        "culture-exchange": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.7480659389429668,
+            "topic_id": 67622
+        },
+        "cycling": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.287717668824218,
+            "topic_id": 18617
+        },
+        "dancing": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.6329788714132796,
+            "topic_id": 17571
+        },
+        "diningout": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 1.8413930804749952,
+            "topic_id": 713
+        },
+        "dinner-and-a-movie": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.287717668824218,
+            "topic_id": 23778
+        },
+        "divorced": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 125105
+        },
+        "dnd": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 553
+        },
+        "dog-play-groups": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 18340
+        },
+        "dog-walks": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 18874
+        },
+        "dogrescue": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 109
+        },
+        "dogs": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 15067
+        },
+        "dream-group": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.2301741350593744,
+            "topic_id": 205281
+        },
+        "dreams": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.2301741350593744,
+            "topic_id": 1586
+        },
+        "dreams-symbols": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.2301741350593744,
+            "topic_id": 94461
+        },
+        "eco-conscious": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 16816
+        },
+        "electric-car": {
+            "category": "cars-motorcycles",
+            "category_id": 3,
+            "score": 0.0575435337648436,
+            "topic_id": 29069
+        },
+        "entrepreneurship": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1150870675296872,
+            "topic_id": 19882
+        },
+        "environment": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 89
+        },
+        "environmental-activism": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 18721
+        },
+        "environmental-awareness": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 23842
+        },
+        "ethnic-dining-cooking": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.7480659389429668,
+            "topic_id": 17410
+        },
+        "evp": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.3452612025890616,
+            "topic_id": 8254
+        },
+        "excercise": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.0575435337648436,
+            "topic_id": 25375
+        },
+        "feminism": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.287717668824218,
+            "topic_id": 312
+        },
+        "feminist": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.287717668824218,
+            "topic_id": 37271
+        },
+        "feminist-activism": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 65198
+        },
+        "fiction": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.287717668824218,
+            "topic_id": 15113
+        },
+        "fitness": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.2301741350593744,
+            "topic_id": 242
+        },
+        "fitness-boot-camp": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.287717668824218,
+            "topic_id": 20087
+        },
+        "float-trips": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.9206965402374976,
+            "topic_id": 1427842
+        },
+        "floating": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.287717668824218,
+            "topic_id": 36909
+        },
+        "fun-times": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 2.2441978168289003,
+            "topic_id": 15117
+        },
+        "game-design": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 19225
+        },
+        "game-night": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.0,
+            "topic_id": 40126
+        },
+        "gamedev": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 496
+        },
+        "games": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 15992
+        },
+        "gaming": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 18071
+        },
+        "geek": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.1726306012945308,
+            "topic_id": 10493
+        },
+        "geek-girls": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.1726306012945308,
+            "topic_id": 371581
+        },
+        "geeks-nerds": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.1726306012945308,
+            "topic_id": 32623
+        },
+        "ghost-tracking-and-hunting": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.3452612025890616,
+            "topic_id": 19479
+        },
+        "ghosts": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.3452612025890616,
+            "topic_id": 220
+        },
+        "ghosttowns": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.2301741350593744,
+            "topic_id": 4132
+        },
+        "girl-nerds": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.1726306012945308,
+            "topic_id": 277791
+        },
+        "green-building": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 16817
+        },
+        "green-entrepreneurs": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 23538
+        },
+        "green-living": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 15398
+        },
+        "greenhome": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 5915
+        },
+        "group-fitness-training": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.287717668824218,
+            "topic_id": 15394
+        },
+        "haunted-attractions": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.2301741350593744,
+            "topic_id": 106965
+        },
+        "haunted-houses": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.2301741350593744,
+            "topic_id": 19956
+        },
+        "haunted-places": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.575435337648436,
+            "topic_id": 18765
+        },
+        "hauntings": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.2301741350593744,
+            "topic_id": 37775
+        },
+        "healthy-family-and-healthy-environment": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 63238
+        },
+        "healthy-living": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.1150870675296872,
+            "topic_id": 20221
+        },
+        "hiking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 1.0933271415320285,
+            "topic_id": 638
+        },
+        "historic-buildings": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.2301741350593744,
+            "topic_id": 20911
+        },
+        "historical-museum": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.2301741350593744,
+            "topic_id": 73278
+        },
+        "historical-tours": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.2301741350593744,
+            "topic_id": 73281
+        },
+        "intellectual-discussion": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.0575435337648436,
+            "topic_id": 15083
+        },
+        "intervaltrain": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.287717668824218,
+            "topic_id": 6034
+        },
+        "intuitive-wisdom": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.2301741350593744,
+            "topic_id": 59918
+        },
+        "kayaking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 1.0933271415320285,
+            "topic_id": 590
+        },
+        "larp": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 1456
+        },
+        "lgbt-families": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 33600
+        },
+        "lgbt-friendly": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 107996
+        },
+        "lgbt-social-group": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 17665
+        },
+        "lgbtfriends": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 10050
+        },
+        "lgbtq": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 64804
+        },
+        "liberal": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.7480659389429668,
+            "topic_id": 2178
+        },
+        "literature": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.287717668824218,
+            "topic_id": 15321
+        },
+        "live-theatre": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 1.0933271415320285,
+            "topic_id": 23274
+        },
+        "livemusic": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.9782400740023413,
+            "topic_id": 8652
+        },
+        "local-wildlife": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.1150870675296872,
+            "topic_id": 24773
+        },
+        "meditation": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 1322
+        },
+        "men": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.863153006472654,
+            "topic_id": 10261
+        },
+        "metaphysics": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.2301741350593744,
+            "topic_id": 774
+        },
+        "moon-and-mars-colonization": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 1231542
+        },
+        "mountain-biking": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.287717668824218,
+            "topic_id": 20266
+        },
+        "movement": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 10460
+        },
+        "movies": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.7480659389429668,
+            "topic_id": 1201
+        },
+        "museum": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.1150870675296872,
+            "topic_id": 7319
+        },
+        "music": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.287717668824218,
+            "topic_id": 15018
+        },
+        "nasa": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 78890
+        },
+        "nature": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.9206965402374976,
+            "topic_id": 197471
+        },
+        "nature-photography": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.9206965402374976,
+            "topic_id": 16600
+        },
+        "nature-walks": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.9206965402374976,
+            "topic_id": 19666
+        },
+        "nerd": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.1726306012945308,
+            "topic_id": 82277
+        },
+        "nerd-culture": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.1726306012945308,
+            "topic_id": 84926
+        },
+        "nerds-girls": {
+            "category": "sci-fi-fantasy",
+            "category_id": 29,
+            "score": 0.1726306012945308,
+            "topic_id": 606822
+        },
+        "never-married": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 1422012
+        },
+        "new-york": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.1150870675296872,
+            "topic_id": 18312
+        },
+        "new-york-city": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.1150870675296872,
+            "topic_id": 16809
+        },
+        "newintown": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 2.589459019417962,
+            "topic_id": 1273
+        },
+        "nightlife": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 1.2659577428265592,
+            "topic_id": 4392
+        },
+        "nonprofit": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.8056094727078105,
+            "topic_id": 1726
+        },
+        "novel-reading": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.287717668824218,
+            "topic_id": 15622
+        },
+        "occult": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.2301741350593744,
+            "topic_id": 1400
+        },
+        "offleash": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 9753
+        },
+        "online-dating": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 40347
+        },
+        "outdoor-adventures": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.9206965402374976,
+            "topic_id": 16967
+        },
+        "outdoor-fitness": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 1.2659577428265592,
+            "topic_id": 15672
+        },
+        "outdoors": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 2.5319154856531183,
+            "topic_id": 15046
+        },
+        "outdoors-and-adventure": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.9206965402374976,
+            "topic_id": 1193962
+        },
+        "paddling": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.287717668824218,
+            "topic_id": 726
+        },
+        "paranormal": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.575435337648436,
+            "topic_id": 1153
+        },
+        "paranormal-evidence": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.3452612025890616,
+            "topic_id": 18767
+        },
+        "paranormal-investigations": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.575435337648436,
+            "topic_id": 18603
+        },
+        "paranormal-research": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.3452612025890616,
+            "topic_id": 24064
+        },
+        "pathfinder-roleplaying-game": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 27294
+        },
+        "performing-arts": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 1.0933271415320285,
+            "topic_id": 17558
+        },
+        "permaculture": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 2527
+        },
+        "personal-development": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 16468
+        },
+        "personal-growth-through-dreams": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.2301741350593744,
+            "topic_id": 22373
+        },
+        "personal-paranormal-experiences": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.1150870675296872,
+            "topic_id": 18766
+        },
+        "pets-animals": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 1.323501276591403,
+            "topic_id": 53052
+        },
+        "poetry": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.7480659389429668,
+            "topic_id": 222
+        },
+        "political-activism": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 19690
+        },
+        "projective-dream-work": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.2301741350593744,
+            "topic_id": 1282282
+        },
+        "queer-socializing": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 51392
+        },
+        "radical-feminism": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 110408
+        },
+        "reading": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.287717668824218,
+            "topic_id": 15360
+        },
+        "renewable-energy": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 16902
+        },
+        "road-trips": {
+            "category": "cars-motorcycles",
+            "category_id": 3,
+            "score": 0.0575435337648436,
+            "topic_id": 23453
+        },
+        "rockclimbing": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.287717668824218,
+            "topic_id": 1566
+        },
+        "rocketry": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 10284
+        },
+        "role-playing-games-rpgs": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 52140
+        },
+        "roleplaying-games-rpgs": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 16425
+        },
+        "scifi": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1150870675296872,
+            "topic_id": 317
+        },
+        "self-empowerment": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.0,
+            "topic_id": 38757
+        },
+        "self-exploration": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.2301741350593744,
+            "topic_id": 29158
+        },
+        "self-improvement": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 1.5536754116507772,
+            "topic_id": 3336
+        },
+        "serious-paranormal-investigation-and-research": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.1150870675296872,
+            "topic_id": 39843
+        },
+        "settlers": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.0,
+            "topic_id": 970
+        },
+        "singles": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 498
+        },
+        "singles-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.287717668824218,
+            "topic_id": 19869
+        },
+        "small-dog-breeds-puppies": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 35513
+        },
+        "small-dog-lovers": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 28267
+        },
+        "small-dog-playgroup": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 53434
+        },
+        "small-dogs": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 35232
+        },
+        "smallbreeddogs": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 7929
+        },
+        "social": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 7.9985511933132605,
+            "topic_id": 10581
+        },
+        "social-group-for-singles-45-and-older": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 70773
+        },
+        "socialnetwork": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 2.992263755771867,
+            "topic_id": 4422
+        },
+        "socialwork": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.8056094727078105,
+            "topic_id": 4213
+        },
+        "space": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 5933
+        },
+        "space-robotics": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 1231532
+        },
+        "space-science": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 70677
+        },
+        "space-tourism": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 78891
+        },
+        "spaceflight": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 117408
+        },
+        "spirits-and-ghosts": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.3452612025890616,
+            "topic_id": 18763
+        },
+        "spiritual-awakening": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.2301741350593744,
+            "topic_id": 69583
+        },
+        "spiritual-growth": {
+            "category": "new-age-spirituality",
+            "category_id": 22,
+            "score": 0.2301741350593744,
+            "topic_id": 17658
+        },
+        "spirituality": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.0575435337648436,
+            "topic_id": 10290
+        },
+        "sports": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.287717668824218,
+            "topic_id": 10451
+        },
+        "sports-cars": {
+            "category": "cars-motorcycles",
+            "category_id": 3,
+            "score": 0.0575435337648436,
+            "topic_id": 15179
+        },
+        "st-louis": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.2301741350593744,
+            "topic_id": 21874
+        },
+        "stargazing": {
+            "category": "education-learning",
+            "category_id": 6,
+            "score": 0.1726306012945308,
+            "topic_id": 34441
+        },
+        "strategy-games": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.287717668824218,
+            "topic_id": 17785
+        },
+        "stress-relief": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 17075
+        },
+        "sustainability": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 15998
+        },
+        "sustainable-development": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.287717668824218,
+            "topic_id": 47570
+        },
+        "tabletop-board-games": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.2301741350593744,
+            "topic_id": 106001
+        },
+        "tabletop-role-playing-and-board-games": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 16714
+        },
+        "technology": {
+            "category": "cars-motorcycles",
+            "category_id": 3,
+            "score": 0.0575435337648436,
+            "topic_id": 10579
+        },
+        "tesla-automobiles": {
+            "category": "cars-motorcycles",
+            "category_id": 3,
+            "score": 0.0575435337648436,
+            "topic_id": 132684
+        },
+        "toydog": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.7480659389429668,
+            "topic_id": 10003
+        },
+        "trans-gender-queer-queer-and-queer-friendly-peeps": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 19017
+        },
+        "travel": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.7480659389429668,
+            "topic_id": 1998
+        },
+        "urbanexplor": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.1150870675296872,
+            "topic_id": 4331
+        },
+        "vegan": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.5178918038835925,
+            "topic_id": 408
+        },
+        "vegetarian": {
+            "category": "food-drink",
+            "category_id": 10,
+            "score": 0.0575435337648436,
+            "topic_id": 309
+        },
+        "volunteering": {
+            "category": "community-environment",
+            "category_id": 4,
+            "score": 0.8056094727078105,
+            "topic_id": 16645
+        },
+        "walkers": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 1.2659577428265592,
+            "topic_id": 933
+        },
+        "walking-for-fitness": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.1150870675296872,
+            "topic_id": 15893
+        },
+        "weekend-adventures": {
+            "category": "outdoors-adventure",
+            "category_id": 23,
+            "score": 0.9206965402374976,
+            "topic_id": 16438
+        },
+        "weightloss": {
+            "category": "fitness",
+            "category_id": 9,
+            "score": 0.287717668824218,
+            "topic_id": 240
+        },
+        "wellness": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.1150870675296872,
+            "topic_id": 10306
+        },
+        "widowed": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.1726306012945308,
+            "topic_id": 85307
+        },
+        "wildlife": {
+            "category": "pets-animals",
+            "category_id": 26,
+            "score": 0.1150870675296872,
+            "topic_id": 51544
+        },
+        "wine": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.287717668824218,
+            "topic_id": 611
+        },
+        "wod": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.1726306012945308,
+            "topic_id": 1437
+        },
+        "women": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.0,
+            "topic_id": 10232
+        },
+        "women-20s-30s": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.863153006472654,
+            "topic_id": 41903
+        },
+        "women-who-like-beer": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.863153006472654,
+            "topic_id": 57028
+        },
+        "womens-book-club": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.287717668824218,
+            "topic_id": 26397
+        },
+        "womens-bookclub": {
+            "category": "book-clubs",
+            "category_id": 18,
+            "score": 0.287717668824218,
+            "topic_id": 107560
+        },
+        "womens-sexuality": {
+            "category": "lgbt",
+            "category_id": 12,
+            "score": 0.3452612025890616,
+            "topic_id": 26430
+        },
+        "yoga": {
+            "category": "health-wellbeing",
+            "category_id": 14,
+            "score": 0.287717668824218,
+            "topic_id": 244
+        }
+    }
+}{
+    "24-04-2016": {
+        "adult-basketball": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.32025630761017426,
+            "topic_id": 23591
+        },
+        "adventure": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 15892
+        },
+        "arts": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 10574
+        },
+        "babyboomer": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 2611
+        },
+        "basketball": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.32025630761017426,
+            "topic_id": 3597
+        },
+        "basketball-lovers": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.32025630761017426,
+            "topic_id": 57627
+        },
+        "call-of-cthulhu-rpg": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 76124
+        },
+        "comedy": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.32025630761017426,
+            "topic_id": 1001
+        },
+        "comedy-club": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.32025630761017426,
+            "topic_id": 88286
+        },
+        "comedy-clubs": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.32025630761017426,
+            "topic_id": 43941
+        },
+        "cultural-activities": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 23884
+        },
+        "culture-exchange": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 67622
+        },
+        "dating-advice": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 97613
+        },
+        "dating-again": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 20814
+        },
+        "dating-and-relationships": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 20246
+        },
+        "dating-over-35": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 20662
+        },
+        "diningout": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 713
+        },
+        "dnd": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 553
+        },
+        "ethnic-dining-cooking": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 17410
+        },
+        "exploring-the-outdoors-with-kids": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 104698
+        },
+        "families": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 16024
+        },
+        "family-friendly": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 22233
+        },
+        "fun-and-laughter": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.32025630761017426,
+            "topic_id": 18795
+        },
+        "funny-story-telling": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.32025630761017426,
+            "topic_id": 321471
+        },
+        "game-design": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 19225
+        },
+        "gamedev": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 496
+        },
+        "games": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 15992
+        },
+        "gaming": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 18071
+        },
+        "haunted-attractions": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 106965
+        },
+        "haunted-houses": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 19956
+        },
+        "haunted-places": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 18765
+        },
+        "hauntings": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 37775
+        },
+        "hiking": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 638
+        },
+        "historic-buildings": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 20911
+        },
+        "historical-museum": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 73278
+        },
+        "historical-tours": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 73281
+        },
+        "indoor-basketball": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.32025630761017426,
+            "topic_id": 36177
+        },
+        "indoor-tennis": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.48038446141526137,
+            "topic_id": 112625
+        },
+        "jokes": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.32025630761017426,
+            "topic_id": 40748
+        },
+        "kids": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 16030
+        },
+        "larp": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 1456
+        },
+        "liberal": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 2178
+        },
+        "live-theatre": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 23274
+        },
+        "mens-adult-basketball": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.32025630761017426,
+            "topic_id": 1172172
+        },
+        "mens-basketball": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.32025630761017426,
+            "topic_id": 20991
+        },
+        "mens-pick-up-basketball": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.32025630761017426,
+            "topic_id": 32458
+        },
+        "movies": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 1201
+        },
+        "nature": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 197471
+        },
+        "nature-walks": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 19666
+        },
+        "newintown": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 1.281025230440697,
+            "topic_id": 1273
+        },
+        "outdoor-exploration-with-kids": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 22994
+        },
+        "outdoor-tennis": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.48038446141526137,
+            "topic_id": 19954
+        },
+        "outdoors": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 15046
+        },
+        "paranormal": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 1153
+        },
+        "paranormal-investigations": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 18603
+        },
+        "parents": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 10333
+        },
+        "pathfinder-roleplaying-game": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 27294
+        },
+        "performing-arts": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 17558
+        },
+        "pick-up-basketball": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.32025630761017426,
+            "topic_id": 22261
+        },
+        "playgroup": {
+            "category": "parents-family",
+            "category_id": 25,
+            "score": 0.0,
+            "topic_id": 9853
+        },
+        "poetry": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 222
+        },
+        "professional-singles": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 18216
+        },
+        "role-playing-games-rpgs": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 52140
+        },
+        "roleplaying-games-rpgs": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 16425
+        },
+        "scifi": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 317
+        },
+        "self-improvement": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 3336
+        },
+        "single-and-dating-again": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 30376
+        },
+        "singles": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 498
+        },
+        "singles-30s-50s": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 16660
+        },
+        "singles-group-singles-30s-and-over": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 625622
+        },
+        "singles-singles-singles": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 115707
+        },
+        "social": {
+            "category": "games",
+            "category_id": 11,
+            "score": 1.4411533842457842,
+            "topic_id": 10581
+        },
+        "socialnetwork": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 4422
+        },
+        "speed-dating": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 15233
+        },
+        "speed-dating-vs-internet-dating": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 48561
+        },
+        "st-louis": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 21874
+        },
+        "stand-up-comedy": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.32025630761017426,
+            "topic_id": 29712
+        },
+        "stand-up-comedy-show": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.32025630761017426,
+            "topic_id": 424002
+        },
+        "standup": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.32025630761017426,
+            "topic_id": 10225
+        },
+        "standup-comedy": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.32025630761017426,
+            "topic_id": 108531
+        },
+        "strategy-games": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 17785
+        },
+        "tabletop-board-games": {
+            "category": "paranormal",
+            "category_id": 24,
+            "score": 0.32025630761017426,
+            "topic_id": 106001
+        },
+        "tabletop-role-playing-and-board-games": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 16714
+        },
+        "tennis": {
+            "category": "sports-recreation",
+            "category_id": 32,
+            "score": 0.48038446141526137,
+            "topic_id": 2926
+        },
+        "travel": {
+            "category": "socializing",
+            "category_id": 31,
+            "score": 0.48038446141526137,
+            "topic_id": 1998
+        },
+        "wod": {
+            "category": "games",
+            "category_id": 11,
+            "score": 0.16012815380508713,
+            "topic_id": 1437
+        },
+        "young-professional-singles": {
+            "category": "singles",
+            "category_id": 30,
+            "score": 0.16012815380508713,
+            "topic_id": 58259
+        }
+    }
+}

@@ -55,8 +55,8 @@ class DecimalEncoder(json.JSONEncoder):
 REGION = "us-west-2"
 conn = dynamodb2.connect_to_region(
     REGION,
-    aws_access_key_id='AKIAITWE64NY2AV6IBEA',
-    aws_secret_access_key='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',
+    aws_access_key_id='',
+    aws_secret_access_key='',
     is_secure = False,
 )
 

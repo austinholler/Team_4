@@ -18,6 +18,7 @@
 // 4/17    MB       Controls updated and reduced to 10 entries.
 // 4/17    MB       Fixed bug with percent calculation.
 // 4/26    MB       Added new chart type and fixed for chartjs 2.0
+// 4/27    MB       Moved legend to bottom.
 
 const COLORS = ['#5DA5DA','#FAA43A','#60BD68', '#F17CB0', '#B2912F', '#B276B2', '#DECF3F', '#F15854','#9deb38',"#e0e0e0"]
 const LINECOLORSSTROKE = ["rgba(93,165,218,0.8)","rgba(250,164,58,0.8)","rgba(96,189,104,0.8)","rgba(241,124,176,0.8)","rgba(178,145,47,.8)","rgba(178,118,178,.8)"]
@@ -152,7 +153,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         myPieChart = new Chart(ctxPie, {
             type: 'pie',
             data: newChartData,
-            options: {}
+            options: { legend: {position:'bottom'}}
         });
 
         //document.getElementById('pieChartLegend').innerHTML = myPieChart.generateLegend();
@@ -345,8 +346,10 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
          myLineChartCity = new Chart(ctxLine, {
             type: 'line',
             data: dataLine,
-            options: {}
+            options: {legend: {position:'bottom'}},
+
         });
+
 
     }
 

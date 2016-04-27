@@ -62,7 +62,7 @@
             <h5 class="text-center center-align"><b>Popularity by City</b></h5>
             <div ng-show="cityListRankingLoaded" class="wow slideInRight left-align">
                 <ol>
-                    <li ng-repeat="city in cityRankArr | orderBy:'-score' | limitTo: 10 " ng-if="city.score > 0"> <div class="capitalize"><a href={{city.url}}> {{city.city}}</a></div></li>
+                    <li ng-repeat="city in cityRankArr | orderBy:'-score' | limitTo: 5 " ng-if="city.score > 0"> <div class="capitalize"><a href={{city.url}}> {{city.city}}</a></div></li>
                 </ol>
             </div>
         </div>

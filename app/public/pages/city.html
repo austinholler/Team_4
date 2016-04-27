@@ -44,7 +44,7 @@
 <div class="row">
     <div class="col s5 ">
         <h5 class="text-center center-align"><b>City Interests</b></h5>
-        <canvas class="text-center" id="pieChart" width="400" height="400"></canvas>
+        <canvas class="text-center" id="pieChart"></canvas>
         <br>
         <div ng-show="categoryDataLoaded" class="text-center center-align">
             <a class="waves-effect waves-light btn" ng-click="pieFilter = 'Today';reloadPieChart()"  ng-class="{activeButton:pieFilter == 'Today', nonActiveButton:pieFilter != 'Today'}">Today</a>
@@ -60,11 +60,11 @@
 
     <div class="col s5 ">
         <h5 class="text-center center-align"><b>Historic Topic Trends</b></h5>
-        <canvas class="text-center" id="lineChart" width="400" height="400"></canvas>
+        <canvas class="text-center" id="lineChart"></canvas>
     </div>
 
-    <div class="col s2 "ssh -i "team_4.pem" ec2user@ec2-52-38-5-96.us-west-2.compute.amazonaws.com>
-        <h5 class="text-center center-align"><b>Trending Topics</b></h5>
+    <div class="col s2 ">
+        <h5 class="text-center center-align"><b>Trending Topics Today</b></h5>
         <div ng-show="topicCacheDataLoaded" class="wow slideInRight">
             <ol>
                 <li ng-repeat="topic in topicCacheDataArr | orderBy:'-score':reverse | limitTo:10"> <div class="capitalize"><a href={{topic.url}}> {{topic.topic}}</a></div></li>

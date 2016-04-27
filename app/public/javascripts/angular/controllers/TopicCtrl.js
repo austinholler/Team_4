@@ -277,7 +277,6 @@ function($scope,DatabaseService,$routeParams) {
                     data: dataPoints//[65, 59, 80, 81, 56, 55, 40]
                 }
             ],
-            height:1000,
             options: {
                 responsive: true,
                 maintainAspectRatio: true
@@ -297,7 +296,10 @@ function($scope,DatabaseService,$routeParams) {
         myLineChart = new Chart(ctxLine, {
             type: 'line',
             data: dataLine,
-            options: {}
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+            }
         });
 
     }

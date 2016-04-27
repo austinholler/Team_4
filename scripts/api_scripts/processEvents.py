@@ -42,6 +42,8 @@ import math
 			   state -> same as city'''	
 def doesntExist(fileName, city, state):
 	
+	beginning = time.time()
+	
 	#Create a dictionary, later turned into the JSON object/file
 	topic_dict = {}
 	
@@ -49,9 +51,13 @@ def doesntExist(fileName, city, state):
 	json_events = open('LrgCityEvents/{}'.format(fileName),'r').read()
 	parsed_events = json.loads(json_events)
 	
+	print time.time() - beginning
+	
 	#Create total events/rsvps keys for later use	
 	topic_dict['num_events'] = 0
 	topic_dict['total_rsvps'] = 0
+	
+	print len(parsed_events['events'])
 			
 	#Iterating through each event in event JSON file for processing
 	for event in parsed_events['events']:
@@ -129,6 +135,7 @@ def doesntExist(fileName, city, state):
 	
 	print("Processed Stuff!!!")
 	
+	
 	return 0
 	
 '''jsonExists: This function is for if the city events.json has had to 
@@ -146,7 +153,7 @@ def jsonExists(fileName, city, state):
 	parsed_post = json.loads(post_json)
 	
 	#Get JSON events file
-	json_events = open('FullCOEvents/{}'.format(fileName),'r').read()
+	json_events = open('LrgCityEvents/{}'.format(fileName),'r').read()
 	parsed_events = json.loads(json_events)
 			
 	#Iterating through each event in event JSON file for processing		
@@ -234,9 +241,13 @@ def jsonExists(fileName, city, state):
 	Variables: fileName -> the name of the file being worked with'''	
 def normalizeData(fileName):
 	
+	beginning = time.time()
+	
 	#Open processed JSON file and create a dictionary
 	json_str = open('ProcessedCities/{}'.format(fileName),'r').read()
 	topic_dict = json.loads(json_str)
+	
+	print time.time() - beginning
 	
 	#Assign total events/rsvps variables
 	total_events = topic_dict['num_events']
@@ -281,6 +292,8 @@ def main():
 	#Create a list of events from given folder
 	filesList = os.listdir('LrgCityEvents')
 	
+	beginning = 0
+	
 	for x in filesList:
 		
 		#Split file name and retrieve the city/state being worked with
@@ -288,8 +301,10 @@ def main():
 		city = name_split[0]
 		state = name_split[1][:2]
 		
+		
 		print("Processing file {}...".format(x))
 		
+		beginning = time.time()
 		#If a processed city file already exists use jsonExists
 		#Else use doesntExist
 		if (os.path.isfile('ProcessedCities/processed-{}-{}.json'.format(city, state))):
@@ -306,6 +321,8 @@ def main():
 		
 		#Normalize the data
 		normalizeData(x)
+		
+		print time.time() - beginning
 		
 		print("{} Processed!!!".format(x))
 		

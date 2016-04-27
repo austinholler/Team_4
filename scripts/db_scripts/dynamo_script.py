@@ -27,8 +27,8 @@ def printProgress (iteration, total, prefix = '', suffix = '', decimals = 2, bar
 REGION = "us-west-2"
 conn = dynamodb2.connect_to_region(
     REGION,
-    aws_access_key_id='xxxxxxxxxxxxxx',
-    aws_secret_access_key='xxxxxxxxxxxxxxxxxxxx',
+    aws_access_key_id='XXXXXXXXXXXXXXXX',
+    aws_secret_access_key='XXXXXXXXXXXXXXXX',
     is_secure = False,
 )
 
@@ -59,12 +59,11 @@ with open(js) as json_file :
                         with topics.batch_write() as batch:
                             for item in topics_list:
                                 items = item.split('#')
-                                batch.put_item(data={'Name' : items[1] , 'Category' : items[2] ,'Date' : sys.argv[1] + items[3] ,'Score': Decimal(items[4])})
+                                batch.put_item(data={'Name' : items[1] , 'Category' : items[2] , 'Date' : sys.argv[1] + items[3] , 'Score': Decimal(items[4])})
                                 #print items
                             topics_list = []
                         sleep(0.1)
                      except :
-                            print sys.exc_info()[0], items
-
+                            print sys.exc_info(), items
                 printProgress(i, size, prefix = 'Data', suffix = 'Complete', barLength = 50)
                 i += 1

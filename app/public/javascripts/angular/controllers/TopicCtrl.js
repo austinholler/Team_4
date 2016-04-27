@@ -11,6 +11,7 @@
 // 4/17    MB       Additional rankings
 // 4/18    MB       Monthy graph.
 // 4/23    MB       Added rankings.
+// 4/26    MB       Fixed for new chart js version.
 
 const MONTH_NAMES = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
@@ -266,9 +267,9 @@ function($scope,DatabaseService,$routeParams) {
             labels: labelPoints,
             datasets: [
                 {
-                    label: "My First dataset",
-                    fillColor: "rgba(2,136,209,.5)",
-                    strokeColor: "rgba(2,136,209,1)",
+                    label: $scope.topic,
+                    backgroundColor: "rgba(2,136,209,.5)",
+                    borderColor: "rgba(2,136,209,1)",
                     pointColor: "rgba(229,115,115,1)",
                     pointStrokeColor: "#fff",
                     pointHighlightFill: "#fff",
@@ -291,9 +292,13 @@ function($scope,DatabaseService,$routeParams) {
         }
 
 
-        myLineChart = new Chart(ctxLine).Line(dataLine, {});
+        //myLineChart = new Chart(cljtxLine).Line(dataLine, {});
 
-
+        myLineChart = new Chart(ctxLine, {
+            type: 'line',
+            data: dataLine,
+            options: {}
+        });
 
     }
 

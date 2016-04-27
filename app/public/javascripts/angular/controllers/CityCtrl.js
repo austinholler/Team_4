@@ -17,9 +17,11 @@
 // 4/17    MB       Queries for cache for the day.
 // 4/17    MB       Controls updated and reduced to 10 entries.
 // 4/17    MB       Fixed bug with percent calculation.
+// 4/26    MB       Added new chart type and fixed for chartjs 2.0
 
-const COLORS = ['#4D4D4D','#5DA5DA','#FAA43A','#60BD68', '#F17CB0', '#B2912F', '#B276B2', '#DECF3F', '#F15854','#e0e0e0']
-
+const COLORS = ['#5DA5DA','#FAA43A','#60BD68', '#F17CB0', '#B2912F', '#B276B2', '#DECF3F', '#F15854','#9deb38',"#e0e0e0"]
+const LINECOLORSSTROKE = ["rgba(93,165,218,0.8)","rgba(250,164,58,0.8)","rgba(96,189,104,0.8)","rgba(241,124,176,0.8)","rgba(178,145,47,.8)","rgba(178,118,178,.8)"]
+const LINECOLORSFILL = ["rgba(93,165,218,0.4)","rgba(250,164,58,0.4)","rgba(96,189,104,0.4)","rgba(241,124,176,0.4)","rgba(178,145,47,.4)","rgba(178,118,178,.4)"]
 angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseService','$routeParams',function($scope,DatabaseService,$routeParams) {
     // City Name
     $scope.code = $routeParams.code;
@@ -44,39 +46,30 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     var ctxPie = null;
     var myPieChart = null;
 
+    // Line Chart Vars
+    var topicDataForLineChart = {};
+    $scope.selectedTopics = ['lifestyle','games','singles'];
+    var lineChartDatasets = {};
+    var myLineChartCity = null;
+
     // Number of records we have for our data.
     $scope.recordCount = 0;
 
     // Category -> Sum of Scores
     $scope.categoryHash = {};
 
-    var dataLine = {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [
-            {
-                label: "My First dataset",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [65, 59, 80, 81, 56, 55, 40]
-            },
-            {
-                label: "My Second dataset",
-                fillColor: "rgba(151,187,205,0.2)",
-                strokeColor: "rgba(151,187,205,1)",
-                pointColor: "rgba(151,187,205,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [28, 48, 40, 19, 86, 27, 90]
-            }
-        ]
-    };
+    // Topic Selector
+    $scope.topicList = null;
+    $scope.topicListLoaded = false;
+    // Load topic list.
+    DatabaseService.getData("cache",{'code':$scope.code,'type':'TOP'},function(err,data) {
+        $scope.topicList = data.data;
+        $scope.topicList = Object.keys($scope.topicList).map(function(key) {
+            return {"topic" : key, "url" : "topic/" + key}
+        })
+        $scope.topicListLoaded = true;
+    });
 
-    // NOTE: Logic in here is pretty janky. Just testing things out.
 
     function initPieChart() {
         ctxPie = document.getElementById("pieChart").getContext("2d");
@@ -122,6 +115,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
             }
             if (i == 9) {
                 chartData[i].label = "Other";
+                chartData[i].color = COLORS[9];
             }
             if (i > 9) {
                 chartData[9].value += chartData[i].value;
@@ -130,22 +124,38 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         chartData[9].value = chartData[9].value.toFixed(2)
         chartData.length = 10;
 
+        // Chart Data Format changed with Chart JS 2.0
+        var newChartData = {
+            labels: [],
+            datasets:
+                [{
+                    data:[],
+                    backgroundColor:[],
+                    hoverBackgroundColor:[]
+                }]
+        };
+        for (var i in chartData) {
+            newChartData.labels.push(chartData[i].label);
+            newChartData.datasets[0].data.push(chartData[i].value);
+            newChartData.datasets[0].backgroundColor.push(chartData[i].color);
+            newChartData.datasets[0].hoverBackgroundColor.push(chartData[i].color);
+        }
 
         // Load Chart
         if (myPieChart != null) {
             myPieChart.destroy();
         }
-        myPieChart = new Chart(ctxPie).Pie(chartData, {
+        /*myPieChart = new Chart(ctxPie).Pie(chartData, {
             tooltipTemplate: "<%= label %> : <%= value %>%"
+        });*/
+
+        myPieChart = new Chart(ctxPie, {
+            type: 'pie',
+            data: newChartData,
+            options: {}
         });
 
-        document.getElementById('pieChartLegend').innerHTML = myPieChart.generateLegend();
-
-    }
-
-    function drawLineChart(data) {
-        //var ctxLine = document.getElementById("lineChart").getContext("2d");
-        //var myLineChart = new Chart(ctxLine).Line(data, {});
+        //document.getElementById('pieChartLegend').innerHTML = myPieChart.generateLegend();
 
     }
 
@@ -190,6 +200,10 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         })
     }
 
+    //$scope.removeFromSelected = function(topic) {
+    //    for
+    //}
+
     $scope.reloadPieChart = function(){
         console.log('Reloading chart');
         $scope.categoryDataLoaded = false;
@@ -221,10 +235,124 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         }
 
         loadCategoryDataRange(start);
+    };
+
+
+    function initLineChart() {
+        console.log("TopicCtrl.initLineChart: Called")
+
+        // Get all of the data loaded in.
+        loadMonthlyLineChartData(12, function(err,data) {
+            console.log("GOT THE DATA")
+            console.log(topicDataForLineChart);
+            $scope.reloadLineChart();
+        })
+
     }
 
-    initPieChart();
+    $scope.reloadLineChart = function(){
+        console.log("TopicCtrl.reloadLineChart: Called")
+        lineChartDatasets = {};
+        for (var i in $scope.selectedTopics)
+        {
+            var curTop = $scope.selectedTopics[i];
+            var curTopDataPoints = Object.keys(topicDataForLineChart).map(function(key) {
+                return (topicDataForLineChart[key] != undefined && topicDataForLineChart[key][curTop] != undefined) ? Number(topicDataForLineChart[key][curTop]).toFixed(2) : 0;
+            });
+            lineChartDatasets[curTop] = {
+                label: curTop,
+                backgroundColor: LINECOLORSFILL[i],
+                borderColor: LINECOLORSSTROKE[i],
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: curTopDataPoints
+            }
+        }
+        drawLineChart(lineChartDatasets)
+    }
 
-    //var myNewChart = new Chart(ctx).PolarArea(data);
+    // Function used for grabbing all of the entries for a given month.
+    function getMonthDataRec(numMonthsBack, callback) {
+        console.log('TopicCtrl.getMonthDataRec: ' + numMonthsBack + " months back.");
+        if (numMonthsBack > 0) {
+            var newToday = new Date();
+            newToday.setHours(newToday.getHours() - 6); // UTC Offset for MT
+            newToday.setMonth(newToday.getMonth() - numMonthsBack); // X number of months into the past.
+            var monthString = newToday.toISOString().slice(0, 10).replace(/-/g, "").slice(0, -2);
+            console.log("monthString:" + monthString);
+            DatabaseService.getData("cache", {'code': $scope.code, 'type': 'top', 'time': monthString}, function (err, data) {
+                console.log(data);
+                topicDataForLineChart[monthString] = data.data;
+                getMonthDataRec(numMonthsBack - 1, function (err, data2) {
+                    callback(null,data2)
+                });
+            });
+        }
+        else {
+            callback(null,topicDataForLineChart);
+        }
+    }
+
+    // Requests and processes the data for the line chart.
+    function loadMonthlyLineChartData(range,callback) {
+        console.log("TopicCtrl.loadCategoryDataRange: Called")
+        getMonthDataRec(range, function(err,data) {
+            // process the data into a city with 12 datapoints
+            /*
+            for (i in topicDataMonthlyMap.keys()) {
+                console.log(topic)
+                monthofdata = null;
+                for (j in topicDataMonthlyMap[i].keys())
+                    lineData[i].key = topicDataMonthlyMap[i][topic];
+                monthOfData.push(topicDataMonthlyMap[i][topic].value());
+                lineData[i].value = monthOfData
+                //drawLineChart(data);
+            }*/
+
+            callback(topicDataForLineChart)
+        })
+
+    }
+
+    // Draws the line chart based on input data.
+    function drawLineChart(lineChartDatasets) {
+        console.log("TopicCtrl.drawLineChart: Called")
+        var labelPoints = Object.keys(topicDataForLineChart).map(function(key) {
+            return MONTH_NAMES[(parseInt(key.slice(-2))-1)%12]
+        });
+        var dataSetArr = Object.keys(lineChartDatasets).map(function(key) {
+            return lineChartDatasets[key];
+        });
+        console.log(dataSetArr);
+        var dataLine = {
+            labels: labelPoints,
+            datasets: dataSetArr,
+            options: {
+                responsive: true,
+                maintainAspectRatio: true
+            }
+        };
+
+        var ctxLine = document.getElementById("lineChart").getContext("2d");
+
+        // Load Chart
+        if (myLineChartCity != null) {
+            myLineChartCity.destroy();
+        }
+
+         myLineChartCity = new Chart(ctxLine, {
+            type: 'line',
+            data: dataLine,
+            options: {}
+        });
+
+    }
+
+
+
+    initLineChart();
+    initPieChart();
 
 }]);

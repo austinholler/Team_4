@@ -242,7 +242,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
         console.log("TopicCtrl.initLineChart: Called")
 
         // Get all of the data loaded in.
-        loadMonthlyLineChartData(12, function(err,data) {
+        loadMonthlyLineChartData(11, function(err,data) {
             console.log("GOT THE DATA")
             console.log(topicDataForLineChart);
             $scope.reloadLineChart();
@@ -276,7 +276,7 @@ angular.module('CityCtrl', []).controller('CityController', ['$scope','DatabaseS
     // Function used for grabbing all of the entries for a given month.
     function getMonthDataRec(numMonthsBack, callback) {
         console.log('TopicCtrl.getMonthDataRec: ' + numMonthsBack + " months back.");
-        if (numMonthsBack > 0) {
+        if (numMonthsBack >= 0) {
             var newToday = new Date();
             newToday.setHours(newToday.getHours() - 6); // UTC Offset for MT
             newToday.setMonth(newToday.getMonth() - numMonthsBack); // X number of months into the past.
